@@ -8,10 +8,13 @@ WARN_RE = re.compile(r"warning|injurious|health|cancer|kills|quit|1800|tobacco|à
 ids = [r["ad_id"] for r in csv.DictReader(open(os.path.join(ANN, "ads.csv"), encoding="utf-8"))]
 sp, st = [], []
 for a in ids:
-    f = os.path.join(CACHE, a + ".asr.json")
+    f = os.path.join(CACHE, a + ".asr_sarvam.json")  # Sarvam preferred; whisper cache is the fallback
+    if not os.path.exists(f):
+        f = os.path.join(CACHE, a + ".asr.json")
     if os.path.exists(f):
         d = json.load(open(f, encoding="utf-8"))
-        sp += [[a, s["start"], s["end"], s["text"], d["language"], "automatic"] for s in d["speech"]]
+        lang = (d["language"] or "").split("-")[0]
+        sp += [[a, s["start"], s["end"], s["text"], lang, "automatic"] for s in d["speech"]]
     f = os.path.join(CACHE, a + ".ocr.json")
     if os.path.exists(f):
         for o in json.load(open(f, encoding="utf-8"))["ocr"]:
