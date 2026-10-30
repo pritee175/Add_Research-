@@ -1,0 +1,92 @@
+ad_id,start_second,end_second,evidence_type,direction,description
+A_0001,21,28,frame,promotional,Pack shown with aspirational slogan about success/ambition; small required warning present but subordinate
+A_0003,3,42,frame,promotional,"Three Bollywood A-listers in luxury convertible; product consumed on camera; only a sugar-content disclaimer visible, no health warning"
+A_0006,60,60,frame,promotional,Shikhar pack reveal with aspirational tagline tied to earlier CSR narrative; standard warning present
+A_0009,4,14,frame,promotional,Sanjay Dutt exits BMW i8 with bodyguards; Goa Pan Masala pack shown with 0% tobacco claim
+A_0011,50,50,frame,promotional,"MS Dhoni; closing card 'McDowell's No.1 Platinum Soda - The No.1 Spirit of Leadership', same brand/crest as whisky"
+A_0012,94,94,frame,promotional,"Closing tagline 'It's your life. Make it large.' is the actual Royal Stag whisky tagline, over Royal Stag Music CDs branding"
+A_0019,5,5,frame,promotional,Pierce Brosnan toasting with a small pack in a luxury party setting
+A_0024,20,46,frame,promotional,"Woman styled wrapped in cigarette cartons, smoking; happy domestic couple scene; no warning (pre-ban era)"
+A_0025,33,60,frame,promotional,Direct whisky toast imagery; closing card '100 Pipers De Luxe Scotch Whisky'
+A_0028,85,85,frame,promotional,IPL cricket star ensemble under 'Kingfisher Premium - Good Times Partner' branding
+A_0032,40,40,frame,promotional,'Celebrating 25 Years of Vimal' card with standard pan masala health warning present
+A_0034,97,97,frame,promotional,Closing tag 'Drink Responsibly | B9 Beverages Inc. New York' - possibly non-India-market content
+B_0001,28,28,frame,preventive,"Crossed-out tobacco pouch icon, 'Quit tobacco today', cessation helpline 1-800-11-2356"
+B_0002,35,35,frame,preventive,"Official government PSA card: 'Smoking Will Cost You', National Tobacco Control Program, MoHFW"
+B_0003,28,28,frame,preventive,"'Quit tobacco today' + COVID-19 health message + cessation helpline, Vital Strategies branding"
+B_0004,5,59,frame,unclear,"Lit cigarette held in early scene, then unrelated content (PadMan sanitary-pad scene) - content mismatch, not a coherent ad"
+B_0010,15,27,frame,preventive,"Graphic damaged-tissue close-up; closing card 'Tambaku jaanleva hai, aaj hi chhodo', official MoHFW/NTCP"
+B_0014,91,167,frame,preventive,Beer-toast celebration shifts to grieving/guilty aftermath scene consistent with 'Guilt' campaign title
+B_0015,59,59,frame,preventive,On-screen text: 'A reminder from the God of Death to drink and get driven'
+B_0016,137,252,frame,preventive,Diageo CSR exec + school student testimonial against underage drinking; 'DRINKIQ' reach statistics; no product shots
+B_0022,22,141,frame,preventive,"Student shown alarmed on phone, later visibly anguished; narrative distress arc, no product content"
+B_0027,533,533,frame,preventive,"Hospital ward scene, patient on IV drip, consistent with illness/harm narrative"
+B_0030,99,99,frame,preventive,Closing card: 'Issued in public interest on World No Tobacco Day - Ashok Leyland - Hinduja Group'
+B_0032,3,36,frame,preventive,"Opening text 'Come, become a wall and confront tobacco'; closing official Govt of India / MoHFW / NTCP card"
+A_0002,21,21,frame,promotional,Billboard reading 'THE CHAMPION WELCOMES YOU' with the protagonist's portrait
+A_0002,31,31,frame,promotional,Closing DS Group corporate logo card
+A_0004,29,29,frame,promotional,"Pack reveal card with brand name, 'maharaja ki pasand' tagline, and small warning text"
+A_0004,13,13,frame,promotional,"Two riders on horseback approaching a grand palace, luxury/heritage imagery"
+A_0005,10,10,frame,promotional,Man eating the sachet directly on camera with visible gusto
+A_0005,14,14,frame,promotional,Closing 'Dilbagh Royal Pan Masala' brand card
+A_0007,34,34,frame,promotional,"Celebrity holding the Ganesh 701 pack aloft before a cheering crowd, brand logo visible top-left"
+A_0008,6,9,frame,promotional,Dilbagh pack shown against fireworks and diyas for Diwali
+A_0010,63,63,frame,promotional,Small product tin visible on a table beside a man watching horse racing
+A_0010,11,11,frame,promotional,Two men golfing on a grand palatial lawn with servants present
+A_0013,63,63,frame,promotional,Tulsi Mix sachet overlaid on a festive street dance scene with fun-themed tagline
+A_0014,25,25,frame,promotional,Actor holding the Kamla Pasand tin directly to camera
+A_0014,37,37,frame,promotional,Closing brand card with tagline and small statutory warning text
+A_0015,55,55,frame,promotional,Actor in a car with the Rajshree pack shown beside him and warning text visible
+A_0015,90,90,frame,promotional,Same actor at home doing laundry with the Rajshree pack shown again
+A_0016,49,49,frame,promotional,Night skyline shot with the brand's actual tagline 'Speaks for itself' overlaid
+A_0016,35,35,frame,promotional,Violin tagged 'Limited Edition' in a premium instrument-shop vignette
+A_0017,42,42,frame,promotional,'Officer's Choice Blue' snacks branding with military-badge logo and 'Salute toh banta hai' tagline
+A_0018,29,29,frame,promotional,Full Pan Parag product lineup with 'Choice of Young India' tagline and statutory warning
+A_0021,63,63,frame,promotional,"Direct close-up of the 8PM whisky bottle, ice bucket, and poured glass"
+A_0022,48,48,frame,promotional,Explicit 'Haywards 5000 Super Strong Soda' bottle shot with 'Sach Much Solid' tagline
+A_0023,39,39,frame,promotional,Explicit 'Raag Premium Pan Masala' pack reveal with 'Swad Mein Heera' tagline
+A_0026,99,99,frame,promotional,Explicit Red & White cigarette pack and lit cigarette collage with brand-identity tagline
+A_0027,79,79,frame,promotional,"Closing royal-crest graphic with the tagline 'A cigarette so distinguished, it's by appointment to your majesty'"
+A_0029,36,36,frame,promotional,Closing 'Tuborg Zero - Open For Fun - Non Alcoholic Malt Beverage' card with bottle shot
+A_0030,89,89,frame,promotional,Explicit Smirnoff Vodka bottle shot with two poured drinks
+A_0033,28,28,frame,promotional,Closing 'Budweiser x EXPERIENCES x' branded card over a night skyline
+A_0035,2,2,frame,promotional,Jockey eating a spoonful of the product directly from the branded can
+A_0035,14,14,frame,promotional,Closing brand card with jockey/horse silhouette and warning text
+A_0036,91,91,frame,promotional,Explicit 'Contessa Apple Juice' bottle shot with 'What men want' tagline and 'Radico' logo
+A_0037,27,27,frame,promotional,Final direct shot of the London Pilsner bottle beside a full poured beer mug
+A_0031,77,464,frame,excluded,"Same person in the same plain room directly addressing the camera about the bottle throughout the entire sampled runtime -- consistent with a personal review/tasting video, not a produced commercial"
+B_0005,18,18,frame,preventive,Close-up of man smoking with troubled expression
+B_0005,32,32,frame,preventive,"Official closing card: 'Tobacco Kills - QUIT TODAY', MoHFW/NTCP logos"
+B_0006,9,9,frame,preventive,Name/age caption introducing the real testimonial subject
+B_0006,30,30,frame,preventive,Graphic close-up of facial disfigurement with closing warning card
+B_0007,10,10,frame,preventive,Close-up of testimonial subject's facial disfigurement
+B_0007,33,33,frame,preventive,"Closing official 'quit tobacco today' card, MoHFW/NTCP"
+B_0008,29,29,frame,preventive,"Closing card: 'Quit Tobacco - Fight Coronavirus', helpline numbers, official logos"
+B_0009,20,29,frame,preventive,"Doctor examining young man's chest with stethoscope, parents looking worried"
+B_0011,11,11,frame,preventive,"Domestic scene, man gesturing dismissively while woman cooks"
+B_0011,29,29,frame,preventive,"Family grieving at hospital bedside, flatline monitor visible"
+B_0012,11,11,frame,preventive,"Man having a stroke, 'स्ट्रोक' text overlay, food falling from his mouth"
+B_0012,30,30,frame,preventive,"Official closing card: quit tobacco today, helpline, MoHFW/NTCP"
+B_0013,10,10,frame,preventive,Doctor taking a patient's blood pressure in a clinic
+B_0013,27,27,frame,preventive,Woman crying in a hospital hallway
+B_0017,30,30,frame,preventive,"Father and daughter affectionate family scene, mother smiling nearby"
+B_0017,21,21,frame,preventive,"Close-up of father and daughter, child looking questioningly at him"
+B_0018,1,10,frame,preventive,"Static official card: 'Choose Life Not Smoke', MoHFW emblem, Quitline number"
+B_0019,11,11,frame,preventive,"Cafe scene with visible smoke among patrons, secondhand exposure framing"
+B_0019,29,29,frame,preventive,Hand stubbing out a lit cigarette in an ashtray
+B_0020,11,11,frame,preventive,Man giving a testimonial interview on a park bench
+B_0020,138,138,frame,preventive,"Official closing card: 'Quit Tobacco Today', multiple government program logos"
+B_0021,15,15,frame,preventive,Man smoking on a crowded public bus
+B_0021,48,48,frame,preventive,Closing credit: 'Cancer Patients Aid Association'
+B_0023,27,27,frame,preventive,Named deceased subject's photo with 'Tobacco Kills' text and death date caption
+B_0025,16,188,frame,preventive,Official spokesperson message with MoHFW branding and World No Tobacco Day graphic
+B_0026,23,23,frame,preventive,Man giving a testimonial interview
+B_0026,155,270,frame,preventive,Tobacco-use statistic overlay and closing NGO collaboration credit
+B_0028,24,24,frame,preventive,"College students socializing, ordinary youth-life setup scene"
+B_0028,283,283,frame,preventive,Symbolic image: cigarette on a drawn heart with 'My Love For You' text
+B_0029,31,31,frame,preventive,Distressed women and family members in a rural domestic setting
+B_0029,215,215,frame,preventive,"Older man and younger person in a village street scene, continuing dramatic narrative"
+B_0031,11,11,frame,preventive,"Official NTCP PSA card: crossed-out cigarette, 'Tobacco - mouth cancer' text"
+B_0031,35,35,frame,preventive,"Closing logo: Public Health Department, Government of Maharashtra"
+B_0033,11,11,frame,preventive,"Hospital ward testimonial scene, 'Rekha's Son - Shankar' caption"
+B_0033,35,35,frame,preventive,"Mock cigarette pack with large graphic oral-cancer warning, 'See it. Believe it.' text"

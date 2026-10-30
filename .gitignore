@@ -1,0 +1,22 @@
+# secrets
+.secrets/
+.env
+
+# environments and caches
+.venv/
+.venv_media/
+.hf_cache/
+.model_cache/
+.pip_cache/
+.torch_cache/
+.tmp/
+.tmp_installs/
+.scratch/
+.claude_scratch/
+.kilo/
+Research_FF.hf_cache/
+Research_FF.tmppyc/
+__pycache__/
+
+# videos exceed GitHub 100MB file limit
+ad_dataset/videos/
