@@ -14,7 +14,8 @@ for a in ids:
     if os.path.exists(f):
         d = json.load(open(f, encoding="utf-8"))
         lang = (d["language"] or "").split("-")[0]
-        sp += [[a, s["start"], s["end"], s["text"], lang, "automatic"] for s in d["speech"]]
+        sp += [[a, s["start"], s["end"], s["text"], (s.get("language") or d["language"] or "").split("-")[0], "automatic"]
+               for s in d["speech"]]
     f = os.path.join(CACHE, a + ".ocr.json")
     if os.path.exists(f):
         for o in json.load(open(f, encoding="utf-8"))["ocr"]:
