@@ -1,1 +1,2577 @@
 ad_id,start_second,end_second,original_text,text_type,language,correction_status
+B_0001,2.0,6.0,ओम प्रकाश,other,Hindi,automatic
+B_0001,4.0,6.0,उम्र ३८,other,Hindi,automatic
+B_0001,8.0,10.0,(पत्नी),other,Hindi,automatic
+B_0001,8.0,10.0,उम्र ३०,other,Hindi,automatic
+B_0001,8.0,10.0,सुनीता,other,Hindi,automatic
+B_0001,16.0,18.0,सर्जरी के दो सप्ताह बाद,other,Hindi,automatic
+B_0001,28.0,30.0,1-800-11-2356  (टोल फ्री),other,Hindi,automatic
+B_0001,28.0,30.0,सहायता के लिए कॉल करें,other,Hindi,automatic
+B_0002,0.0,4.0,Child,other,English,automatic
+B_0002,0.0,4.0,Eng,other,English,automatic
+B_0002,0.0,4.0,SmokeFree,other,English,automatic
+B_0002,0.0,4.0,३० sec,other,Hindi,automatic
+B_0002,28.0,30.0,passive smoking kills loo,warning,English,automatic
+B_0002,34.0,36.0,Cost,other,English,automatic
+B_0002,34.0,36.0,Issued in public interest by,other,English,automatic
+B_0002,34.0,36.0,SMOKEFREE,other,English,automatic
+B_0002,34.0,36.0,Smoking,other,English,automatic
+B_0002,34.0,36.0,Wl,other,English,automatic
+B_0002,34.0,36.0,You,other,English,automatic
+B_0003,16.0,18.0,50,other,English,automatic
+B_0003,16.0,18.0,70%,other,English,automatic
+B_0003,16.0,18.0,Camera & Music,other,English,automatic
+B_0003,16.0,18.0,SAL,other,English,automatic
+B_0003,16.0,18.0,max,other,English,automatic
+B_0003,28.0,30.0,1-800-11-2356  (टोल फ्री),other,Hindi,automatic
+B_0003,28.0,30.0,Strategies,other,English,automatic
+B_0003,28.0,30.0,Vital,other,English,automatic
+B_0003,28.0,30.0,तम्बाकू आज ही छोड़ें,warning,Hindi,automatic
+B_0003,28.0,30.0,नोवल कोरोनावायरस (COVID १९) से लड़ने के लिए स्वस्थ रहें.,other,Hindi,automatic
+B_0003,28.0,30.0,या मिस्ड कॉल दें 011-२२९०1७०१,other,Hindi,automatic
+B_0003,28.0,30.0,सहायता के लिए कॉल करें,other,Hindi,automatic
+B_0004,0.0,2.0,BEEP,other,English,automatic
+B_0004,4.0,6.0,PRIMARY HEALTH CENTRE,warning,English,automatic
+B_0004,4.0,6.0,प्राथमिक स्वास्थ्य केन्द्र,warning,Hindi,automatic
+B_0004,8.0,10.0,आप भीजा,other,Hindi,automatic
+B_0004,30.0,32.0,Smoking kills,warning,English,automatic
+B_0004,30.0,32.0,WARNING,warning,English,automatic
+B_0004,32.0,34.0,ररेटर,other,Hindi,automatic
+B_0004,34.0,36.0,आप,other,Hindi,automatic
+B_0004,34.0,36.0,भीजागी,other,Hindi,automatic
+B_0004,48.0,50.0,गोज,other,Hindi,automatic
+B_0004,48.0,50.0,टीका,other,Hindi,automatic
+B_0004,60.0,62.0,सेनेटरी पैड,other,Hindi,automatic
+B_0004,60.0,62.0,स्वच्छ,other,Hindi,automatic
+B_0005,4.0,6.0,SL[,other,English,automatic
+B_0005,30.0,33.1,QUIT TODAY,warning,English,automatic
+B_0005,30.0,32.0,Tobacco Klls,warning,English,automatic
+B_0005,32.0,33.1,Tobacco Kills,warning,English,automatic
+B_0006,6.0,8.0,एक पल्री औरएक माँ,other,Hindi,automatic
+B_0006,6.0,8.0,सुनिता,other,Hindi,automatic
+B_0006,6.0,8.0,२७ वर्ष,other,Hindi,automatic
+B_0006,8.0,10.0,एक पत्ी और एक माँ,other,Hindi,automatic
+B_0006,8.0,10.0,सुनिता २७ वर्ष,other,Hindi,automatic
+B_0006,16.0,18.0,REG,other,English,automatic
+B_0006,16.0,20.0,ऑप्रेशन,other,Hindi,automatic
+B_0006,18.0,20.0,REC,other,English,automatic
+B_0006,20.0,22.0,एक हफ्ते,other,Hindi,automatic
+B_0006,20.0,22.0,बाद,other,Hindi,automatic
+B_0006,22.0,24.0,एक हफ्ते बाद,other,Hindi,automatic
+B_0006,26.0,28.0,आज ही छोड़ो,other,Hindi,automatic
+B_0006,30.0,31.1,आज ह छोड़ो,other,Hindi,automatic
+B_0006,30.0,31.1,तम्बाकू जानलेवा हैे,warning,Hindi,automatic
+B_0007,14.0,16.0,हरान,other,Hindi,automatic
+B_0007,16.0,18.0,कॅसर पीड़ित,other,Hindi,automatic
+B_0007,18.0,22.0,मुकेश हराने,other,Hindi,automatic
+B_0007,20.0,22.0,कसर पीडित,other,Hindi,automatic
+B_0007,26.0,30.0,मृत्यु २७ अक्टूबर २००९,other,Hindi,automatic
+B_0007,32.0,34.0,आज ही छोडो,other,Hindi,automatic
+A_0001,2.0,4.0,Rajpigapdba,other,English,automatic
+A_0001,4.0,6.0,Rajpigapdbo,other,English,automatic
+A_0001,6.0,10.0,Rajpigapdba,other,English,automatic
+A_0001,10.0,12.0,Rajpigapdbo,other,English,automatic
+A_0001,28.0,30.0,BANNA CHAHE,other,English,automatic
+A_0001,28.0,30.0,DUNIYA,other,English,automatic
+A_0001,28.0,30.0,"KUCH KARAISA,",other,English,automatic
+A_0001,28.0,30.0,Rapigqpdbo,other,English,automatic
+A_0001,28.0,30.0,TERE JAISA.,other,English,automatic
+A_0001,30.0,30.0,Rapigopdbo,other,English,automatic
+A_0002,24.0,26.0,EURO,other,English,automatic
+A_0002,28.0,32.0,BANNA CHAHE,other,English,automatic
+A_0002,28.0,32.0,DUNIYA,other,English,automatic
+A_0002,28.0,32.0,KUCH KARAISA,other,English,automatic
+A_0002,28.0,32.0,TERE JAISA :,other,English,automatic
+A_0003,20.0,22.0,Elaichi -,other,English,automatic
+A_0003,20.0,24.0,यह कसर का काल्पनिक,other,Hindi,automatic
+A_0003,20.0,22.0,रचनात्मक चित्रण है|,other,Hindi,automatic
+A_0003,22.0,24.0,चित्रण हैl,other,Hindi,automatic
+A_0003,24.0,26.0,काल्पनिक,other,Hindi,automatic
+A_0003,24.0,26.0,यह कसर का,other,Hindi,automatic
+A_0003,24.0,26.0,रचनात्मक चित्रण हैl,other,Hindi,automatic
+A_0003,26.0,28.0,८२,other,Hindi,automatic
+A_0003,30.0,32.0,काल्पनिक,other,Hindi,automatic
+A_0003,30.0,32.0,चित्रण,other,Hindi,automatic
+A_0003,30.0,32.0,यह कसर का,other,Hindi,automatic
+A_0003,34.0,36.0,यह कसर का काल्पनिक,other,Hindi,automatic
+A_0003,34.0,36.0,रचनात्मक चिन्रण हैl,other,Hindi,automatic
+A_0003,40.0,42.0,जागरूको कलिए विमल इलायची दूसूर,other,Hindi,automatic
+A_0003,40.0,42.0,पठास साडियम,other,Hindi,automatic
+A_0003,40.0,42.0,मेंचीनो मिली है,other,Hindi,automatic
+A_0003,40.0,42.0,विज्ञापन में दिखाय,other,Hindi,automatic
+A_0003,40.0,42.0,सूक्रेलोस (INS ९५५) व नियोटेम,other,Hindi,automatic
+A_0003,40.0,45.0,"सैकरिन (INS 9५४ ) ,",other,Hindi,automatic
+A_0003,42.0,45.0,Elaichi ~,other,English,automatic
+A_0003,42.0,44.0,कलोरी,other,Hindi,automatic
+A_0003,42.0,45.0,केसर युक्त,other,Hindi,automatic
+A_0003,42.0,44.0,ते,other,Hindi,automatic
+A_0003,42.0,44.0,७०,other,Hindi,automatic
+A_0003,44.0,45.0,जागरूकों केलिए विमल इलायची दूसरे प्रकार में भी,other,Hindi,automatic
+A_0003,44.0,45.0,सीमग्रियों में से एक है|,other,Hindi,automatic
+A_0004,4.0,6.0,FLAVOURED,other,English,automatic
+A_0004,4.0,6.0,NIWAS,other,English,automatic
+A_0004,4.0,6.0,PAN MASALA,other,English,automatic
+A_0004,4.0,6.0,PANNASALA,other,English,automatic
+A_0004,4.0,6.0,RAJ,other,English,automatic
+A_0004,4.0,6.0,TODACCO NO ADDED NICOTINE,other,English,automatic
+A_0004,4.0,6.0,maharaja ki,other,English,automatic
+A_0004,4.0,6.0,pasand,other,English,automatic
+A_0004,8.0,10.0,MASAIA,other,English,automatic
+A_0004,8.0,10.0,NIWAS,other,English,automatic
+A_0004,8.0,10.0,PAN,other,English,automatic
+A_0004,8.0,10.0,RAJ,other,English,automatic
+A_0004,8.0,10.0,ki pasand,other,English,automatic
+A_0004,8.0,10.0,miharaja,other,English,automatic
+A_0004,22.0,24.0,NIWAS,other,English,automatic
+A_0004,22.0,24.0,PANMASALA,other,English,automatic
+A_0004,22.0,24.0,RAJ,other,English,automatic
+A_0004,28.0,30.5,FLAVOURED,other,English,automatic
+A_0004,28.0,30.0,IAS,other,English,automatic
+A_0004,28.0,30.0,N MASALA,other,English,automatic
+A_0004,28.0,30.5,NIWAS,other,English,automatic
+A_0004,28.0,30.5,PAN MASALA,other,English,automatic
+A_0004,28.0,30.5,RAJ,other,English,automatic
+A_0004,28.0,30.0,maharaja ki pasand,other,English,automatic
+A_0004,30.0,30.5,PANNASALA,other,English,automatic
+A_0004,30.0,30.5,maharaja ki,other,English,automatic
+A_0004,30.0,30.5,pasand,other,English,automatic
+A_0004,30.0,30.5,पान पताला,other,Hindi,automatic
+A_0005,0.0,2.0,CHEING OFPANMASALAIS NURRIOUS IOHEALTH,warning,English,automatic
+A_0005,0.0,4.0,NOT FORMINORES,other,English,automatic
+A_0005,2.0,8.0,CHEWINGOF PANMASALAIS INURIOUS TOHEALTH,warning,English,automatic
+A_0005,4.0,6.0,NOT FORIINORE5,other,English,automatic
+A_0005,10.0,12.0,CHEWINGOF PANMASALAIS INURIOUS TOHEALTH,warning,English,automatic
+A_0005,12.0,15.0,CHEWING OF PANMASALAISINJURIOUS TOHEALTH,warning,English,automatic
+A_0005,12.0,15.0,NOTFORMINORES,other,English,automatic
+A_0005,12.0,14.0,दिलवाग,other,Hindi,automatic
+A_0005,12.0,15.0,पानमसाला,other,Hindi,automatic
+A_0005,12.0,15.0,शॅयल,other,Hindi,automatic
+A_0006,18.0,20.0,अमन बर्मा डोनेटस,other,Hindi,automatic
+A_0006,18.0,20.0,फाउडशन,other,Hindi,automatic
+A_0006,18.0,20.0,फाउडसन,other,Hindi,automatic
+A_0006,18.0,20.0,फार ररल एनजी,other,Hindi,automatic
+A_0006,18.0,20.0,फार साल एनजी,other,Hindi,automatic
+A_0006,60.0,60.4,Shikhar,other,English,automatic
+A_0006,60.0,60.4,"जो दिल की सुनते है,",other,Hindi,automatic
+A_0006,60.0,60.4,पर रहते है,other,Hindi,automatic
+A_0007,0.0,4.0,11.09.09,other,English,automatic
+A_0007,0.0,4.0,GANESH,other,English,automatic
+A_0007,2.0,4.0,tatuiil,other,English,automatic
+A_0007,12.0,14.0,4!,other,English,automatic
+A_0007,28.0,30.0,GANEU,other,English,automatic
+A_0007,34.0,35.4,701,other,English,automatic
+A_0008,0.0,2.0,देलबा,other,Hindi,automatic
+A_0008,2.0,10.0,CHEWINGOF PAN MASALAIS INJURIOUS TO HEALTH,warning,English,automatic
+A_0008,2.0,10.0,NOT FORMINORES,other,English,automatic
+A_0008,2.0,8.0,दिलबाग,other,Hindi,automatic
+A_0008,2.0,10.0,पानमसाला,other,Hindi,automatic
+A_0008,2.0,10.0,शॅयल,other,Hindi,automatic
+A_0008,8.0,10.0,दिलवाग,other,Hindi,automatic
+A_0009,0.0,2.0,PACK NEW TASTE,other,English,automatic
+A_0009,6.0,8.0,गव,other,Hindi,automatic
+A_0009,14.0,16.0,ढय,other,Hindi,automatic
+A_0009,14.0,16.0,पसाला,other,Hindi,automatic
+A_0009,30.0,32.0,गाव,other,Hindi,automatic
+A_0009,36.0,38.0,गाव,other,Hindi,automatic
+A_0009,44.0,45.0,OonGha Swad  !,other,English,automatic
+A_0009,44.0,45.0,Oonchi Khushboo.,other,English,automatic
+A_0009,44.0,45.0,गव[,other,Hindi,automatic
+A_0009,44.0,45.0,पान पसाला,other,Hindi,automatic
+A_0009,44.0,45.0,र5,other,Hindi,automatic
+A_0009,44.0,45.0,र१०,other,Hindi,automatic
+A_0010,2.0,6.0,02062010,other,English,automatic
+A_0010,2.0,6.0,PAN VILAS,other,English,automatic
+A_0010,18.0,20.0,SIAUOU,other,English,automatic
+A_0010,58.0,60.0,शौक़ बड़ी चीज़ा है,other,Hindi,automatic
+B_0008,26.0,30.1,FIGHT CORONAVIRUS,other,English,automatic
+B_0008,26.0,30.1,FOR HELP CALL 1-800-11-23५6 (Toll Free),other,Hindi,automatic
+B_0008,26.0,30.1,Igaued,other,English,automatic
+B_0008,26.0,30.1,OR GIVEA MISSED CALL ON 011-22901701,other,English,automatic
+B_0008,26.0,30.1,QUIT TOBACCO,warning,English,automatic
+B_0008,26.0,30.1,public initereat byy,other,English,automatic
+B_0009,0.0,2.0,01.03.17,other,English,automatic
+B_0009,0.0,2.0,ANTI SMOKING TVC (SICKENING),other,English,automatic
+B_0009,0.0,2.0,ENGLISH,other,English,automatic
+B_0009,0.0,2.0,VITAL STRATEGIES,other,English,automatic
+B_0009,0.0,2.0,३० SEC,other,Hindi,automatic
+B_0009,30.0,32.0,Lital,other,English,automatic
+B_0009,30.0,34.0,QUIT TODAY,warning,English,automatic
+B_0009,30.0,34.0,TOBACCO KILLS,warning,English,automatic
+B_0010,26.0,30.0,आज ही छोडो,other,Hindi,automatic
+B_0010,26.0,30.0,तम्बाकू जानलेवा है,warning,Hindi,automatic
+B_0011,0.0,4.0,05.10.16,other,English,automatic
+B_0011,0.0,4.0,Dont Believe,other,English,automatic
+B_0011,0.0,4.0,Hindi,other,English,automatic
+B_0011,0.0,4.0,३० Seconds,other,Hindi,automatic
+B_0011,30.0,36.0,public interest Dl,other,English,automatic
+B_0011,30.0,36.0,इसे पढ़िए,other,Hindi,automatic
+B_0011,30.0,32.0,चतावनी,other,Hindi,automatic
+B_0011,30.0,36.0,तम्बाकू जानलेवा है,warning,Hindi,automatic
+B_0011,32.0,34.0,इस,other,Hindi,automatic
+B_0011,32.0,34.0,पर विश्वास कीजिये,other,Hindi,automatic
+B_0011,34.0,36.0,इस पर विश्वास कीजिये,other,Hindi,automatic
+B_0012,0.0,4.0,290518,other,English,automatic
+B_0012,0.0,4.0,HINDI,other,English,automatic
+B_0012,0.0,4.0,३० SEEC,other,Hindi,automatic
+B_0012,10.0,14.0,स्ट्रोक,other,Hindi,automatic
+B_0012,14.0,16.0,फेफड़ों का कैंसर,warning,Hindi,automatic
+B_0012,20.0,22.0,एम्फिसीमा,other,Hindi,automatic
+B_0012,24.0,26.0,का क्या परिणाम होगा,other,Hindi,automatic
+B_0012,26.0,30.0,तम्बाकू आज ही छोड़ें,warning,Hindi,automatic
+B_0012,28.0,36.0,1-800-11-2356  (टोल फ्री),other,Hindi,automatic
+B_0012,28.0,36.0,या मिस्ड कॉल दें 01 1-२२९०1७०१,other,Hindi,automatic
+B_0012,28.0,30.0,सहायता के लिए कॉल करें,other,Hindi,automatic
+B_0012,30.0,32.0,कॉल करें,other,Hindi,automatic
+B_0012,30.0,32.0,लिए,other,Hindi,automatic
+B_0012,30.0,32.0,सहायता के,other,Hindi,automatic
+B_0012,32.0,36.0,Isucd,other,English,automatic
+B_0012,32.0,36.0,तम्बाकू आज ही छोड़ें,warning,Hindi,automatic
+B_0012,32.0,36.0,सहायता के लिए कॉल करें,other,Hindi,automatic
+B_0013,30.0,34.0,QUIT TODAY,warning,English,automatic
+B_0013,30.0,34.0,Strategics,other,English,automatic
+B_0013,30.0,34.0,TOBACCO KILLS,warning,English,automatic
+B_0014,82.0,84.0,4#/,other,English,automatic
+B_0014,174.0,178.0,BE A RESPONSIBLE FRIEND .,other,English,automatic
+B_0014,174.0,178.0,CALL A CAB AFTER THE PARTY,other,English,automatic
+B_0014,178.0,180.0,TRAFFIC,other,English,automatic
+B_0014,178.0,180.0,पोलीस,other,Hindi,automatic
+B_0014,178.0,180.0,मुंबई,other,Hindi,automatic
+B_0014,178.0,180.0,वाहतूक,other,Hindi,automatic
+B_0015,4.0,6.0,INDIA IS A GODFEARING COUNTIRY,other,English,automatic
+B_0015,10.0,12.0,THI MOST FEARSOMI ONEIS YAMA,other,English,automatic
+B_0015,12.0,14.0,TIIE GOD OF DEATI WIO COMES FOR YOUR SOUL,other,English,automatic
+B_0015,16.0,18.0,THIS TIME YAMA ARRIVED,other,English,automatic
+B_0015,18.0,20.0,THIS TIME,other,English,automatic
+B_0015,18.0,20.0,YAMA ARRIVED TO ADDRESS DRUNKEN DRIVING,other,English,automatic
+B_0015,26.0,28.0,SPIRITED PATRONS USING T,other,English,automatic
+B_0015,28.0,30.0,WERI IN FOR A SURPRISE,other,English,automatic
+B_0015,30.0,32.0,A SURPRISE,other,English,automatic
+B_0015,30.0,32.0,WERI IN FOR,other,English,automatic
+B_0015,54.0,58.0,YAMA,other,English,automatic
+B_0015,56.0,58.0,THE GOD OF DEATH READY TO TAKE THEMAWAY,other,English,automatic
+B_0015,86.0,88.0,YOUR TIMEIS NOTYETCOME,other,English,automatic
+B_0015,88.0,90.0,2345,other,English,automatic
+B_0015,88.0,90.0,8888,other,English,automatic
+B_0015,88.0,90.0,CALL,other,English,automatic
+B_0015,88.0,90.0,COME,other,English,automatic
+B_0015,88.0,90.0,DRINK AND,other,English,automatic
+B_0015,88.0,90.0,DRIVEN.,other,English,automatic
+B_0015,88.0,90.0,DRIVER,other,English,automatic
+B_0015,88.0,90.0,FOR,other,English,automatic
+B_0015,88.0,90.0,INTEREST,other,English,automatic
+B_0015,88.0,90.0,ISSUED IN YOUR,other,English,automatic
+B_0015,88.0,90.0,YOUR TIME,other,English,automatic
+B_0015,88.0,90.0,Za,other,English,automatic
+B_0015,88.0,90.0,डूँ,other,Hindi,automatic
+B_0015,108.0,110.0,A REMINDER FROM TIIE GOD OF DEATI |,other,English,automatic
+B_0015,108.0,110.0,TO,other,English,automatic
+B_0015,110.0,112.0,A REMINDER FROM TIE GOD OF DEATI |,other,English,automatic
+B_0015,110.0,112.0,TO DRINK AND GET DRIVEN,other,English,automatic
+B_0015,116.0,118.0,AND GET,other,English,automatic
+B_0015,116.0,118.0,DRIVER,other,English,automatic
+B_0015,116.0,118.0,HAS NOTYEY,other,English,automatic
+B_0015,116.0,118.0,YOUR,other,English,automatic
+B_0015,116.0,118.0,coMe,other,English,automatic
+B_0016,2.0,6.0,ORINKING,other,English,automatic
+B_0016,2.0,6.0,९ROMOTE,other,Hindi,automatic
+B_0016,4.0,6.0,OSITIVE,other,English,automatic
+B_0016,8.0,14.0,OF,other,English,automatic
+B_0016,8.0,14.0,SOCIETY,other,English,automatic
+B_0016,14.0,36.0,DIAGEO,other,English,automatic
+B_0016,16.0,20.0,"Celebrating life,",other,English,automatic
+B_0016,16.0,20.0,day,other,English,automatic
+B_0016,16.0,20.0,every,other,English,automatic
+B_0016,16.0,20.0,everywhere,other,English,automatic
+B_0016,20.0,22.0,vdeep Singh Mehram,other,English,automatic
+B_0016,22.0,24.0,"HEAD CSR AND SUSTAINABILITY, DIAGEO INDIA",other,English,automatic
+B_0016,22.0,26.0,Navdeep Singh Mehram,other,English,automatic
+B_0016,24.0,26.0,"SR AND SUSTAINABILITY, DIAGEO INDIA",other,English,automatic
+B_0016,30.0,32.0,AC,other,English,automatic
+B_0016,30.0,32.0,CURBING,other,English,automatic
+B_0016,32.0,36.0,CONSUMPION,other,English,automatic
+B_0016,32.0,34.0,CREATING AWARENESS,other,English,automatic
+B_0016,32.0,36.0,CURBING UNDERAGE,other,English,automatic
+B_0016,34.0,36.0,CREAIING AWARENESSON,other,English,automatic
+B_0016,36.0,42.0,ACT SMART,other,English,automatic
+B_0016,38.0,42.0,INDIA,other,English,automatic
+B_0016,42.0,50.0,"Aristotle World School, Etawah, Uttar Pradesh",other,English,automatic
+B_0016,42.0,44.0,Ji :,other,English,automatic
+B_0016,58.0,60.0,CENAIION,other,English,automatic
+B_0016,58.0,60.0,DO DIFFERENTLY?,other,English,automatic
+B_0016,58.0,60.0,GO INGIDE TlE,other,English,automatic
+B_0016,58.0,60.0,WHAT WOULD YOU,other,English,automatic
+B_0016,58.0,60.0,tne cecision5,other,English,automatic
+B_0016,60.0,62.0,A EW QUICK QUESTIONS..,other,English,automatic
+B_0016,60.0,62.0,JUst answet,other,English,automatic
+B_0016,64.0,66.0,CSRB,other,English,automatic
+B_0016,64.0,66.0,DIAGEO,other,English,automatic
+B_0016,64.0,66.0,India,other,English,automatic
+B_0016,70.0,72.0,LLUE,other,English,automatic
+B_0016,76.0,78.0,ACI SART,other,English,automatic
+B_0016,78.0,80.0,Maharash,other,English,automatic
+B_0016,80.0,86.0,Maharashtra,other,English,automatic
+B_0016,80.0,84.0,West Bengal,other,English,automatic
+B_0016,82.0,86.0,Karnataka,other,English,automatic
+B_0016,84.0,86.0,Bengal,other,English,automatic
+B_0016,84.0,86.0,Rest of India,other,English,automatic
+B_0016,84.0,86.0,west,other,English,automatic
+B_0016,88.0,92.0,140000,other,English,automatic
+B_0016,88.0,92.0,Young adults by २०२३,other,Hindi,automatic
+B_0016,94.0,100.0,100000,other,English,automatic
+B_0016,94.0,100.0,12000,other,English,automatic
+B_0016,94.0,98.0,2२,other,Hindi,automatic
+B_0016,94.0,100.0,300000,other,English,automatic
+B_0016,94.0,100.0,400000,other,English,automatic
+B_0016,94.0,100.0,500000,other,English,automatic
+B_0016,94.0,100.0,600000,other,English,automatic
+B_0016,94.0,100.0,ActSmart INDIA,other,English,automatic
+B_0016,94.0,100.0,India Target,other,English,automatic
+B_0016,94.0,100.0,No. of Young Adults),other,English,automatic
+B_0016,94.0,96.0,ZEU00,other,English,automatic
+B_0016,94.0,96.0,|21,other,English,automatic
+B_0016,94.0,100.0,|23,other,English,automatic
+B_0016,94.0,100.0,|25,other,English,automatic
+B_0016,94.0,96.0,|26,other,English,automatic
+B_0016,94.0,100.0,|28,other,English,automatic
+B_0016,94.0,98.0,|29,other,English,automatic
+B_0016,94.0,100.0,|30,other,English,automatic
+B_0016,94.0,100.0,|=27,other,English,automatic
+B_0016,94.0,98.0,२00000,other,Hindi,automatic
+B_0016,96.0,98.0,13044,other,English,automatic
+B_0016,96.0,100.0,170000,other,English,automatic
+B_0016,96.0,100.0,175000,other,English,automatic
+B_0016,96.0,100.0,200000,other,English,automatic
+B_0016,96.0,100.0,23011,other,English,automatic
+B_0016,96.0,98.0,Achievement,other,English,automatic
+B_0016,96.0,98.0,Adults,other,English,automatic
+B_0016,96.0,98.0,India,other,English,automatic
+B_0016,96.0,100.0,Plan (No,other,English,automatic
+B_0016,96.0,98.0,Young,other,English,automatic
+B_0016,98.0,100.0,India Achievement,other,English,automatic
+B_0016,98.0,100.0,Young Adults),other,English,automatic
+B_0016,98.0,100.0,z00000,other,English,automatic
+B_0016,98.0,100.0,|24,other,English,automatic
+B_0016,98.0,100.0,|26,other,English,automatic
+B_0016,100.0,102.0,ACT SMART,other,English,automatic
+B_0016,100.0,102.0,INDIA WEEY,other,English,automatic
+B_0016,122.0,124.0,WORLD,other,English,automatic
+B_0016,124.0,126.0,am a sports person.,other,English,automatic
+B_0016,126.0,130.0,ARISTOTLE WORLD SCHOOL,other,English,automatic
+B_0016,126.0,130.0,CLASS,other,English,automatic
+B_0016,126.0,130.0,EAWAHUIIAR PRADESH,other,English,automatic
+B_0016,126.0,130.0,Surya Pratap Singh,other,English,automatic
+B_0016,126.0,130.0,have come to know that underage driking is wrong,other,English,automatic
+B_0016,132.0,140.0,SMIRT,other,English,automatic
+B_0016,134.0,140.0,Ashika Jain,other,English,automatic
+B_0016,134.0,140.0,MY,other,English,automatic
+B_0016,136.0,138.0,Class 8 Arislolle world school,other,English,automatic
+B_0016,136.0,140.0,N0,other,English,automatic
+B_0016,136.0,138.0,YOVNG Wse,other,English,automatic
+B_0016,138.0,142.0,will never let that happen,other,English,automatic
+B_0016,138.0,140.0,world school,other,English,automatic
+B_0016,140.0,142.0,and that would affect my studies and,other,English,automatic
+B_0016,142.0,144.0,MY N,other,English,automatic
+B_0016,142.0,144.0,because,other,English,automatic
+B_0016,142.0,144.0,want to study and become a doctor.,other,English,automatic
+B_0016,148.0,150.0,United Nations Institute,other,English,automatic
+B_0016,148.0,150.0,for Training and Research,other,English,automatic
+B_0016,148.0,150.0,unitar,other,English,automatic
+B_0016,160.0,164.0,DIAGEO,other,English,automatic
+B_0016,164.0,166.0,Behaw,other,English,automatic
+B_0016,164.0,166.0,WF,other,English,automatic
+B_0016,166.0,168.0,Behavioral,other,English,automatic
+B_0016,166.0,168.0,OFTHERO,other,English,automatic
+B_0016,166.0,168.0,WRONGS,other,English,automatic
+B_0016,168.0,172.0,जीवन =,other,Hindi,automatic
+B_0016,168.0,172.0,जीवन रक्षा,other,Hindi,automatic
+B_0016,168.0,172.0,रक्षा,other,Hindi,automatic
+B_0016,170.0,172.0,Behavioral,other,English,automatic
+B_0016,182.0,184.0,१३ &eotres,other,Hindi,automatic
+B_0016,196.0,198.0,Mayank Pathak,other,English,automatic
+B_0016,196.0,198.0,"Senior Project Associate, CSR BOX",other,English,automatic
+B_0016,198.0,200.0,Behavioral,other,English,automatic
+B_0016,198.0,200.0,Change,other,English,automatic
+B_0016,198.0,200.0,Workshop,other,English,automatic
+B_0016,208.0,210.0,क के,other,Hindi,automatic
+B_0016,208.0,210.0,तरे,other,Hindi,automatic
+B_0016,208.0,210.0,सुरक्षितपणे   चालवा,other,Hindi,automatic
+B_0016,210.0,214.0,DRIVE SAFE,other,English,automatic
+B_0016,210.0,212.0,घडक के,other,Hindi,automatic
+B_0016,210.0,214.0,चालवा,other,Hindi,automatic
+B_0016,210.0,214.0,सुरक्षित चलाऐं,other,Hindi,automatic
+B_0016,210.0,214.0,सुरक्षितपणे,other,Hindi,automatic
+B_0016,212.0,214.0,Whathappens atter you make,other,English,automatic
+B_0016,214.0,222.0,F21,other,English,automatic
+B_0016,214.0,216.0,Wrong Side,other,English,automatic
+B_0016,216.0,218.0,100000,other,English,automatic
+B_0016,216.0,222.0,150000,other,English,automatic
+B_0016,216.0,222.0,250000,other,English,automatic
+B_0016,216.0,218.0,28,other,English,automatic
+B_0016,216.0,222.0,300000,other,English,automatic
+B_0016,216.0,222.0,50000,other,English,automatic
+B_0016,216.0,222.0,F24,other,English,automatic
+B_0016,216.0,218.0,F26,other,English,automatic
+B_0016,216.0,222.0,F27,other,English,automatic
+B_0016,216.0,222.0,F30,other,English,automatic
+B_0016,216.0,218.0,India Ta,other,English,automatic
+B_0016,216.0,222.0,Wrong Side of the Road,other,English,automatic
+B_0016,216.0,222.0,|25,other,English,automatic
+B_0016,216.0,220.0,२०००००,other,Hindi,automatic
+B_0016,218.0,220.0,0000,other,English,automatic
+B_0016,218.0,220.0,10000०,other,Hindi,automatic
+B_0016,218.0,222.0,155000,other,English,automatic
+B_0016,218.0,220.0,3000,other,English,automatic
+B_0016,218.0,220.0,India Achievement,other,English,automatic
+B_0016,218.0,220.0,India Target INO of consumers,other,English,automatic
+B_0016,218.0,220.0,Plan INO. of Consumers),other,English,automatic
+B_0016,220.0,222.0,100000,other,English,automatic
+B_0016,220.0,222.0,200000,other,English,automatic
+B_0016,220.0,222.0,80000,other,English,automatic
+B_0016,220.0,222.0,India Achievement / Plan INO. रof Consumers),other,Hindi,automatic
+B_0016,220.0,222.0,|$6245,other,English,automatic
+B_0016,220.0,222.0,|29,other,English,automatic
+B_0016,222.0,228.0,am quite happy that we are able to provide a lot of information,warning,English,automatic
+B_0016,224.0,228.0,Vimal Pandey,other,English,automatic
+B_0016,228.0,230.0,One should not drive after consuming alcohol.,other,English,automatic
+B_0016,228.0,230.0,pHILIDS,other,English,automatic
+B_0016,230.0,234.0,hope that by working together in this way,other,English,automatic
+B_0016,234.0,238.0,making our countrys roads safer,other,English,automatic
+B_0016,234.0,238.0,we will succeed in,other,English,automatic
+B_0016,240.0,242.0,DRINKIQ,other,English,automatic
+B_0016,242.0,246.0,CREATING AWARENESS ON ANTIDRINK DRIVE,other,English,automatic
+B_0016,242.0,252.0,DRINIKiQ,other,English,automatic
+B_0016,242.0,252.0,Promoting,other,English,automatic
+B_0016,242.0,252.0,Responsible Consumption,other,English,automatic
+B_0016,242.0,244.0,WWW DRINKIQ,other,English,automatic
+B_0016,244.0,246.0,WW,other,English,automatic
+B_0016,246.0,248.0,difference,other,English,automatic
+B_0016,246.0,248.0,widlike To,other,English,automatic
+B_0016,252.0,254.0,6 L,other,English,automatic
+B_0016,254.0,256.0,2025,other,English,automatic
+B_0016,254.0,258.0,6 LAKH+,other,English,automatic
+B_0016,254.0,258.0,Indians by,other,English,automatic
+B_0016,256.0,258.0,2030,other,English,automatic
+B_0016,268.0,270.0,203,other,English,automatic
+B_0016,268.0,270.0,OF,other,English,automatic
+B_0016,268.0,270.0,SOCIETY,other,English,automatic
+B_0016,270.0,274.2,DIAGEO,other,English,automatic
+B_0016,272.0,274.2,"Celebrating life, every day everywhere",other,English,automatic
+A_0011,0.0,2.0,Olcl,other,English,automatic
+A_0011,0.0,4.0,PLATINUN,other,English,automatic
+A_0011,0.0,4.0,२२ १० २०१३,other,Hindi,automatic
+A_0011,0.0,4.0,४५ SECONDS,other,Hindi,automatic
+A_0011,2.0,4.0,Olc,other,English,automatic
+A_0011,46.0,48.0,Olc,other,English,automatic
+A_0011,46.0,48.0,Oowells,other,English,automatic
+A_0011,46.0,48.0,PLATINUN,other,English,automatic
+A_0011,48.0,52.0,PLATINUM,other,English,automatic
+A_0011,48.0,50.0,THE No,other,English,automatic
+A_0011,50.0,52.0,LEADERSHIP,other,English,automatic
+A_0011,50.0,52.0,OF,other,English,automatic
+A_0011,50.0,52.0,SPIRIT,other,English,automatic
+A_0011,50.0,52.0,THE No. 1,other,English,automatic
+A_0012,0.0,4.0,Ranveer Singh Royal Stag Advertisement,other,English,automatic
+A_0012,4.0,6.0,Prooucwon,other,English,automatic
+A_0012,4.0,8.0,ROZL,other,English,automatic
+A_0012,4.0,6.0,S७,other,Hindi,automatic
+A_0012,10.0,18.0,ROZL,other,English,automatic
+A_0012,18.0,20.0,ROL,other,English,automatic
+A_0012,20.0,22.0,ROZL,other,English,automatic
+A_0012,22.0,24.0,ROZIL,other,English,automatic
+A_0012,24.0,26.0,ROZL,other,English,automatic
+A_0012,26.0,28.0,ROZIL,other,English,automatic
+A_0012,28.0,38.0,ROZL,other,English,automatic
+A_0012,38.0,44.0,MAKEIT LARGE,other,English,automatic
+A_0012,38.0,42.0,ROXAL,other,English,automatic
+A_0012,38.0,40.0,SAG,other,English,automatic
+A_0012,38.0,44.0,SEAGRAMS,other,English,automatic
+A_0012,40.0,42.0,ITS YOUR LIFE,other,English,automatic
+A_0012,40.0,44.0,SG,other,English,automatic
+A_0012,42.0,44.0,ROYAL,other,English,automatic
+A_0012,42.0,44.0,TSYOUR LIFE,other,English,automatic
+A_0012,44.0,54.0,ROZL,other,English,automatic
+A_0012,54.0,56.0,ROAL,other,English,automatic
+A_0012,56.0,58.0,ROZL,other,English,automatic
+A_0012,58.0,60.0,LAUGHABLE!!!,other,English,automatic
+A_0012,58.0,60.0,RANVEER SINGH DID IT AGAIN,other,English,automatic
+A_0012,58.0,60.0,ROAL,other,English,automatic
+A_0012,58.0,60.0,commot,other,English,automatic
+A_0012,58.0,60.0,poro,other,English,automatic
+A_0012,60.0,70.0,ROZ L,other,English,automatic
+A_0012,70.0,74.0,IT'S YOUR LIFE,other,English,automatic
+A_0012,70.0,72.0,MAKE IT LARGE,other,English,automatic
+A_0012,70.0,72.0,SEAGRAM $,other,English,automatic
+A_0012,70.0,74.0,डढ,other,Hindi,automatic
+A_0012,72.0,74.0,ROXL,other,English,automatic
+A_0012,100.0,102.5,IT'S YOUR LIFE. MAKE IT LARGE,other,English,automatic
+A_0012,100.0,102.0,MEGA,other,English,automatic
+A_0012,100.0,102.5,ROXAL,other,English,automatic
+A_0012,100.0,102.5,STAG,other,English,automatic
+A_0012,102.0,102.5,MUSIC,other,English,automatic
+B_0017,0.0,4.0,Child,other,English,automatic
+B_0017,0.0,4.0,Eng,other,English,automatic
+B_0017,0.0,4.0,SmokeFree,other,English,automatic
+B_0017,0.0,4.0,३० sec,other,Hindi,automatic
+B_0017,28.0,30.0,passive,other,English,automatic
+B_0017,28.0,30.0,smoking kills loo,warning,English,automatic
+B_0017,34.0,36.0,Cosi,other,English,automatic
+B_0017,34.0,36.0,Issued in public interest by,other,English,automatic
+B_0017,34.0,36.0,SHOKEFREE,other,English,automatic
+B_0017,34.0,36.0,Smoking,other,English,automatic
+B_0017,34.0,36.0,Wl,other,English,automatic
+B_0017,34.0,36.0,You,other,English,automatic
+B_0018,0.0,10.1,CHOOSELIFE,other,English,automatic
+B_0018,0.0,2.0,Family Welfare,other,English,automatic
+B_0018,0.0,4.0,Goverment of India,other,English,automatic
+B_0018,0.0,10.1,Healih,other,English,automatic
+B_0018,0.0,10.1,Ministry,other,English,automatic
+B_0018,0.0,2.0,NOTSMOKE,other,English,automatic
+B_0018,0.0,4.0,Quitline number 1800-112-356,warning,English,automatic
+B_0018,0.0,10.1,"To quit tobacco, call the",warning,English,automatic
+B_0018,2.0,6.0,Faiily Welfare,other,English,automatic
+B_0018,2.0,4.0,NOT SOKE,other,English,automatic
+B_0018,4.0,10.1,Govemment of India,other,English,automatic
+B_0018,4.0,10.1,NOTSMOKE,other,English,automatic
+B_0018,6.0,10.1,Family Welfare,other,English,automatic
+B_0018,8.0,10.1,Quitline number 1800-112-356,warning,English,automatic
+B_0019,0.0,4.0,Dhuan,other,English,automatic
+B_0019,0.0,4.0,Hindi,other,English,automatic
+B_0019,0.0,4.0,SmokeFree,other,English,automatic
+B_0019,0.0,4.0,३० sec,other,Hindi,automatic
+B_0019,30.0,32.0,द्वारा जनहित में जारी,other,Hindi,automatic
+B_0019,30.0,36.0,धूम्रमुक्त,other,Hindi,automatic
+B_0019,32.0,34.0,secondhandsmokekills in,warning,English,automatic
+B_0019,32.0,36.0,जारी,other,Hindi,automatic
+B_0019,32.0,36.0,द्वारा जनहित,other,Hindi,automatic
+B_0019,32.0,36.0,धूम्रपान,other,Hindi,automatic
+B_0019,32.0,34.0,पड़ेगा महगा,other,Hindi,automatic
+B_0019,34.0,36.0,Ww secondhandsmokekills in,warning,English,automatic
+B_0019,34.0,36.0,एड़ेगा महगा,other,Hindi,automatic
+B_0020,18.0,24.0,Asthma,other,English,automatic
+B_0020,18.0,24.0,Blindness,other,English,automatic
+B_0020,18.0,24.0,Cataract,other,English,automatic
+B_0020,18.0,24.0,Chronic Obstructive,other,English,automatic
+B_0020,18.0,24.0,Disease (COPD),other,English,automatic
+B_0020,18.0,24.0,Heart Disease,other,English,automatic
+B_0020,18.0,24.0,Impotency,other,English,automatic
+B_0020,18.0,24.0,Kidney Diseases,other,English,automatic
+B_0020,18.0,24.0,Lung Cancer,warning,English,automatic
+B_0020,18.0,24.0,Mouth Cancer,warning,English,automatic
+B_0020,18.0,24.0,Pancreatic Cancer,warning,English,automatic
+B_0020,18.0,24.0,Pulmonary,other,English,automatic
+B_0020,18.0,24.0,Stomach Cancer,warning,English,automatic
+B_0020,18.0,24.0,Stroke,other,English,automatic
+B_0020,18.0,24.0,Throat Cancer,warning,English,automatic
+B_0020,58.0,60.0,au L-,other,English,automatic
+B_0020,84.0,86.0,Atto,other,English,automatic
+B_0020,84.0,86.0,Child al,other,English,automatic
+B_0020,84.0,88.0,Saving,other,English,automatic
+B_0020,84.0,88.0,goals,other,English,automatic
+B_0020,86.0,88.0,AUIO,other,English,automatic
+B_0020,86.0,88.0,Childa,other,English,automatic
+B_0020,90.0,98.0,1800-11-2356,warning,English,automatic
+B_0020,98.0,102.0,oUIT,other,English,automatic
+B_0020,102.0,110.0,(Tobacco Cessation Center),warning,English,automatic
+B_0020,102.0,110.0,तंबाखू समुपदेशन केंद्र,other,Hindi,automatic
+B_0020,102.0,108.0,हेल्प लाईन नंबर : १८००-11- २३५६,other,Hindi,automatic
+B_0020,104.0,106.0,राष्ट्रीय तंबासू नियंत्रण कायक्रम,other,Hindi,automatic
+B_0020,106.0,108.0,राष्ट्रीय अग़रंग्य अभियान,other,Hindi,automatic
+B_0020,108.0,110.0,23|56,other,English,automatic
+B_0020,108.0,110.0,हेल्प लाईन नंबर : १८००- ११-,other,Hindi,automatic
+B_0020,110.0,112.0,(Tobacco Cessation Centre),warning,English,automatic
+B_0020,110.0,112.0,CEASTION(,other,English,automatic
+B_0020,110.0,112.0,IOENTRE,other,English,automatic
+B_0020,110.0,112.0,ITOBBACCO,other,English,automatic
+B_0020,110.0,112.0,आरोग्य अभियान,other,Hindi,automatic
+B_0020,110.0,112.0,केंद्र,other,Hindi,automatic
+B_0020,110.0,112.0,तंबाखू,other,Hindi,automatic
+B_0020,110.0,112.0,"तंबाखू नियंत्रण कार्यक्रम,",other,Hindi,automatic
+B_0020,110.0,112.0,नियंत्रण कार्यक्रम,other,Hindi,automatic
+B_0020,110.0,112.0,राष्ट्रीय,other,Hindi,automatic
+B_0020,110.0,112.0,राष्ट्ाय आरोग्य अभियान,other,Hindi,automatic
+B_0020,110.0,112.0,समुपदेशन,other,Hindi,automatic
+B_0020,112.0,116.0,Smoking causes,other,English,automatic
+B_0020,112.0,116.0,WARNING,warning,English,automatic
+B_0020,112.0,116.0,throat cancer,warning,English,automatic
+B_0020,116.0,118.0,तंबाखु,other,Hindi,automatic
+B_0020,116.0,118.0,समुपदेशन,other,Hindi,automatic
+B_0020,118.0,120.0,2^),other,English,automatic
+B_0020,118.0,120.0,Followup,other,English,automatic
+B_0020,118.0,120.0,Last,other,English,automatic
+B_0020,118.0,120.0,Relark,other,English,automatic
+B_0020,118.0,120.0,Stopped,other,English,automatic
+B_0020,118.0,120.0,dton,other,English,automatic
+B_0020,120.0,122.0,खु,other,Hindi,automatic
+B_0020,120.0,122.0,शन,other,Hindi,automatic
+B_0020,134.0,136.0,112 356,other,English,automatic
+B_0020,134.0,136.0,180०,other,Hindi,automatic
+B_0020,136.0,138.0,11२,other,Hindi,automatic
+B_0020,136.0,138.0,356,other,English,automatic
+B_0020,136.0,138.0,Calmo.,other,English,automatic
+B_0020,138.0,144.2,FOR HELP CALL 1800-11-2356,warning,English,automatic
+B_0020,138.0,144.2,QUIT TOBACCO TODAY,warning,English,automatic
+A_0013,60.0,62.0,असनी,other,Hindi,automatic
+A_0013,62.0,64.0,aue५५,other,Hindi,automatic
+A_0013,62.0,64.0,असली पजे,other,Hindi,automatic
+A_0013,62.0,64.0,कीप्तस्त लह,other,Hindi,automatic
+A_0014,4.0,6.0,3/12|2002,other,English,automatic
+A_0014,4.0,6.0,KAMLA PASAND,other,English,automatic
+A_0014,4.0,6.0,WITH NEW ANIMATION,other,English,automatic
+A_0014,18.0,20.0,कमल,other,Hindi,automatic
+A_0014,18.0,20.0,पसन्द,other,Hindi,automatic
+A_0014,18.0,20.0,पान मसाला,other,Hindi,automatic
+A_0014,18.0,20.0,साल,other,Hindi,automatic
+A_0014,36.0,38.0,Chewing of pan masala may be Injurious to health,warning,English,automatic
+A_0014,36.0,38.0,Statutory Warning,warning,English,automatic
+A_0014,36.0,38.0,कमला पसुन्दु,other,Hindi,automatic
+A_0014,36.0,38.0,पसन्द,other,Hindi,automatic
+A_0014,36.0,38.0,पान मसाला,other,Hindi,automatic
+A_0014,36.0,38.0,स्वाद,other,Hindi,automatic
+A_0015,20.0,22.0,पान नसाला,other,Hindi,automatic
+A_0015,26.0,28.0,% ErdA =,other,English,automatic
+A_0015,26.0,28.0,E0,other,English,automatic
+A_0015,26.0,28.0,c%r,other,English,automatic
+A_0015,26.0,28.0,cot 1,other,English,automatic
+A_0015,26.0,28.0,drarc cotx =,other,English,automatic
+A_0015,26.0,28.0,२bc COSA,other,Hindi,automatic
+A_0015,46.0,48.0,पान,other,Hindi,automatic
+A_0015,60.0,62.0,पान निसाला,other,Hindi,automatic
+A_0015,60.0,62.0,राजश्री,other,Hindi,automatic
+A_0015,76.0,78.0,पान पसाल,other,Hindi,automatic
+A_0015,106.0,108.0,पान नसाला,other,Hindi,automatic
+A_0015,106.0,108.0,सजश्री,other,Hindi,automatic
+A_0015,122.0,124.0,राजश्री,other,Hindi,automatic
+A_0015,126.0,128.0,पान नसाला,other,Hindi,automatic
+A_0015,136.0,138.0,SUBSCRIBE,other,English,automatic
+A_0016,2.0,4.0,22008,other,English,automatic
+A_0016,2.0,4.0,45  270208,other,English,automatic
+A_0016,2.0,4.0,BLENDERs,other,English,automatic
+A_0016,2.0,4.0,MAGICAL,other,English,automatic
+A_0016,2.0,4.0,PRIDE,other,English,automatic
+A_0016,50.0,54.0,ENDERS,other,English,automatic
+A_0016,50.0,54.0,Music CDs,other,English,automatic
+A_0016,50.0,54.0,PRIDE,other,English,automatic
+A_0016,50.0,52.0,f 0 r,other,English,automatic
+A_0017,2.0,4.0,POLIC,other,English,automatic
+A_0017,20.0,22.0,-ICE,other,English,automatic
+A_0017,44.0,46.0,BLUE,other,English,automatic
+A_0017,44.0,46.0,Oice४ Choice,other,Hindi,automatic
+A_0017,44.0,46.0,Salute toh banta hai,other,English,automatic
+A_0017,46.0,47.0,AD,other,English,automatic
+A_0018,8.0,10.0,"30,000",other,English,automatic
+A_0018,8.0,10.0,SENSEX,other,English,automatic
+A_0018,28.0,30.0,% TOBACCo O% NICOTINE,warning,English,automatic
+A_0018,28.0,30.0,PAN MSALA,other,English,automatic
+A_0018,28.0,30.0,PAN PARAG,other,English,automatic
+A_0018,28.0,30.0,PARAG,other,English,automatic
+A_0018,28.0,30.0,PRAO,other,English,automatic
+A_0018,28.0,30.0,STATUTORY WARNING: CHEWING OF PAN MASALA IS INJURIOUS TO HEALTH.,warning,English,automatic
+A_0018,28.0,30.0,SUPRLVE,other,English,automatic
+A_0018,28.0,30.0,पान नसाला,other,Hindi,automatic
+A_0018,28.0,30.0,रंग,other,Hindi,automatic
+A_0019,42.0,44.0,BAHAR,other,English,automatic
+A_0019,42.0,44.0,DN,other,English,automatic
+A_0019,42.0,44.0,THE,other,English,automatic
+A_0019,58.0,60.0,PAN BAHAR,other,English,automatic
+A_0019,58.0,60.0,PEHCHAN KAMYABI KI,other,English,automatic
+A_0021,0.0,4.0,8PM Whisky TVC India,other,English,automatic
+A_0021,0.0,4.0,Brand: Radico Khaiton,other,English,automatic
+A_0021,0.0,4.0,Director: Rovi K Chandran,other,English,automatic
+A_0021,0.0,4.0,Duration: १० Sec,other,Hindi,automatic
+A_0021,58.0,60.0,PM,other,English,automatic
+A_0021,90.0,92.0,PM,other,English,automatic
+A_0022,2.0,4.0,270306,other,English,automatic
+A_0022,2.0,4.0,4५ sec,other,Hindi,automatic
+A_0022,2.0,4.0,Haywards ५००० Soda,other,Hindi,automatic
+A_0022,2.0,4.0,Hindi,other,English,automatic
+A_0022,2.0,4.0,The Interview,other,English,automatic
+A_0022,36.0,38.0,IARDS,other,English,automatic
+A_0022,36.0,38.0,Soc|a,other,English,automatic
+A_0022,48.0,52.0,50००,other,Hindi,automatic
+A_0022,48.0,50.0,HAYWARDS,other,English,automatic
+A_0022,48.0,52.0,Soda,other,English,automatic
+A_0022,50.0,52.0,HAIYWARDS,other,English,automatic
+A_0022,50.0,52.0,SRONG,other,English,automatic
+A_0023,14.0,18.0,भूखहड़तल,other,Hindi,automatic
+A_0023,36.0,40.5,PAN VILAS,other,English,automatic
+A_0023,36.0,40.5,RAAG,other,English,automatic
+A_0023,38.0,40.5,Heera,other,English,automatic
+A_0023,38.0,40.5,Mein,other,English,automatic
+A_0023,38.0,40.5,Swad,other,English,automatic
+A_0024,0.0,2.0,wWw wildfilmsindia.com,other,English,automatic
+A_0024,6.0,8.0,wWw wildfilmsindia com,other,English,automatic
+A_0024,10.0,12.0,WWW wildfilmsindia com,other,English,automatic
+A_0024,14.0,16.0,Www wildfilmsindia com,other,English,automatic
+A_0024,16.0,18.0,WWW,other,English,automatic
+A_0024,16.0,18.0,wildfilmsindia com,other,English,automatic
+A_0024,20.0,24.0,WwW wildfilmsindia com,other,English,automatic
+A_0024,26.0,28.0,www wildfilmsindia com,other,English,automatic
+A_0024,36.0,38.0,WW wildfilmsindia com,other,English,automatic
+A_0024,38.0,40.0,wWw wildfilmsindia com,other,English,automatic
+A_0024,44.0,46.0,www wildfilmsindlia com,other,English,automatic
+A_0024,46.0,48.0,www wildfilmsindliakcom,other,English,automatic
+A_0024,48.0,52.0,wWw wildfilmsindia com,other,English,automatic
+A_0024,54.0,56.0,WILLS,other,English,automatic
+A_0024,56.0,58.0,WLLS,other,English,automatic
+A_0024,60.0,62.0,com,other,English,automatic
+A_0024,60.0,62.0,de८,other,Hindi,automatic
+A_0024,62.0,66.0,TO LICENSE THIS STOCK FOOTAGE CONTACT,other,English,automatic
+A_0024,62.0,64.0,wWw wildfilmsindia com,other,English,automatic
+A_0024,66.0,66.0,WWW wildfilmsindia com,other,English,automatic
+A_0025,26.0,28.0,CRS,other,English,automatic
+A_0025,26.0,28.0,Pl,other,English,automatic
+A_0025,48.0,54.0,Seagram,other,English,automatic
+A_0025,48.0,50.0,Suamn,other,English,automatic
+A_0025,48.0,50.0,०० PIPE?,other,Hindi,automatic
+A_0025,50.0,54.0,Every,other,English,automatic
+A_0025,50.0,54.0,music,other,English,automatic
+A_0025,50.0,54.0,pure,other,English,automatic
+A_0025,50.0,54.0,sip is,other,English,automatic
+A_0025,60.0,62.0,SCOICH WHIShY,other,English,automatic
+A_0025,60.0,62.0,Seagtams,other,English,automatic
+B_0022,4.0,8.0,MANUBHAL PATEL DENTAL COLLEGE,other,English,automatic
+B_0022,4.0,8.0,PRESENTS SHORTFILM ONANTI TOBACCO,warning,English,automatic
+B_0022,218.0,230.0,Lumps/Bumps,other,English,automatic
+B_0022,218.0,230.0,"Patches,",other,English,automatic
+B_0022,218.0,228.0,Red/White,other,English,automatic
+B_0022,238.0,250.0,"Bottom,",other,English,automatic
+B_0022,238.0,250.0,Side to Side,other,English,automatic
+B_0022,238.0,250.0,Top,other,English,automatic
+B_0022,252.0,256.0,EVERY 6 MONTHS,other,English,automatic
+B_0022,252.0,254.0,VISIT A DENTIST,other,English,automatic
+B_0022,254.0,256.0,DENTIST,other,English,automatic
+B_0022,254.0,256.0,VISIT A,other,English,automatic
+B_0022,272.0,276.0,THANK YOU,other,English,automatic
+B_0022,276.0,278.0,CREDITS,other,English,automatic
+B_0022,276.0,278.0,JEET SHAH,other,English,automatic
+B_0022,276.0,278.0,MADE BY,other,English,automatic
+B_0022,276.0,280.0,RONAK PARMAR,other,English,automatic
+B_0022,278.0,280.0,DR.,other,English,automatic
+B_0022,278.0,280.0,DRARPAN SHAH,other,English,automatic
+B_0022,278.0,280.0,DRDHARMESH SHAH,other,English,automatic
+B_0022,278.0,280.0,DRDIPEN PATEL,other,English,automatic
+B_0022,278.0,280.0,DRRASHMI GS PHULARI,other,English,automatic
+B_0022,278.0,280.0,EDITED BY,other,English,automatic
+B_0022,278.0,280.0,GUIDED BY,other,English,automatic
+B_0022,278.0,280.0,JAY PATEL,other,English,automatic
+B_0022,278.0,280.0,VARDHMAN DAGLI,other,English,automatic
+B_0022,278.0,280.0,ZOHRA BODELIWALA,other,English,automatic
+B_0022,280.0,282.0,AND DEPARTMENT OF ORAL PATHOLOGY AND,other,English,automatic
+B_0022,280.0,282.0,"AND HOSPITAL, VADODARA",other,English,automatic
+B_0022,280.0,282.0,COLLEGE,other,English,automatic
+B_0022,280.0,282.0,MADE FOR MANUBHAI PATELDENTAL,other,English,automatic
+B_0022,280.0,282.0,MICROBIOLOGY,other,English,automatic
+B_0023,6.0,8.0,Ti7A Memoral Hospital,other,English,automatic
+B_0023,28.0,30.0,Mluikeshi Flarane,other,English,automatic
+B_0023,28.0,30.0,lobacto Kllls,other,English,automatic
+B_0023,30.0,34.0,Tobacto Kills,warning,English,automatic
+B_0023,32.0,34.0,QUIT TODAY,warning,English,automatic
+B_0025,0.0,2.0,)06,other,English,automatic
+B_0025,0.0,2.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,0.0,6.0,0९,other,Hindi,automatic
+B_0025,0.0,2.0,10,other,English,automatic
+B_0025,0.0,2.0,199&,other,English,automatic
+B_0025,0.0,2.0,1999,other,English,automatic
+B_0025,0.0,2.0,31 07 2023|,other,English,automatic
+B_0025,0.0,2.0,FEMILY WEDARE,other,English,automatic
+B_0025,0.0,2.0,SERIS SDHANOA,other,English,automatic
+B_0025,0.0,2.0,SHRI,other,English,automatic
+B_0025,0.0,2.0,Sili-,other,English,automatic
+B_0025,0.0,72.0,TOBACCO DAY,warning,English,automatic
+B_0025,0.0,194.0,०१ ०५ २००२,other,Hindi,automatic
+B_0025,0.0,8.0,०५ ०९ १९८८,other,Hindi,automatic
+B_0025,0.0,20.0,१०,other,Hindi,automatic
+B_0025,0.0,28.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,0.0,8.0,१६,other,Hindi,automatic
+B_0025,0.0,2.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,0.0,10.0,१७ ०६ २००३,other,Hindi,automatic
+B_0025,0.0,2.0,१९ ०५,other,Hindi,automatic
+B_0025,0.0,4.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,0.0,2.0,२२ ०१,other,Hindi,automatic
+B_0025,0.0,196.0,३lst May,other,Hindi,automatic
+B_0025,0.0,16.0,३१ १२ २०२३,other,Hindi,automatic
+B_0025,2.0,6.0,0६,other,Hindi,automatic
+B_0025,2.0,4.0,17,other,English,automatic
+B_0025,2.0,4.0,SHY,other,English,automatic
+B_0025,2.0,4.0,SRJNIVASAN,other,English,automatic
+B_0025,2.0,4.0,Silil,other,English,automatic
+B_0025,2.0,18.0,WORLD NC,other,English,automatic
+B_0025,2.0,4.0,परियार फल्पाण मंग्नातय,other,Hindi,automatic
+B_0025,2.0,4.0,१४,other,Hindi,automatic
+B_0025,2.0,20.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,2.0,10.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,4.0,6.0,01 1२ १९९७,other,Hindi,automatic
+B_0025,4.0,8.0,07 2023,other,English,automatic
+B_0025,4.0,8.0,11,other,English,automatic
+B_0025,4.0,8.0,SH,other,English,automatic
+B_0025,4.0,22.0,SHR,other,English,automatic
+B_0025,4.0,196.0,SHRI,other,English,automatic
+B_0025,4.0,14.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,6.0,8.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,6.0,8.0,06,other,English,automatic
+B_0025,6.0,8.0,09,other,English,automatic
+B_0025,6.0,10.0,1२,other,Hindi,automatic
+B_0025,6.0,8.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,6.0,8.0,QESTH,other,English,automatic
+B_0025,6.0,8.0,SHI,other,English,automatic
+B_0025,6.0,8.0,SHh,other,English,automatic
+B_0025,6.0,8.0,२००४,other,Hindi,automatic
+B_0025,8.0,10.0,1997,other,English,automatic
+B_0025,8.0,10.0,SHRJ,other,English,automatic
+B_0025,8.0,10.0,Sii-,other,English,automatic
+B_0025,8.0,10.0,पारबार कल्या,other,Hindi,automatic
+B_0025,8.0,10.0,०1 १२,other,Hindi,automatic
+B_0025,8.0,10.0,०५ ०९ १९८०,other,Hindi,automatic
+B_0025,8.0,10.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,8.0,12.0,३1 1२ १९९०,other,Hindi,automatic
+B_0025,10.0,20.0,11,other,English,automatic
+B_0025,10.0,12.0,ILN,other,English,automatic
+B_0025,10.0,12.0,SHIR,other,English,automatic
+B_0025,10.0,16.0,Shri Apurva Chandra,other,English,automatic
+B_0025,10.0,16.0,Union Health Secretary,warning,English,automatic
+B_0025,10.0,12.0,०1 1२ १९९/,other,Hindi,automatic
+B_0025,10.0,12.0,०५ ०९ १९८८,other,Hindi,automatic
+B_0025,12.0,14.0,SHI,other,English,automatic
+B_0025,12.0,14.0,SHRL,other,English,automatic
+B_0025,12.0,14.0,SRINJVASAN,other,English,automatic
+B_0025,12.0,14.0,०५ 0९ १९८८,other,Hindi,automatic
+B_0025,12.0,24.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,12.0,18.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,12.0,16.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,12.0,14.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,14.0,16.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,14.0,34.0,30,other,English,automatic
+B_0025,14.0,16.0,81,other,English,automatic
+B_0025,14.0,18.0,SHRJ,other,English,automatic
+B_0025,14.0,16.0,TH,other,English,automatic
+B_0025,14.0,16.0,WELFARE,other,English,automatic
+B_0025,14.0,16.0,०५ ०९ १९८८,other,Hindi,automatic
+B_0025,16.0,18.0,01,other,English,automatic
+B_0025,16.0,20.0,04,other,English,automatic
+B_0025,16.0,20.0,0२,other,Hindi,automatic
+B_0025,16.0,28.0,17,other,English,automatic
+B_0025,16.0,18.0,1१,other,Hindi,automatic
+B_0025,16.0,18.0,1२,other,Hindi,automatic
+B_0025,16.0,18.0,20०४,other,Hindi,automatic
+B_0025,16.0,38.0,210,other,English,automatic
+B_0025,16.0,34.0,31,other,English,automatic
+B_0025,16.0,18.0,SHIR,other,English,automatic
+B_0025,16.0,18.0,WVELFARE,other,English,automatic
+B_0025,16.0,24.0,१६,other,Hindi,automatic
+B_0025,16.0,42.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,16.0,18.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,18.0,20.0,2004,other,English,automatic
+B_0025,18.0,20.0,300,other,English,automatic
+B_0025,18.0,24.0,31 0,other,English,automatic
+B_0025,18.0,20.0,HESTRY OFD,other,English,automatic
+B_0025,18.0,20.0,WELFARE,other,English,automatic
+B_0025,18.0,20.0,WORLD NO,other,English,automatic
+B_0025,18.0,20.0,स्ास्थ एव,other,Hindi,automatic
+B_0025,18.0,80.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,18.0,20.0,३१ १२ २०२३,other,Hindi,automatic
+B_0025,20.0,36.0,040,other,English,automatic
+B_0025,20.0,24.0,05,other,English,automatic
+B_0025,20.0,24.0,1999,other,English,automatic
+B_0025,20.0,34.0,1२,other,Hindi,automatic
+B_0025,20.0,24.0,1९,other,Hindi,automatic
+B_0025,20.0,28.0,SHRL,other,English,automatic
+B_0025,20.0,22.0,WEDARE,other,English,automatic
+B_0025,20.0,26.0,WORLD NC,other,English,automatic
+B_0025,20.0,22.0,पारयार फल्प,other,Hindi,automatic
+B_0025,20.0,22.0,०२,other,Hindi,automatic
+B_0025,20.0,22.0,१०   SHRI,other,Hindi,automatic
+B_0025,20.0,22.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,22.0,24.0,01 १२ १९५/,other,Hindi,automatic
+B_0025,22.0,28.0,0२,other,Hindi,automatic
+B_0025,22.0,26.0,11,other,English,automatic
+B_0025,22.0,24.0,2023,other,English,automatic
+B_0025,22.0,28.0,SHRJ,other,English,automatic
+B_0025,22.0,24.0,WEDFARE,other,English,automatic
+B_0025,22.0,50.0,१०,other,Hindi,automatic
+B_0025,22.0,32.0,१२,other,Hindi,automatic
+B_0025,24.0,26.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,24.0,26.0,20०४,other,Hindi,automatic
+B_0025,24.0,26.0,300,other,English,automatic
+B_0025,24.0,26.0,Silt-,other,English,automatic
+B_0025,24.0,26.0,WEIARE,other,English,automatic
+B_0025,24.0,26.0,०६   २००३,other,Hindi,automatic
+B_0025,24.0,30.0,१६0,other,Hindi,automatic
+B_0025,24.0,34.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,24.0,28.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,24.0,26.0,३१,other,Hindi,automatic
+B_0025,26.0,28.0,202,other,English,automatic
+B_0025,26.0,36.0,310,other,English,automatic
+B_0025,26.0,30.0,WEDARE,other,English,automatic
+B_0025,26.0,28.0,WORLD NO,other,English,automatic
+B_0025,26.0,28.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,28.0,30.0,01,other,English,automatic
+B_0025,28.0,32.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,28.0,30.0,15,other,English,automatic
+B_0025,28.0,30.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,28.0,30.0,WORLD NC,other,English,automatic
+B_0025,28.0,30.0,०२ १९९४,other,Hindi,automatic
+B_0025,30.0,32.0,0२,other,Hindi,automatic
+B_0025,30.0,40.0,11,other,English,automatic
+B_0025,30.0,40.0,17,other,English,automatic
+B_0025,30.0,32.0,1६0,other,Hindi,automatic
+B_0025,30.0,38.0,300,other,English,automatic
+B_0025,30.0,32.0,81,other,English,automatic
+B_0025,30.0,32.0,CMIY,other,English,automatic
+B_0025,30.0,58.0,SHRI K,other,English,automatic
+B_0025,30.0,34.0,SHRJ,other,English,automatic
+B_0025,30.0,34.0,SHRL,other,English,automatic
+B_0025,30.0,32.0,SHRL K,other,English,automatic
+B_0025,30.0,32.0,WELFARE,other,English,automatic
+B_0025,30.0,156.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,30.0,36.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,30.0,32.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,32.0,34.0,01,other,English,automatic
+B_0025,32.0,34.0,199/,other,English,automatic
+B_0025,32.0,34.0,2023,other,English,automatic
+B_0025,32.0,34.0,WEDARE,other,English,automatic
+B_0025,32.0,34.0,०1 १२,other,Hindi,automatic
+B_0025,32.0,42.0,०२ 0,other,Hindi,automatic
+B_0025,32.0,34.0,१६0,other,Hindi,automatic
+B_0025,32.0,34.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,32.0,34.0,३० 0,other,Hindi,automatic
+B_0025,34.0,36.0,1999,other,English,automatic
+B_0025,34.0,40.0,31 1,other,English,automatic
+B_0025,34.0,40.0,331,other,English,automatic
+B_0025,34.0,36.0,SHRI 5,other,English,automatic
+B_0025,34.0,38.0,SHRLP,other,English,automatic
+B_0025,34.0,38.0,WELEARE,other,English,automatic
+B_0025,34.0,36.0,१२,other,Hindi,automatic
+B_0025,34.0,42.0,१२ 0,other,Hindi,automatic
+B_0025,34.0,36.0,१९ ०५,other,Hindi,automatic
+B_0025,36.0,38.0,19$/,other,English,automatic
+B_0025,36.0,38.0,1२,other,Hindi,automatic
+B_0025,36.0,38.0,1६0६,other,Hindi,automatic
+B_0025,36.0,38.0,1७,other,Hindi,automatic
+B_0025,36.0,38.0,20०४,other,Hindi,automatic
+B_0025,36.0,40.0,30 1,other,English,automatic
+B_0025,36.0,42.0,31,other,English,automatic
+B_0025,36.0,40.0,3101,other,English,automatic
+B_0025,36.0,38.0,81,other,English,automatic
+B_0025,36.0,38.0,FEMILY,other,English,automatic
+B_0025,36.0,38.0,Sili-,other,English,automatic
+B_0025,36.0,38.0,०1 १२,other,Hindi,automatic
+B_0025,36.0,38.0,०६   २००३,other,Hindi,automatic
+B_0025,36.0,38.0,१२ १९९०,other,Hindi,automatic
+B_0025,36.0,38.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,36.0,38.0,२023,other,Hindi,automatic
+B_0025,36.0,38.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,38.0,42.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,38.0,40.0,040;,other,English,automatic
+B_0025,38.0,46.0,1999,other,English,automatic
+B_0025,38.0,102.0,2107,other,English,automatic
+B_0025,38.0,102.0,3004,other,English,automatic
+B_0025,38.0,40.0,SHIRLP,other,English,automatic
+B_0025,38.0,40.0,SHRJ,other,English,automatic
+B_0025,38.0,40.0,Stil 6,other,English,automatic
+B_0025,38.0,40.0,WELFARE,other,English,automatic
+B_0025,38.0,40.0,WORLD NC,other,English,automatic
+B_0025,38.0,44.0,१२,other,Hindi,automatic
+B_0025,38.0,40.0,१६0६,other,Hindi,automatic
+B_0025,38.0,48.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,38.0,46.0,१९ ०५,other,Hindi,automatic
+B_0025,38.0,40.0,२०२३,other,Hindi,automatic
+B_0025,38.0,40.0,३ 1,other,Hindi,automatic
+B_0025,38.0,40.0,३१ 0,other,Hindi,automatic
+B_0025,40.0,102.0,0405,other,English,automatic
+B_0025,40.0,44.0,30 11,other,English,automatic
+B_0025,40.0,42.0,81,other,English,automatic
+B_0025,40.0,42.0,FEMLY,other,English,automatic
+B_0025,40.0,42.0,Ub,other,English,automatic
+B_0025,40.0,42.0,WEDARE,other,English,automatic
+B_0025,40.0,48.0,०१ 0,other,Hindi,automatic
+B_0025,40.0,42.0,११   SHRI,other,Hindi,automatic
+B_0025,40.0,66.0,१२ २०२३,other,Hindi,automatic
+B_0025,40.0,42.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,40.0,48.0,३० 0९,other,Hindi,automatic
+B_0025,42.0,44.0,01 1२ १९५७,other,Hindi,automatic
+B_0025,42.0,44.0,11,other,English,automatic
+B_0025,42.0,50.0,17,other,English,automatic
+B_0025,42.0,44.0,1998,other,English,automatic
+B_0025,42.0,102.0,31 01,other,English,automatic
+B_0025,42.0,44.0,3१ 0,other,Hindi,automatic
+B_0025,42.0,46.0,SHRL,other,English,automatic
+B_0025,42.0,50.0,WELFARE,other,English,automatic
+B_0025,42.0,46.0,WORLD NC,other,English,automatic
+B_0025,42.0,46.0,१६0६,other,Hindi,automatic
+B_0025,42.0,44.0,१७ ०६,other,Hindi,automatic
+B_0025,42.0,46.0,३1 १०,other,Hindi,automatic
+B_0025,44.0,48.0,31,other,English,automatic
+B_0025,44.0,46.0,UI,other,English,automatic
+B_0025,44.0,48.0,१२ 0:,other,Hindi,automatic
+B_0025,44.0,48.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,46.0,48.0,19$/,other,English,automatic
+B_0025,46.0,48.0,1६0६,other,Hindi,automatic
+B_0025,46.0,48.0,FANSLY,other,English,automatic
+B_0025,46.0,48.0,WORLD NO,other,English,automatic
+B_0025,46.0,48.0,०1 १२,other,Hindi,automatic
+B_0025,46.0,54.0,०२ 0:,other,Hindi,automatic
+B_0025,46.0,48.0,१२,other,Hindi,automatic
+B_0025,46.0,52.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,46.0,58.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,46.0,50.0,३ 1,other,Hindi,automatic
+B_0025,46.0,48.0,३1 1२ १९९०,other,Hindi,automatic
+B_0025,48.0,54.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,48.0,56.0,0१ 0,other,Hindi,automatic
+B_0025,48.0,50.0,1१ @९,other,Hindi,automatic
+B_0025,48.0,50.0,1२,other,Hindi,automatic
+B_0025,48.0,50.0,30,other,English,automatic
+B_0025,48.0,52.0,30 11,other,English,automatic
+B_0025,48.0,50.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,48.0,52.0,SHRL,other,English,automatic
+B_0025,48.0,62.0,WORLD NC,other,English,automatic
+B_0025,48.0,54.0,१६0६,other,Hindi,automatic
+B_0025,48.0,50.0,३१ १०,other,Hindi,automatic
+B_0025,50.0,52.0,0i,other,English,automatic
+B_0025,50.0,54.0,11,other,English,automatic
+B_0025,50.0,52.0,1७,other,Hindi,automatic
+B_0025,50.0,52.0,AND,other,English,automatic
+B_0025,50.0,52.0,१०   SHRI,other,Hindi,automatic
+B_0025,50.0,52.0,१२ 0!,other,Hindi,automatic
+B_0025,50.0,52.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,50.0,104.0,१७ ०६ २००३,other,Hindi,automatic
+B_0025,50.0,52.0,३१ 0,other,Hindi,automatic
+B_0025,52.0,56.0,17,other,English,automatic
+B_0025,52.0,54.0,1998,other,English,automatic
+B_0025,52.0,54.0,1999,other,English,automatic
+B_0025,52.0,54.0,3१ 0,other,Hindi,automatic
+B_0025,52.0,56.0,SHIRL,other,English,automatic
+B_0025,52.0,54.0,SHRI J U,other,English,automatic
+B_0025,52.0,54.0,SHRJ,other,English,automatic
+B_0025,52.0,78.0,१०,other,Hindi,automatic
+B_0025,52.0,54.0,१२,other,Hindi,automatic
+B_0025,52.0,54.0,१७ ०६,other,Hindi,automatic
+B_0025,52.0,54.0,१९ ०५,other,Hindi,automatic
+B_0025,52.0,54.0,३० 0९,other,Hindi,automatic
+B_0025,54.0,56.0,01,other,English,automatic
+B_0025,54.0,56.0,19$/,other,English,automatic
+B_0025,54.0,56.0,1२,other,Hindi,automatic
+B_0025,54.0,56.0,30 11,other,English,automatic
+B_0025,54.0,58.0,31,other,English,automatic
+B_0025,54.0,64.0,SHRL,other,English,automatic
+B_0025,54.0,56.0,WELFARE,other,English,automatic
+B_0025,54.0,56.0,०२ 0१,other,Hindi,automatic
+B_0025,54.0,56.0,१1,other,Hindi,automatic
+B_0025,54.0,102.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,54.0,58.0,३ 1,other,Hindi,automatic
+B_0025,56.0,58.0,199/,other,English,automatic
+B_0025,56.0,60.0,1७,other,Hindi,automatic
+B_0025,56.0,58.0,FMILY WED,other,English,automatic
+B_0025,56.0,58.0,SHP,other,English,automatic
+B_0025,56.0,60.0,SHR,other,English,automatic
+B_0025,56.0,58.0,U U,other,English,automatic
+B_0025,56.0,58.0,WELEARE,other,English,automatic
+B_0025,56.0,58.0,०१ 0,other,Hindi,automatic
+B_0025,56.0,58.0,०१ १२,other,Hindi,automatic
+B_0025,56.0,62.0,०२ 0:,other,Hindi,automatic
+B_0025,56.0,58.0,११   SHRI,other,Hindi,automatic
+B_0025,56.0,58.0,१२,other,Hindi,automatic
+B_0025,56.0,58.0,१२ 0:,other,Hindi,automatic
+B_0025,56.0,60.0,१६ 0६,other,Hindi,automatic
+B_0025,56.0,74.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,56.0,62.0,३० 0९,other,Hindi,automatic
+B_0025,58.0,60.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,58.0,60.0,1२,other,Hindi,automatic
+B_0025,58.0,62.0,30 11,other,English,automatic
+B_0025,58.0,60.0,3१ 0,other,Hindi,automatic
+B_0025,58.0,64.0,AND,other,English,automatic
+B_0025,58.0,60.0,Ub,other,English,automatic
+B_0025,58.0,70.0,WELFARE,other,English,automatic
+B_0025,58.0,60.0,२1 07  १९९९,other,Hindi,automatic
+B_0025,58.0,60.0,३१   0,other,Hindi,automatic
+B_0025,60.0,62.0,199/,other,English,automatic
+B_0025,60.0,62.0,1६0६,other,Hindi,automatic
+B_0025,60.0,62.0,30,other,English,automatic
+B_0025,60.0,62.0,31,other,English,automatic
+B_0025,60.0,62.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,60.0,62.0,FANSLY,other,English,automatic
+B_0025,60.0,90.0,SHRI K,other,English,automatic
+B_0025,60.0,62.0,०१ १२,other,Hindi,automatic
+B_0025,60.0,62.0,१२  SHPL,other,Hindi,automatic
+B_0025,60.0,72.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,60.0,72.0,३ 1,other,Hindi,automatic
+B_0025,62.0,64.0,1२,other,Hindi,automatic
+B_0025,62.0,64.0,1७,other,Hindi,automatic
+B_0025,62.0,64.0,3१ 0,other,Hindi,automatic
+B_0025,62.0,64.0,5ili-,other,English,automatic
+B_0025,62.0,64.0,SHIP,other,English,automatic
+B_0025,62.0,64.0,SHRJ,other,English,automatic
+B_0025,62.0,64.0,०१ 0,other,Hindi,automatic
+B_0025,62.0,64.0,०२ 0१,other,Hindi,automatic
+B_0025,62.0,182.0,१२ 0:,other,Hindi,automatic
+B_0025,62.0,70.0,१६0६,other,Hindi,automatic
+B_0025,62.0,64.0,३1  0,other,Hindi,automatic
+B_0025,62.0,64.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,62.0,64.0,३० ०९,other,Hindi,automatic
+B_0025,64.0,66.0,1%6,other,English,automatic
+B_0025,64.0,66.0,11,other,English,automatic
+B_0025,64.0,74.0,30 11,other,English,automatic
+B_0025,64.0,66.0,31,other,English,automatic
+B_0025,64.0,66.0,SHRIP,other,English,automatic
+B_0025,64.0,66.0,WORLD NC,other,English,automatic
+B_0025,64.0,68.0,३० 0९,other,Hindi,automatic
+B_0025,66.0,70.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,66.0,68.0,11 @9,other,English,automatic
+B_0025,66.0,70.0,1२,other,Hindi,automatic
+B_0025,66.0,68.0,31 1२ 1९९०,other,Hindi,automatic
+B_0025,66.0,68.0,HEISTBY OF,other,English,automatic
+B_0025,66.0,74.0,SHRLP,other,English,automatic
+B_0025,66.0,68.0,WORLD NO,other,English,automatic
+B_0025,66.0,74.0,०१ 0,other,Hindi,automatic
+B_0025,66.0,70.0,२०२३,other,Hindi,automatic
+B_0025,68.0,70.0,1७,other,Hindi,automatic
+B_0025,68.0,74.0,3१ 0,other,Hindi,automatic
+B_0025,68.0,70.0,HESTBY,other,English,automatic
+B_0025,68.0,70.0,SHIP,other,English,automatic
+B_0025,68.0,70.0,SHRI B,other,English,automatic
+B_0025,68.0,70.0,SHRJ,other,English,automatic
+B_0025,68.0,72.0,WORLD NC,other,English,automatic
+B_0025,68.0,70.0,०२ 0:,other,Hindi,automatic
+B_0025,68.0,70.0,३० ०९,other,Hindi,automatic
+B_0025,70.0,72.0,11,other,English,automatic
+B_0025,70.0,78.0,17,other,English,automatic
+B_0025,70.0,74.0,FAMLY,other,English,automatic
+B_0025,70.0,72.0,J U,other,English,automatic
+B_0025,70.0,72.0,SHP,other,English,automatic
+B_0025,70.0,72.0,१२,other,Hindi,automatic
+B_0025,70.0,74.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,70.0,80.0,३० 0९,other,Hindi,automatic
+B_0025,72.0,74.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,72.0,78.0,1२,other,Hindi,automatic
+B_0025,72.0,74.0,1६06,other,Hindi,automatic
+B_0025,72.0,74.0,StIRL,other,English,automatic
+B_0025,72.0,82.0,WELFARE,other,English,automatic
+B_0025,72.0,130.0,०२ 0:,other,Hindi,automatic
+B_0025,72.0,74.0,३1 1०,other,Hindi,automatic
+B_0025,72.0,74.0,३०,other,Hindi,automatic
+B_0025,74.0,84.0,11,other,English,automatic
+B_0025,74.0,76.0,20०४,other,Hindi,automatic
+B_0025,74.0,76.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,74.0,76.0,33ii,other,English,automatic
+B_0025,74.0,76.0,FMLY,other,English,automatic
+B_0025,74.0,78.0,SHRJ,other,English,automatic
+B_0025,74.0,76.0,SHRL,other,English,automatic
+B_0025,74.0,96.0,TOBACCO DAY,warning,English,automatic
+B_0025,74.0,76.0,१ ०६  १९९८,other,Hindi,automatic
+B_0025,74.0,76.0,१६0६,other,Hindi,automatic
+B_0025,74.0,76.0,२1  07,other,Hindi,automatic
+B_0025,74.0,90.0,३ 1,other,Hindi,automatic
+B_0025,74.0,76.0,३1 १०,other,Hindi,automatic
+B_0025,76.0,78.0,30 11,other,English,automatic
+B_0025,76.0,80.0,HEISTBY,other,English,automatic
+B_0025,76.0,80.0,SHIRL,other,English,automatic
+B_0025,76.0,78.0,Sili-,other,English,automatic
+B_0025,76.0,78.0,WORLD NO,other,English,automatic
+B_0025,76.0,78.0,०1 १२ १९५/,other,Hindi,automatic
+B_0025,76.0,78.0,१२  २०२३,other,Hindi,automatic
+B_0025,76.0,100.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,76.0,78.0,२1 0७,other,Hindi,automatic
+B_0025,76.0,78.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,78.0,80.0,0१ 0,other,Hindi,automatic
+B_0025,78.0,80.0,199/,other,English,automatic
+B_0025,78.0,80.0,1६06,other,Hindi,automatic
+B_0025,78.0,80.0,20०४,other,Hindi,automatic
+B_0025,78.0,80.0,30,other,English,automatic
+B_0025,78.0,80.0,31 1२ १९९०,other,Hindi,automatic
+B_0025,78.0,80.0,3१ 0,other,Hindi,automatic
+B_0025,78.0,80.0,SEIRI,other,English,automatic
+B_0025,78.0,80.0,SHPL,other,English,automatic
+B_0025,78.0,80.0,SHR,other,English,automatic
+B_0025,78.0,86.0,WORLD NC,other,English,automatic
+B_0025,78.0,80.0,०१ १२,other,Hindi,automatic
+B_0025,78.0,80.0,१०   SHRI,other,Hindi,automatic
+B_0025,78.0,80.0,१२,other,Hindi,automatic
+B_0025,78.0,80.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,78.0,82.0,२०२३,other,Hindi,automatic
+B_0025,80.0,82.0,01,other,English,automatic
+B_0025,80.0,86.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,80.0,82.0,17,other,English,automatic
+B_0025,80.0,82.0,SERI,other,English,automatic
+B_0025,80.0,82.0,SHRI J U,other,English,automatic
+B_0025,80.0,86.0,SHRL,other,English,automatic
+B_0025,80.0,82.0,Sili,other,English,automatic
+B_0025,80.0,90.0,१०,other,Hindi,automatic
+B_0025,80.0,82.0,१६0६,other,Hindi,automatic
+B_0025,80.0,82.0,२२ ०१,other,Hindi,automatic
+B_0025,80.0,84.0,३0 0९,other,Hindi,automatic
+B_0025,80.0,82.0,३0 ११,other,Hindi,automatic
+B_0025,80.0,82.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,80.0,82.0,३१ 0,other,Hindi,automatic
+B_0025,82.0,84.0,1२,other,Hindi,automatic
+B_0025,82.0,88.0,30 11,other,English,automatic
+B_0025,82.0,84.0,3१ 0,other,Hindi,automatic
+B_0025,82.0,84.0,SHRL K,other,English,automatic
+B_0025,82.0,84.0,The Government of India,other,English,automatic
+B_0025,82.0,84.0,WEARE,other,English,automatic
+B_0025,82.0,84.0,०१ 0,other,Hindi,automatic
+B_0025,82.0,84.0,१६,other,Hindi,automatic
+B_0025,82.0,84.0,२1 0७,other,Hindi,automatic
+B_0025,82.0,88.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,82.0,86.0,३1 1०,other,Hindi,automatic
+B_0025,84.0,96.0,17,other,English,automatic
+B_0025,84.0,86.0,FMLY,other,English,automatic
+B_0025,84.0,90.0,SHPL,other,English,automatic
+B_0025,84.0,86.0,Sill-,other,English,automatic
+B_0025,84.0,86.0,WELFARL,other,English,automatic
+B_0025,84.0,86.0,decisive action,other,English,automatic
+B_0025,84.0,88.0,१२,other,Hindi,automatic
+B_0025,84.0,94.0,१६ 0६,other,Hindi,automatic
+B_0025,84.0,88.0,३1 1२ १९९०,other,Hindi,automatic
+B_0025,84.0,86.0,३० ०९,other,Hindi,automatic
+B_0025,84.0,94.0,३१ 0,other,Hindi,automatic
+B_0025,86.0,90.0,SHRJ,other,English,automatic
+B_0025,86.0,88.0,decisive action and enact,other,English,automatic
+B_0025,86.0,88.0,measures at local,other,English,automatic
+B_0025,86.0,88.0,०1 1२ १९९/,other,Hindi,automatic
+B_0025,86.0,88.0,०१ 0,other,Hindi,automatic
+B_0025,86.0,90.0,२1 0७,other,Hindi,automatic
+B_0025,86.0,88.0,३० 0९,other,Hindi,automatic
+B_0025,88.0,92.0,01,other,English,automatic
+B_0025,88.0,90.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,88.0,90.0,06,other,English,automatic
+B_0025,88.0,90.0,11,other,English,automatic
+B_0025,88.0,90.0,1999,other,English,automatic
+B_0025,88.0,90.0,1१ ९,other,Hindi,automatic
+B_0025,88.0,92.0,1२,other,Hindi,automatic
+B_0025,88.0,90.0,SHRI J U,other,English,automatic
+B_0025,88.0,94.0,SHRL,other,English,automatic
+B_0025,88.0,90.0,SHRL K,other,English,automatic
+B_0025,88.0,92.0,Sili,other,English,automatic
+B_0025,88.0,90.0,"national, regional and",other,English,automatic
+B_0025,88.0,90.0,२२ ०१,other,Hindi,automatic
+B_0025,88.0,90.0,३0 0९,other,Hindi,automatic
+B_0025,88.0,90.0,३०,other,Hindi,automatic
+B_0025,90.0,92.0,07,other,English,automatic
+B_0025,90.0,92.0,0६,other,Hindi,automatic
+B_0025,90.0,92.0,19$/,other,English,automatic
+B_0025,90.0,92.0,20०४,other,Hindi,automatic
+B_0025,90.0,102.0,30 11,other,English,automatic
+B_0025,90.0,92.0,33fi,other,English,automatic
+B_0025,90.0,92.0,FEMLY,other,English,automatic
+B_0025,90.0,92.0,SHPI,other,English,automatic
+B_0025,90.0,92.0,SHR,other,English,automatic
+B_0025,90.0,126.0,WORLD NC,other,English,automatic
+B_0025,90.0,92.0,०1 १२,other,Hindi,automatic
+B_0025,90.0,94.0,१०   SHRI,other,Hindi,automatic
+B_0025,90.0,98.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,92.0,94.0,8१,other,Hindi,automatic
+B_0025,92.0,94.0,SHRJ,other,English,automatic
+B_0025,92.0,94.0,WELFARE,other,English,automatic
+B_0025,92.0,94.0,०१ 0,other,Hindi,automatic
+B_0025,92.0,94.0,१२,other,Hindi,automatic
+B_0025,92.0,94.0,१३ 1,other,Hindi,automatic
+B_0025,92.0,94.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,92.0,100.0,३० 0९,other,Hindi,automatic
+B_0025,94.0,96.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,94.0,98.0,07,other,English,automatic
+B_0025,94.0,96.0,0२,other,Hindi,automatic
+B_0025,94.0,96.0,11,other,English,automatic
+B_0025,94.0,98.0,1२,other,Hindi,automatic
+B_0025,94.0,96.0,SER-,other,English,automatic
+B_0025,94.0,96.0,SHR,other,English,automatic
+B_0025,94.0,96.0,WNARE,other,English,automatic
+B_0025,94.0,96.0,१०,other,Hindi,automatic
+B_0025,94.0,96.0,३1 1०,other,Hindi,automatic
+B_0025,96.0,98.0,SHIRL,other,English,automatic
+B_0025,96.0,100.0,SHPL,other,English,automatic
+B_0025,96.0,100.0,SHRJ,other,English,automatic
+B_0025,96.0,102.0,SHRL,other,English,automatic
+B_0025,96.0,98.0,Sili-,other,English,automatic
+B_0025,96.0,98.0,WEDARE,other,English,automatic
+B_0025,96.0,100.0,०१ 0,other,Hindi,automatic
+B_0025,96.0,98.0,१०   SHRI,other,Hindi,automatic
+B_0025,96.0,108.0,१६ 0६,other,Hindi,automatic
+B_0025,96.0,108.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,98.0,104.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,98.0,100.0,07202_,other,English,automatic
+B_0025,98.0,124.0,11,other,English,automatic
+B_0025,98.0,100.0,17,other,English,automatic
+B_0025,98.0,100.0,20०४,other,Hindi,automatic
+B_0025,98.0,116.0,SHRI K,other,English,automatic
+B_0025,98.0,196.0,TOBACCO DAY,warning,English,automatic
+B_0025,98.0,102.0,WELFARE,other,English,automatic
+B_0025,98.0,196.0,१०,other,Hindi,automatic
+B_0025,98.0,100.0,१२,other,Hindi,automatic
+B_0025,98.0,100.0,२1  0७,other,Hindi,automatic
+B_0025,98.0,100.0,३०,other,Hindi,automatic
+B_0025,98.0,100.0,३१  0,other,Hindi,automatic
+B_0025,100.0,116.0,01,other,English,automatic
+B_0025,100.0,102.0,07 2,other,English,automatic
+B_0025,100.0,102.0,0२,other,Hindi,automatic
+B_0025,100.0,102.0,1१ @९,other,Hindi,automatic
+B_0025,100.0,104.0,1२,other,Hindi,automatic
+B_0025,100.0,102.0,1७,other,Hindi,automatic
+B_0025,100.0,102.0,FEMILY,other,English,automatic
+B_0025,100.0,102.0,SHIRL,other,English,automatic
+B_0025,100.0,102.0,पारवार,other,Hindi,automatic
+B_0025,100.0,102.0,१ ०६   १९९८,other,Hindi,automatic
+B_0025,100.0,102.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,100.0,102.0,३0 0९,other,Hindi,automatic
+B_0025,102.0,104.0,05,other,English,automatic
+B_0025,102.0,104.0,07  १९९९,other,Hindi,automatic
+B_0025,102.0,104.0,17,other,English,automatic
+B_0025,102.0,106.0,1999,other,English,automatic
+B_0025,102.0,104.0,1९,other,Hindi,automatic
+B_0025,102.0,104.0,210?,other,English,automatic
+B_0025,102.0,104.0,30 0,other,English,automatic
+B_0025,102.0,112.0,30 1,other,English,automatic
+B_0025,102.0,104.0,31,other,English,automatic
+B_0025,102.0,106.0,31 1(,other,English,automatic
+B_0025,102.0,104.0,FEMILY WEDARE,other,English,automatic
+B_0025,102.0,104.0,SHRIP,other,English,automatic
+B_0025,102.0,104.0,SHRL K,other,English,automatic
+B_0025,102.0,114.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,102.0,106.0,३1 १२ १९९०,other,Hindi,automatic
+B_0025,104.0,114.0,040:,other,English,automatic
+B_0025,104.0,106.0,1७,other,Hindi,automatic
+B_0025,104.0,106.0,2107,other,English,automatic
+B_0025,104.0,106.0,SHPL,other,English,automatic
+B_0025,104.0,108.0,SHRJ,other,English,automatic
+B_0025,104.0,106.0,०६   २००३,other,Hindi,automatic
+B_0025,104.0,108.0,१२,other,Hindi,automatic
+B_0025,104.0,106.0,१९ ०५,other,Hindi,automatic
+B_0025,104.0,108.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,106.0,120.0,17,other,English,automatic
+B_0025,106.0,108.0,210?,other,English,automatic
+B_0025,106.0,112.0,30 0९,other,Hindi,automatic
+B_0025,106.0,110.0,3004,other,English,automatic
+B_0025,106.0,120.0,31,other,English,automatic
+B_0025,106.0,108.0,SHR,other,English,automatic
+B_0025,106.0,108.0,SHRL,other,English,automatic
+B_0025,106.0,108.0,SHRL K,other,English,automatic
+B_0025,106.0,108.0,WELFARE,other,English,automatic
+B_0025,106.0,110.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,106.0,112.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,106.0,108.0,३०,other,Hindi,automatic
+B_0025,106.0,108.0,३१ १२ १९९०,other,Hindi,automatic
+B_0025,108.0,110.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,108.0,110.0,1139,other,English,automatic
+B_0025,108.0,110.0,2107,other,English,automatic
+B_0025,108.0,120.0,31 1(,other,English,automatic
+B_0025,108.0,110.0,3101,other,English,automatic
+B_0025,108.0,110.0,SHPI,other,English,automatic
+B_0025,108.0,110.0,SHRL P,other,English,automatic
+B_0025,108.0,110.0,२२ ०१,other,Hindi,automatic
+B_0025,108.0,110.0,३ 1,other,Hindi,automatic
+B_0025,108.0,110.0,३1 1२ १९९०,other,Hindi,automatic
+B_0025,110.0,112.0,1२,other,Hindi,automatic
+B_0025,110.0,122.0,210?,other,English,automatic
+B_0025,110.0,114.0,FEMILY WEDARE,other,English,automatic
+B_0025,110.0,118.0,SHRJ,other,English,automatic
+B_0025,110.0,112.0,SHRL,other,English,automatic
+B_0025,110.0,112.0,०६   २००३,other,Hindi,automatic
+B_0025,110.0,114.0,१६0६,other,Hindi,automatic
+B_0025,110.0,112.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,110.0,112.0,३०,other,Hindi,automatic
+B_0025,112.0,114.0,05,other,English,automatic
+B_0025,112.0,114.0,07  १९९९,other,Hindi,automatic
+B_0025,112.0,114.0,1999,other,English,automatic
+B_0025,112.0,114.0,1९,other,Hindi,automatic
+B_0025,112.0,114.0,21,other,English,automatic
+B_0025,112.0,114.0,300,other,English,automatic
+B_0025,112.0,116.0,331,other,English,automatic
+B_0025,112.0,114.0,SHRLP F,other,English,automatic
+B_0025,112.0,114.0,१२,other,Hindi,automatic
+B_0025,112.0,116.0,१७ ०६ २००३,other,Hindi,automatic
+B_0025,112.0,114.0,२२ ०१,other,Hindi,automatic
+B_0025,112.0,114.0,३0 0,other,Hindi,automatic
+B_0025,114.0,120.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,114.0,116.0,1२,other,Hindi,automatic
+B_0025,114.0,118.0,1६0६,other,Hindi,automatic
+B_0025,114.0,120.0,301,other,English,automatic
+B_0025,114.0,116.0,SHPI,other,English,automatic
+B_0025,114.0,116.0,SHRL K,other,English,automatic
+B_0025,114.0,116.0,SHRLSP,other,English,automatic
+B_0025,114.0,118.0,WEDARE,other,English,automatic
+B_0025,114.0,116.0,१ ०६  १९९८,other,Hindi,automatic
+B_0025,114.0,118.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,114.0,116.0,२1 07,other,Hindi,automatic
+B_0025,114.0,116.0,२२ ०1,other,Hindi,automatic
+B_0025,116.0,128.0,"040""",other,English,automatic
+B_0025,116.0,118.0,199&,other,English,automatic
+B_0025,116.0,122.0,20०४,other,Hindi,automatic
+B_0025,116.0,120.0,300,other,English,automatic
+B_0025,116.0,118.0,SHRL,other,English,automatic
+B_0025,116.0,122.0,०१ 0,other,Hindi,automatic
+B_0025,116.0,118.0,०६   २००३,other,Hindi,automatic
+B_0025,116.0,122.0,१२,other,Hindi,automatic
+B_0025,116.0,122.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,116.0,122.0,२२ ०१,other,Hindi,automatic
+B_0025,116.0,118.0,३0 0,other,Hindi,automatic
+B_0025,118.0,120.0,07  १९९९,other,Hindi,automatic
+B_0025,118.0,124.0,1999,other,English,automatic
+B_0025,118.0,120.0,21,other,English,automatic
+B_0025,118.0,120.0,331,other,English,automatic
+B_0025,118.0,122.0,SHRU,other,English,automatic
+B_0025,118.0,128.0,१६0६,other,Hindi,automatic
+B_0025,118.0,128.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,118.0,124.0,१९ ०५,other,Hindi,automatic
+B_0025,118.0,120.0,३ 1,other,Hindi,automatic
+B_0025,120.0,122.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,120.0,122.0,06,other,English,automatic
+B_0025,120.0,122.0,1१ @९,other,Hindi,automatic
+B_0025,120.0,124.0,30 0९,other,Hindi,automatic
+B_0025,120.0,122.0,3004,other,English,automatic
+B_0025,120.0,122.0,SHIRI,other,English,automatic
+B_0025,120.0,122.0,SHRJ,other,English,automatic
+B_0025,120.0,122.0,WELFARE=,other,English,automatic
+B_0025,120.0,122.0,२1 07,other,Hindi,automatic
+B_0025,122.0,124.0,01,other,English,automatic
+B_0025,122.0,124.0,17,other,English,automatic
+B_0025,122.0,124.0,1998,other,English,automatic
+B_0025,122.0,124.0,2004,other,English,automatic
+B_0025,122.0,126.0,2107,other,English,automatic
+B_0025,122.0,162.0,30 1,other,English,automatic
+B_0025,122.0,130.0,31,other,English,automatic
+B_0025,122.0,124.0,331,other,English,automatic
+B_0025,122.0,124.0,१७ ०६,other,Hindi,automatic
+B_0025,122.0,126.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,122.0,124.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,122.0,124.0,३1 1,other,Hindi,automatic
+B_0025,124.0,126.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,124.0,126.0,1१ @९,other,Hindi,automatic
+B_0025,124.0,130.0,1२,other,Hindi,automatic
+B_0025,124.0,132.0,300,other,English,automatic
+B_0025,124.0,138.0,31 1(,other,English,automatic
+B_0025,124.0,126.0,SHD,other,English,automatic
+B_0025,124.0,132.0,SHR,other,English,automatic
+B_0025,124.0,126.0,०१ 0,other,Hindi,automatic
+B_0025,124.0,128.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,124.0,128.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,124.0,126.0,२२ ०१,other,Hindi,automatic
+B_0025,124.0,126.0,३ 1,other,Hindi,automatic
+B_0025,124.0,126.0,३१  0,other,Hindi,automatic
+B_0025,126.0,128.0,07  १९९९,other,Hindi,automatic
+B_0025,126.0,142.0,11,other,English,automatic
+B_0025,126.0,128.0,17,other,English,automatic
+B_0025,126.0,128.0,19$/,other,English,automatic
+B_0025,126.0,128.0,21,other,English,automatic
+B_0025,126.0,178.0,210?,other,English,automatic
+B_0025,126.0,128.0,SEIL,other,English,automatic
+B_0025,126.0,128.0,SHRJ,other,English,automatic
+B_0025,126.0,128.0,WELFARE=,other,English,automatic
+B_0025,126.0,128.0,०१ १२,other,Hindi,automatic
+B_0025,126.0,132.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,128.0,142.0,01,other,English,automatic
+B_0025,128.0,130.0,05,other,English,automatic
+B_0025,128.0,130.0,1998,other,English,automatic
+B_0025,128.0,130.0,1999,other,English,automatic
+B_0025,128.0,130.0,1६0६,other,Hindi,automatic
+B_0025,128.0,130.0,1७,other,Hindi,automatic
+B_0025,128.0,130.0,1९,other,Hindi,automatic
+B_0025,128.0,130.0,331,other,English,automatic
+B_0025,128.0,130.0,SHI,other,English,automatic
+B_0025,128.0,130.0,WELEARE,other,English,automatic
+B_0025,128.0,130.0,WORLD NC,other,English,automatic
+B_0025,128.0,130.0,परियार फल्पाण,other,Hindi,automatic
+B_0025,128.0,130.0,०६   २००३,other,Hindi,automatic
+B_0025,128.0,130.0,१७ ०६,other,Hindi,automatic
+B_0025,128.0,142.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,128.0,132.0,३0 0,other,Hindi,automatic
+B_0025,130.0,138.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,130.0,134.0,"040""",other,English,automatic
+B_0025,130.0,132.0,0२,other,Hindi,automatic
+B_0025,130.0,132.0,20०४,other,Hindi,automatic
+B_0025,130.0,132.0,SHRJ,other,English,automatic
+B_0025,130.0,132.0,StliJ,other,English,automatic
+B_0025,130.0,134.0,१२,other,Hindi,automatic
+B_0025,130.0,134.0,१६0६,other,Hindi,automatic
+B_0025,130.0,134.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,130.0,134.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,130.0,132.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,132.0,146.0,17,other,English,automatic
+B_0025,132.0,134.0,1999,other,English,automatic
+B_0025,132.0,134.0,1१ @९,other,Hindi,automatic
+B_0025,132.0,134.0,3004,other,English,automatic
+B_0025,132.0,138.0,31,other,English,automatic
+B_0025,132.0,152.0,WORLD NC,other,English,automatic
+B_0025,132.0,172.0,०२ 0,other,Hindi,automatic
+B_0025,132.0,134.0,१९ ०५,other,Hindi,automatic
+B_0025,132.0,134.0,२००४,other,Hindi,automatic
+B_0025,132.0,136.0,२२ ०१,other,Hindi,automatic
+B_0025,134.0,142.0,1२,other,Hindi,automatic
+B_0025,134.0,136.0,1६0६,other,Hindi,automatic
+B_0025,134.0,136.0,30 0९,other,Hindi,automatic
+B_0025,134.0,142.0,300,other,English,automatic
+B_0025,134.0,136.0,SHRJ,other,English,automatic
+B_0025,134.0,136.0,SHRL,other,English,automatic
+B_0025,134.0,136.0,०६   २००३,other,Hindi,automatic
+B_0025,134.0,136.0,१ ०६  १९९८,other,Hindi,automatic
+B_0025,134.0,138.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,136.0,148.0,SHR,other,English,automatic
+B_0025,136.0,138.0,परियार,other,Hindi,automatic
+B_0025,136.0,138.0,१६0६,other,Hindi,automatic
+B_0025,136.0,148.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,136.0,160.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,136.0,142.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,136.0,138.0,३० 0,other,Hindi,automatic
+B_0025,138.0,140.0,040:,other,English,automatic
+B_0025,138.0,140.0,1999,other,English,automatic
+B_0025,138.0,140.0,331,other,English,automatic
+B_0025,138.0,142.0,Sili-,other,English,automatic
+B_0025,138.0,140.0,area for,other,English,automatic
+B_0025,138.0,140.0,१९ ०५,other,Hindi,automatic
+B_0025,138.0,140.0,३0 0९,other,Hindi,automatic
+B_0025,138.0,140.0,३1 1(,other,Hindi,automatic
+B_0025,138.0,140.0,३०,other,Hindi,automatic
+B_0025,140.0,142.0,11 39,other,English,automatic
+B_0025,140.0,142.0,20०४,other,Hindi,automatic
+B_0025,140.0,144.0,30 0९,other,Hindi,automatic
+B_0025,140.0,168.0,31 1(,other,English,automatic
+B_0025,140.0,144.0,SHRJ,other,English,automatic
+B_0025,140.0,142.0,area for tobacco control,warning,English,automatic
+B_0025,140.0,142.0,initiatives in २०२४,other,Hindi,automatic
+B_0025,140.0,142.0,१६0६,other,Hindi,automatic
+B_0025,140.0,146.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,140.0,144.0,३१ 0,other,Hindi,automatic
+B_0025,142.0,144.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,142.0,148.0,"040""",other,English,automatic
+B_0025,142.0,148.0,31,other,English,automatic
+B_0025,142.0,144.0,331,other,English,automatic
+B_0025,142.0,144.0,०१ 0,other,Hindi,automatic
+B_0025,142.0,144.0,१२,other,Hindi,automatic
+B_0025,142.0,144.0,१६०६,other,Hindi,automatic
+B_0025,142.0,144.0,२1  0७,other,Hindi,automatic
+B_0025,142.0,144.0,२२ ०१,other,Hindi,automatic
+B_0025,142.0,144.0,३ 1,other,Hindi,automatic
+B_0025,144.0,156.0,01,other,English,automatic
+B_0025,144.0,148.0,11,other,English,automatic
+B_0025,144.0,158.0,1२,other,Hindi,automatic
+B_0025,144.0,148.0,20०४,other,Hindi,automatic
+B_0025,144.0,146.0,strict enforcement of,other,English,automatic
+B_0025,144.0,146.0,१६0६,other,Hindi,automatic
+B_0025,144.0,146.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,144.0,146.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,146.0,148.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,146.0,150.0,07  १९९९,other,Hindi,automatic
+B_0025,146.0,148.0,199&,other,English,automatic
+B_0025,146.0,152.0,1999,other,English,automatic
+B_0025,146.0,148.0,1१ @९,other,Hindi,automatic
+B_0025,146.0,148.0,1७,other,Hindi,automatic
+B_0025,146.0,148.0,21,other,English,automatic
+B_0025,146.0,154.0,30 0,other,English,automatic
+B_0025,146.0,148.0,SHRJ,other,English,automatic
+B_0025,146.0,148.0,Sii-,other,English,automatic
+B_0025,146.0,152.0,tobacco control,warning,English,automatic
+B_0025,146.0,148.0,१९ ०५,other,Hindi,automatic
+B_0025,146.0,148.0,२२ ०१,other,Hindi,automatic
+B_0025,148.0,150.0,05,other,English,automatic
+B_0025,148.0,150.0,1998,other,English,automatic
+B_0025,148.0,150.0,1६0६,other,Hindi,automatic
+B_0025,148.0,152.0,COTPA2003,other,English,automatic
+B_0025,148.0,150.0,FMILY WEDARE5,other,English,automatic
+B_0025,148.0,150.0,SHIR,other,English,automatic
+B_0025,148.0,152.0,"law,",other,English,automatic
+B_0025,148.0,150.0,१७ ०६,other,Hindi,automatic
+B_0025,148.0,150.0,१९,other,Hindi,automatic
+B_0025,148.0,150.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,148.0,150.0,३०,other,Hindi,automatic
+B_0025,150.0,152.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,150.0,158.0,040:,other,English,automatic
+B_0025,150.0,170.0,17,other,English,automatic
+B_0025,150.0,154.0,30 0९,other,Hindi,automatic
+B_0025,150.0,156.0,SHR,other,English,automatic
+B_0025,150.0,156.0,SHRJ,other,English,automatic
+B_0025,150.0,152.0,intensified,other,English,automatic
+B_0025,150.0,152.0,११  SHRI,other,Hindi,automatic
+B_0025,150.0,152.0,१३ 1,other,Hindi,automatic
+B_0025,150.0,152.0,१६0६,other,Hindi,automatic
+B_0025,150.0,160.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,150.0,152.0,१९ ०५,other,Hindi,automatic
+B_0025,150.0,160.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,150.0,152.0,२२ ०१,other,Hindi,automatic
+B_0025,152.0,168.0,11,other,English,automatic
+B_0025,152.0,154.0,1६0६,other,Hindi,automatic
+B_0025,152.0,158.0,31,other,English,automatic
+B_0025,152.0,154.0,331,other,English,automatic
+B_0025,152.0,154.0,Sii-,other,English,automatic
+B_0025,152.0,154.0,WORLD NO,other,English,automatic
+B_0025,152.0,154.0,"campaigns,",other,English,automatic
+B_0025,152.0,154.0,intensified public awareness,other,English,automatic
+B_0025,152.0,154.0,"tobacco control law, COTPA2003",warning,English,automatic
+B_0025,152.0,156.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,152.0,164.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,154.0,156.0,3004,other,English,automatic
+B_0025,154.0,192.0,WORLD NC,other,English,automatic
+B_0025,154.0,156.0,educational,other,English,automatic
+B_0025,154.0,158.0,increasing tobacco free,warning,English,automatic
+B_0025,154.0,156.0,१६0६,other,Hindi,automatic
+B_0025,156.0,158.0,01  0,other,English,automatic
+B_0025,156.0,158.0,11@9,other,English,automatic
+B_0025,156.0,158.0,1999,other,English,automatic
+B_0025,156.0,160.0,20०४,other,Hindi,automatic
+B_0025,156.0,158.0,30 0९,other,Hindi,automatic
+B_0025,156.0,158.0,300,other,English,automatic
+B_0025,156.0,158.0,SHRL,other,English,automatic
+B_0025,156.0,158.0,educational institutions and,other,English,automatic
+B_0025,156.0,160.0,१५ ०२ 1९९४,other,Hindi,automatic
+B_0025,156.0,158.0,१९ ०५,other,Hindi,automatic
+B_0025,158.0,164.0,01,other,English,automatic
+B_0025,158.0,160.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,158.0,160.0,06,other,English,automatic
+B_0025,158.0,160.0,11 39,other,English,automatic
+B_0025,158.0,164.0,1६0६,other,Hindi,automatic
+B_0025,158.0,160.0,3004,other,English,automatic
+B_0025,158.0,162.0,SHR,other,English,automatic
+B_0025,158.0,160.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,160.0,170.0,"040""",other,English,automatic
+B_0025,160.0,164.0,07  १९९९,other,Hindi,automatic
+B_0025,160.0,162.0,1998,other,English,automatic
+B_0025,160.0,162.0,1999,other,English,automatic
+B_0025,160.0,170.0,1२,other,Hindi,automatic
+B_0025,160.0,162.0,30 0९,other,Hindi,automatic
+B_0025,160.0,180.0,300,other,English,automatic
+B_0025,160.0,166.0,31,other,English,automatic
+B_0025,160.0,162.0,FAMILY WEDARE5,other,English,automatic
+B_0025,160.0,162.0,SHIR,other,English,automatic
+B_0025,160.0,162.0,SHRJ,other,English,automatic
+B_0025,160.0,162.0,Sii-,other,English,automatic
+B_0025,160.0,162.0,०६   २००३,other,Hindi,automatic
+B_0025,160.0,164.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,160.0,162.0,१९ ०५,other,Hindi,automatic
+B_0025,160.0,162.0,३०,other,Hindi,automatic
+B_0025,162.0,164.0,11 39,other,English,automatic
+B_0025,162.0,164.0,20०४,other,Hindi,automatic
+B_0025,162.0,164.0,21,other,English,automatic
+B_0025,162.0,164.0,30 11,other,English,automatic
+B_0025,162.0,174.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,162.0,164.0,१७ ०६ २००३,other,Hindi,automatic
+B_0025,162.0,168.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,164.0,182.0,301,other,English,automatic
+B_0025,164.0,168.0,SHR,other,English,automatic
+B_0025,164.0,166.0,SHRJ,other,English,automatic
+B_0025,164.0,166.0,०६   २००३,other,Hindi,automatic
+B_0025,164.0,166.0,१३ 1,other,Hindi,automatic
+B_0025,164.0,166.0,२२ ०१,other,Hindi,automatic
+B_0025,166.0,196.0,01,other,English,automatic
+B_0025,166.0,168.0,FAMILY WEDARE5,other,English,automatic
+B_0025,166.0,168.0,SHK,other,English,automatic
+B_0025,166.0,172.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,166.0,168.0,१६0६,other,Hindi,automatic
+B_0025,166.0,174.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,166.0,170.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,166.0,174.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,168.0,172.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,168.0,170.0,1९,other,Hindi,automatic
+B_0025,168.0,170.0,20०४,other,Hindi,automatic
+B_0025,168.0,196.0,31,other,English,automatic
+B_0025,168.0,172.0,331,other,English,automatic
+B_0025,168.0,170.0,FMILY WEDARES,other,English,automatic
+B_0025,168.0,170.0,SHIR,other,English,automatic
+B_0025,170.0,172.0,0६,other,Hindi,automatic
+B_0025,170.0,180.0,31 1(,other,English,automatic
+B_0025,170.0,178.0,SHR,other,English,automatic
+B_0025,170.0,172.0,SHRJ,other,English,automatic
+B_0025,170.0,172.0,Sp,other,English,automatic
+B_0025,170.0,172.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,170.0,172.0,२1  0७,other,Hindi,automatic
+B_0025,172.0,196.0,040',other,English,automatic
+B_0025,172.0,174.0,05  1९९९,other,Hindi,automatic
+B_0025,172.0,174.0,06,other,English,automatic
+B_0025,172.0,180.0,0२,other,Hindi,automatic
+B_0025,172.0,180.0,11,other,English,automatic
+B_0025,172.0,174.0,11 @9,other,English,automatic
+B_0025,172.0,176.0,1२,other,Hindi,automatic
+B_0025,172.0,174.0,SHIR,other,English,automatic
+B_0025,172.0,174.0,safeguard both current,other,English,automatic
+B_0025,172.0,174.0,१५ ०२ 1९९४,other,Hindi,automatic
+B_0025,172.0,174.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,174.0,176.0,01 1९९९,other,Hindi,automatic
+B_0025,174.0,176.0,07  १९९९,other,Hindi,automatic
+B_0025,174.0,180.0,0६,other,Hindi,automatic
+B_0025,174.0,176.0,17,other,English,automatic
+B_0025,174.0,176.0,1१ @९,other,Hindi,automatic
+B_0025,174.0,176.0,1६0६,other,Hindi,automatic
+B_0025,174.0,176.0,1९,other,Hindi,automatic
+B_0025,174.0,176.0,21,other,English,automatic
+B_0025,174.0,176.0,FEMILY,other,English,automatic
+B_0025,174.0,178.0,SHRJ,other,English,automatic
+B_0025,174.0,176.0,WELFARES,other,English,automatic
+B_0025,174.0,184.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,174.0,176.0,२२,other,Hindi,automatic
+B_0025,176.0,178.0,13,other,English,automatic
+B_0025,176.0,178.0,19$/,other,English,automatic
+B_0025,176.0,178.0,1७,other,Hindi,automatic
+B_0025,176.0,178.0,20०४,other,Hindi,automatic
+B_0025,176.0,178.0,30,other,English,automatic
+B_0025,176.0,178.0,१२,other,Hindi,automatic
+B_0025,176.0,184.0,१७ ०६   १९९८,other,Hindi,automatic
+B_0025,176.0,180.0,१७ ०६ २००३,other,Hindi,automatic
+B_0025,176.0,196.0,१९ ०५ १९९९,other,Hindi,automatic
+B_0025,178.0,184.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,178.0,196.0,17,other,English,automatic
+B_0025,178.0,188.0,1२,other,Hindi,automatic
+B_0025,178.0,182.0,2101,other,English,automatic
+B_0025,178.0,180.0,HESTRY,other,English,automatic
+B_0025,178.0,180.0,SHD,other,English,automatic
+B_0025,178.0,182.0,SHIR,other,English,automatic
+B_0025,178.0,188.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,178.0,180.0,३0 0,other,Hindi,automatic
+B_0025,180.0,182.0,06,other,English,automatic
+B_0025,180.0,182.0,FEMILY WELFARE >,other,English,automatic
+B_0025,180.0,184.0,०२ 0,other,Hindi,automatic
+B_0025,180.0,182.0,०६   २००३,other,Hindi,automatic
+B_0025,180.0,182.0,११   SHRI,other,Hindi,automatic
+B_0025,180.0,196.0,२1 0७  १९९९,other,Hindi,automatic
+B_0025,180.0,182.0,३०,other,Hindi,automatic
+B_0025,182.0,184.0,11,other,English,automatic
+B_0025,182.0,184.0,2004,other,English,automatic
+B_0025,182.0,196.0,210,other,English,automatic
+B_0025,182.0,196.0,30,other,English,automatic
+B_0025,182.0,196.0,30 0,other,English,automatic
+B_0025,182.0,186.0,331,other,English,automatic
+B_0025,182.0,184.0,SHIL,other,English,automatic
+B_0025,182.0,196.0,SHR,other,English,automatic
+B_0025,182.0,184.0,SHRJ,other,English,automatic
+B_0025,182.0,184.0,SHh,other,English,automatic
+B_0025,182.0,186.0,WELFARE,other,English,automatic
+B_0025,182.0,196.0,१७ ०६  २००३,other,Hindi,automatic
+B_0025,184.0,196.0,0२,other,Hindi,automatic
+B_0025,184.0,186.0,1१ 3,other,Hindi,automatic
+B_0025,184.0,188.0,1६0,other,Hindi,automatic
+B_0025,184.0,186.0,SHI,other,English,automatic
+B_0025,184.0,186.0,Si|{,other,English,automatic
+B_0025,184.0,186.0,०२  १९९४,other,Hindi,automatic
+B_0025,184.0,186.0,३० 0,other,Hindi,automatic
+B_0025,186.0,188.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,186.0,192.0,11,other,English,automatic
+B_0025,186.0,188.0,SH,other,English,automatic
+B_0025,186.0,188.0,SHE,other,English,automatic
+B_0025,186.0,196.0,१५ ०२ १९९४,other,Hindi,automatic
+B_0025,186.0,196.0,१७ ०६  १९९८,other,Hindi,automatic
+B_0025,186.0,190.0,३०,other,Hindi,automatic
+B_0025,188.0,190.0,0)4,other,English,automatic
+B_0025,188.0,190.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,188.0,190.0,FEAILY,other,English,automatic
+B_0025,188.0,190.0,SHI,other,English,automatic
+B_0025,188.0,190.0,१६0,other,Hindi,automatic
+B_0025,190.0,192.0,1२,other,Hindi,automatic
+B_0025,190.0,192.0,331,other,English,automatic
+B_0025,190.0,192.0,81,other,English,automatic
+B_0025,190.0,192.0,FEALLY,other,English,automatic
+B_0025,190.0,196.0,SH,other,English,automatic
+B_0025,190.0,192.0,SHL,other,English,automatic
+B_0025,190.0,192.0,२२ ०१ १९९९,other,Hindi,automatic
+B_0025,190.0,192.0,३० 0,other,Hindi,automatic
+B_0025,192.0,194.0,01 1२ १९५/,other,Hindi,automatic
+B_0025,192.0,194.0,07-2023,other,English,automatic
+B_0025,192.0,196.0,1६0,other,Hindi,automatic
+B_0025,192.0,194.0,SHI,other,English,automatic
+B_0025,192.0,194.0,WELFARE,other,English,automatic
+B_0025,192.0,196.0,१२,other,Hindi,automatic
+B_0025,194.0,196.0,01 1२ १९९/,other,Hindi,automatic
+B_0025,194.0,196.0,07-202,other,English,automatic
+B_0025,194.0,196.0,SHh,other,English,automatic
+B_0025,194.0,196.0,WELEARE,other,English,automatic
+B_0025,194.0,196.0,WORLD NC,other,English,automatic
+B_0025,194.0,196.0,२२ ०१ १९९९,other,Hindi,automatic
+A_0026,0.0,12.0,@TheMarketinglntern,other,English,automatic
+A_0026,0.0,152.1,Akshay Kumar,other,English,automatic
+A_0026,0.0,64.0,Red & White Ad,other,English,automatic
+A_0026,2.0,6.0,SUBSCRIBE!,other,English,automatic
+A_0026,6.0,8.0,SURSCRIBE!,other,English,automatic
+A_0026,8.0,16.0,SUBSCRIBED,other,English,automatic
+A_0026,14.0,22.0,TheMarketinglntern,other,English,automatic
+A_0026,16.0,22.0,SUBSCRIBE!,other,English,automatic
+A_0026,22.0,24.0,@TheMarketingIntern,other,English,automatic
+A_0026,22.0,24.0,SUBSGRIBED,other,English,automatic
+A_0026,24.0,30.0,SUBSCRIBED,other,English,automatic
+A_0026,24.0,150.0,TheMarketinglntern,other,English,automatic
+A_0026,32.0,36.0,SUBSCRIBE!,other,English,automatic
+A_0026,36.0,38.0,SUBSA RIBE!,other,English,automatic
+A_0026,38.0,40.0,ALL,other,English,automatic
+A_0026,38.0,40.0,ASKED,other,English,automatic
+A_0026,38.0,40.0,MGHT,other,English,automatic
+A_0026,38.0,40.0,NTINES,other,English,automatic
+A_0026,40.0,44.0,SUBSCRIBED,other,English,automatic
+A_0026,48.0,50.0,SUBSCRIBE!,other,English,automatic
+A_0026,50.0,52.0,SUESCRIBE!,other,English,automatic
+A_0026,52.0,60.0,SUBSCRIBED,other,English,automatic
+A_0026,60.0,64.0,SUBSCRIBE!,other,English,automatic
+A_0026,64.0,66.0,Red,other,English,automatic
+A_0026,64.0,66.0,White Ad,other,English,automatic
+A_0026,66.0,102.0,Red & White Ad,other,English,automatic
+A_0026,66.0,68.0,SUBSGRIBED,other,English,automatic
+A_0026,68.0,74.0,SUBSCRIBED,other,English,automatic
+A_0026,74.0,80.0,SUBSCRIBE!,other,English,automatic
+A_0026,80.0,82.0,SUBSARIBE!,other,English,automatic
+A_0026,82.0,88.0,SUBSCRIBED,other,English,automatic
+A_0026,90.0,94.0,SUBSCRIBE!,other,English,automatic
+A_0026,94.0,96.0,SUBSRIBE!,other,English,automatic
+A_0026,96.0,104.0,SUBSCRIBED,other,English,automatic
+A_0026,102.0,104.0,Red,other,English,automatic
+A_0026,102.0,104.0,White Ad,other,English,automatic
+A_0026,104.0,152.1,Red & White Ad,other,English,automatic
+A_0026,104.0,108.0,SUBSCRIBE!,other,English,automatic
+A_0026,110.0,118.0,SUBSCRIBED,other,English,automatic
+A_0026,118.0,124.0,SUBSCRIBE!,other,English,automatic
+A_0026,124.0,126.0,SUBSARIBE!,other,English,automatic
+A_0026,126.0,132.0,SUBSCRIBED,other,English,automatic
+A_0026,134.0,138.0,SUBSCRIBE!,other,English,automatic
+A_0026,138.0,140.0,SUBSARIBE!,other,English,automatic
+A_0026,140.0,148.0,SUBSCRIBED,other,English,automatic
+A_0026,148.0,152.0,RED& WHITE,other,English,automatic
+A_0026,148.0,152.0,SUBSCRIBE!,other,English,automatic
+A_0026,148.0,152.0,VIE,other,English,automatic
+A_0026,148.0,150.0,दी कुछ ओर है,other,Hindi,automatic
+A_0026,148.0,150.0,हम रेड एण्ड व्हाइट,other,Hindi,automatic
+A_0026,150.0,152.0,@TheMarketinglntem,other,English,automatic
+A_0026,152.0,152.1,SURSCRIBE!,other,English,automatic
+A_0026,152.0,152.1,TheMarketinglntern,other,English,automatic
+A_0027,2.0,6.0,AT THE MOVIES,other,English,automatic
+A_0027,6.0,8.0,A TIEMOVES,other,English,automatic
+A_0027,6.0,84.0,AT THE,other,English,automatic
+A_0027,8.0,10.0,AT THEMOVES,other,English,automatic
+A_0027,10.0,12.0,TIEMOVES,other,English,automatic
+A_0027,12.0,14.0,AT TEMOVES,other,English,automatic
+A_0027,14.0,16.0,AT THEMOVES,other,English,automatic
+A_0027,16.0,18.0,A THEVOVES,other,English,automatic
+A_0027,18.0,20.0,EMOVES,other,English,automatic
+A_0027,20.0,22.0,AT THEMOVES,other,English,automatic
+A_0027,22.0,24.0,A THEVOVES,other,English,automatic
+A_0027,24.0,26.0,AT TEMOVES,other,English,automatic
+A_0027,26.0,28.0,A TEMOVES,other,English,automatic
+A_0027,30.0,34.0,AT THEMOVES,other,English,automatic
+A_0027,34.0,36.0,A TEMOVES,other,English,automatic
+A_0027,38.0,40.0,AT TEMOVES,other,English,automatic
+A_0027,42.0,44.0,TIEMOVIES,other,English,automatic
+A_0027,44.0,46.0,ITTIEMOVES,other,English,automatic
+A_0027,46.0,48.0,AT THEMOVES,other,English,automatic
+A_0027,48.0,52.0,TIEMOVES,other,English,automatic
+A_0027,52.0,54.0,A TIEMOVES,other,English,automatic
+A_0027,54.0,58.0,TIEMOVES,other,English,automatic
+A_0027,58.0,60.0,THEMOVIES,other,English,automatic
+A_0027,60.0,62.0,EMOVES,other,English,automatic
+A_0027,62.0,64.0,TIEMOVES,other,English,automatic
+A_0027,64.0,66.0,ITTIEMOVES,other,English,automatic
+A_0027,66.0,72.0,TIEMOVES,other,English,automatic
+A_0027,72.0,74.0,EMOVES,other,English,automatic
+A_0027,74.0,76.0,TIEMOVES,other,English,automatic
+A_0027,76.0,78.0,EMOVES,other,English,automatic
+A_0027,78.0,80.0,AT TIEMOVES,other,English,automatic
+A_0027,78.0,80.0,cigarette so distinguished,other,English,automatic
+A_0027,78.0,80.0,its by appointment Io your,other,English,automatic
+A_0027,80.0,82.0,A TIEMOVES,other,English,automatic
+A_0027,80.0,82.0,cigarette so dlstinguished,other,English,automatic
+A_0027,80.0,82.0,its by appointment to your,other,English,automatic
+A_0027,82.0,84.0,AT TIEMOVES,other,English,automatic
+A_0027,82.0,84.0,cigarette so distinpuished,other,English,automatic
+A_0027,82.0,84.0,its by appointment IO your,other,English,automatic
+A_0027,84.0,88.1,AT THE MOVIES,other,English,automatic
+B_0026,2.0,6.0,Language : Hindi,other,English,automatic
+B_0026,2.0,6.0,Tobacco Free advocacy Film,warning,English,automatic
+B_0026,2.0,6.0,Total Run Time : ०४ Minutes ३५ Seconds,other,Hindi,automatic
+B_0026,2.0,6.0,World Lung Foundation,other,English,automatic
+B_0026,24.0,26.0,Bldl Smoher,other,English,automatic
+B_0026,28.0,30.0,Bldl Smoher,other,English,automatic
+B_0026,48.0,50.0,Jaywanti Balhore,other,English,automatic
+B_0026,50.0,54.0,Jaywanti Bathore,other,English,automatic
+B_0026,94.0,96.0,Nilesh Akrelkar I३७ vearsl,other,Hindi,automatic
+B_0026,96.0,98.0,Nillesh Axrelkar I३७ years],other,Hindi,automatic
+B_0026,108.0,110.0,Dr. Caleb Harris,other,English,automatic
+B_0026,108.0,110.0,Tata Memorial Hosaital UNumbail,other,English,automatic
+B_0026,116.0,118.0,Belha [२७ yearsl,other,Hindi,automatic
+B_0026,124.0,126.0,Or. Pankal Chaturuedll,other,English,automatic
+B_0026,124.0,126.0,Tala Memorial Nospital IMumbail,other,English,automatic
+B_0026,132.0,134.0,Caini,other,English,automatic
+B_0026,146.0,150.0,THEREARE २७ 5 CRORES,other,Hindi,automatic
+B_0026,152.0,154.0,USESOHE FORHOF TOBACCO,warning,English,automatic
+B_0026,178.0,180.0,PIEUMONII,other,English,automatic
+B_0026,178.0,180.0,UNGDISEASES,other,English,automatic
+B_0026,180.0,182.0,PYEUHONIA,other,English,automatic
+B_0026,182.0,184.0,STROKES,other,English,automatic
+B_0026,190.0,192.0,Tobacco Cliewe,warning,English,automatic
+B_0026,202.0,204.0,HORETHEN १० LAKH,other,Hindi,automatic
+B_0026,206.0,208.0,Shariila Sanlos,other,English,automatic
+B_0026,208.0,210.0,Shariila Sanlosh Kalsekar ३९ vears],other,Hindi,automatic
+B_0026,220.0,224.0,ISCAUSED BYSHOKING,other,English,automatic
+B_0026,222.0,224.0,१IH१० DAIIS,other,Hindi,automatic
+B_0026,224.0,226.0,Deenak Kumar I६३ yearsl,other,Hindi,automatic
+B_0026,224.0,226.0,Pallent ITI,other,English,automatic
+B_0026,226.0,228.0,Clgarette Smoker,other,English,automatic
+B_0026,226.0,228.0,Palleni IThroal Cancerl,warning,English,automatic
+B_0026,260.0,262.0,Hake India Tohacco Free,other,English,automatic
+B_0026,262.0,264.0,Make India Tobacco Free,warning,English,automatic
+B_0026,262.0,266.0,WORLD LUNG,other,English,automatic
+B_0026,264.0,266.0,Hake India Tohacco Free,other,English,automatic
+B_0026,268.0,270.0,Thanks to,other,English,automatic
+B_0026,270.0,272.0,Collaboration with,other,English,automatic
+B_0026,270.0,272.0,Healis,other,English,automatic
+B_0026,270.0,272.0,Voice of Tobacco Victims [ VOTV ],warning,English,automatic
+B_0026,272.0,274.0,Tala Memorial Hospilal Numbai,other,English,automatic
+B_0026,274.0,276.0,Tata Ilemorial Hospilal Numiai,other,English,automatic
+B_0026,276.0,278.0,Acknowledgements,other,English,automatic
+B_0026,276.0,278.0,Bloomberg Phillanthropies,other,English,automatic
+B_0026,276.0,278.0,Frameworh Conventon Alllance,other,English,automatic
+B_0026,276.0,278.0,Johns Honhinns University School oi Public Health,warning,English,automatic
+B_0026,276.0,278.0,The Internatonal Unlon Agalnst Tuberculosls and Lung Olsease,other,English,automatic
+B_0026,276.0,278.0,World Health Organization,warning,English,automatic
+B_0026,278.0,280.0,Nandita Mulrukkutla,other,English,automatic
+B_0026,278.0,280.0,Rebecca Perl,other,English,automatic
+B_0026,278.0,280.0,Vaishakhi Malllik,other,English,automatic
+B_0026,278.0,282.0,WORLD LUNG,other,English,automatic
+B_0026,280.0,282.0,Behecca Perl,other,English,automatic
+B_0026,280.0,282.0,Vaishaihi Mallik,other,English,automatic
+B_0027,0.0,4.0,HEALTH ADVSORY,warning,English,automatic
+B_0027,0.0,12.0,LIQUOR DRINKING IS INJURIOUS TO HEALTH,warning,English,automatic
+B_0027,0.0,2.0,Looa,other,English,automatic
+B_0027,0.0,12.0,SMOKING CAUSE CANCER,warning,English,automatic
+B_0027,0.0,12.0,SMOKING KILLS!,warning,English,automatic
+B_0027,0.0,46.0,Subscribe,other,English,automatic
+B_0027,4.0,6.0,HEALTHADVISORY,warning,English,automatic
+B_0027,6.0,8.0,LEALTIADVISORY,other,English,automatic
+B_0027,8.0,10.0,DoLLgl,other,English,automatic
+B_0027,8.0,10.0,HEALTH ADVISORY,warning,English,automatic
+B_0027,8.0,10.0,Loob,other,English,automatic
+B_0027,10.0,12.0,Dpuugl,other,English,automatic
+B_0027,10.0,12.0,HEALHADVISORY,other,English,automatic
+B_0027,10.0,12.0,Looo,other,English,automatic
+B_0027,12.0,16.0,HEALTHADVISORY,warning,English,automatic
+B_0027,12.0,14.0,Llood,other,English,automatic
+B_0027,12.0,14.0,SMOKING CAUSE CANCER - SMOKING KILLS!,warning,English,automatic
+B_0027,14.0,16.0,LIQUOR DRINKING IS INJURIOUS TO HEALTH,warning,English,automatic
+B_0027,14.0,16.0,SMOKING CAUSE CANCER,warning,English,automatic
+B_0027,14.0,16.0,SMOKING KILLS!,warning,English,automatic
+B_0027,16.0,18.0,"DEPARTMENT OF COMMUNITY MEDICINE,",other,English,automatic
+B_0027,16.0,18.0,GOVT. SIVAGANGAI MEDICAL COLLEGE & HOSPITAL,other,English,automatic
+B_0027,16.0,18.0,SPECIAL THANKS TO,other,English,automatic
+B_0027,18.0,20.0,BE LIXE,other,English,automatic
+B_0027,18.0,22.0,DOG,other,English,automatic
+B_0027,18.0,22.0,MEDIA PARTNER,other,English,automatic
+B_0027,22.0,26.0,DHARMARAJ,other,English,automatic
+B_0027,22.0,24.0,SRIVATHSAN,other,English,automatic
+B_0027,22.0,24.0,STORY,other,English,automatic
+B_0027,22.0,24.0,SURENDHAR,other,English,automatic
+B_0027,24.0,26.0,CINEMATOGRAPHY,other,English,automatic
+B_0027,24.0,26.0,DIRECTION,other,English,automatic
+B_0027,24.0,26.0,EDITING,other,English,automatic
+B_0027,26.0,28.0,& HOSPITAL,other,English,automatic
+B_0027,26.0,28.0,DIEDICAL GOLLEGE,other,English,automatic
+B_0027,26.0,28.0,GOUT,other,English,automatic
+B_0027,26.0,28.0,NH,other,English,automatic
+B_0027,26.0,28.0,SIVAGANGAl,other,English,automatic
+B_0027,28.0,30.0,NI,other,English,automatic
+B_0027,32.0,34.0,IDia %,other,English,automatic
+B_0027,32.0,34.0,Present,other,English,automatic
+B_0027,50.0,52.0,Oio,other,English,automatic
+B_0027,58.0,60.0,0६:30 PM,other,Hindi,automatic
+B_0027,60.0,62.0,alony,other,English,automatic
+B_0027,98.0,100.0,CALL,other,English,automatic
+B_0027,100.0,102.0,BUS STO,other,English,automatic
+B_0027,132.0,134.0,O9:00 PM,other,English,automatic
+B_0027,228.0,230.0,vvo,other,English,automatic
+B_0027,306.0,308.0,08:30 AM,other,English,automatic
+B_0027,370.0,372.0,4|,other,English,automatic
+B_0027,370.0,372.0,LPno,other,English,automatic
+B_0027,370.0,372.0,Name,other,English,automatic
+B_0027,370.0,372.0,Unil,other,English,automatic
+B_0027,462.0,464.0,११:४९ PM,other,Hindi,automatic
+B_0027,468.0,470.0,"0""0",other,English,automatic
+B_0027,500.0,502.0,Ml,other,English,automatic
+B_0027,508.0,510.0,@6,other,English,automatic
+B_0027,508.0,512.0,DREAM,other,English,automatic
+B_0027,512.0,514.0,ARIYY,other,English,automatic
+B_0027,514.0,516.0,DRCAM,other,English,automatic
+B_0027,516.0,520.0,Each cigarette reduces १1 minutes of your lifetime,other,Hindi,automatic
+B_0027,516.0,518.0,Think before you smoke the next one,other,English,automatic
+B_0027,528.0,530.0,84,other,English,automatic
+B_0027,532.0,534.0,046,other,English,automatic
+B_0027,532.0,534.0,ARRO,other,English,automatic
+B_0027,532.0,534.0,CALL,other,English,automatic
+B_0027,542.0,544.0,SIOP SMOKING,other,English,automatic
+B_0027,544.0,546.0,DEPT,other,English,automatic
+B_0027,544.0,546.0,DR,other,English,automatic
+B_0027,544.0,546.0,MANONMANI,other,English,automatic
+B_0027,544.0,546.0,OF BIOCHEMISTRY,other,English,automatic
+B_0027,546.0,548.0,DR. DAVID PRADEEP KUMAR,other,English,automatic
+B_0027,550.0,552.0,SRIVATHSAN,other,English,automatic
+B_0027,550.0,552.0,SURENDHAR,other,English,automatic
+B_0027,552.0,554.0,DINESH KUMAR,other,English,automatic
+B_0027,552.0,554.0,SHARATHRAJ,other,English,automatic
+B_0027,556.0,558.0,ARUN,other,English,automatic
+B_0027,556.0,558.0,VIDHYAPATHI,other,English,automatic
+B_0027,558.0,560.0,DEEPAK KUMAR,other,English,automatic
+B_0027,558.0,560.0,SURESH KUMAR,other,English,automatic
+B_0027,560.0,562.0,AJITH KUMAR,other,English,automatic
+B_0027,560.0,562.0,MARIRAJ,other,English,automatic
+B_0027,564.0,568.0,DHARMARAJ,other,English,automatic
+B_0027,564.0,568.0,FILM BY,other,English,automatic
+B_0027,568.0,580.0,BE LIXE,other,English,automatic
+B_0027,568.0,580.0,DOG,other,English,automatic
+B_0027,568.0,580.0,Subscribe,other,English,automatic
+B_0028,2.0,4.0,It Hurts,other,English,automatic
+B_0028,16.0,18.0,DAY,other,English,automatic
+B_0028,28.0,30.0,IUU UIV,other,English,automatic
+B_0028,40.0,42.0,RIUH,other,English,automatic
+B_0028,42.0,44.0,Rllil,other,English,automatic
+B_0028,52.0,56.0,UU,other,English,automatic
+B_0028,60.0,62.0,IIU,other,English,automatic
+B_0028,98.0,100.0,DAY 5,other,English,automatic
+B_0028,104.0,106.0,DAY 6,other,English,automatic
+B_0028,108.0,112.0,DAY,other,English,automatic
+B_0028,122.0,124.0,DAK8,other,English,automatic
+B_0028,234.0,236.0,ड्,other,Hindi,automatic
+B_0028,282.0,292.0,(०,other,Hindi,automatic
+B_0028,282.0,292.0,Love,other,English,automatic
+B_0028,286.0,292.0,M५,other,Hindi,automatic
+B_0028,292.0,294.9,SMOKING IS THE BST WAY OF,other,English,automatic
+B_0028,292.0,294.9,TELLING YOUR GJRL THAT YOU DONT,other,English,automatic
+B_0028,292.0,294.9,TO LOVE YOU.,other,English,automatic
+B_0028,292.0,294.9,WANT HER,other,English,automatic
+A_0028,0.0,2.0,JAWE,other,English,automatic
+A_0028,0.0,2.0,Midea,other,English,automatic
+A_0028,8.0,10.0,DHL,other,English,automatic
+A_0028,12.0,14.0,hTe,other,English,automatic
+A_0028,16.0,18.0,WI,other,English,automatic
+A_0028,20.0,22.0,%4,other,English,automatic
+A_0028,46.0,48.0,MOIORS,other,English,automatic
+A_0028,46.0,48.0,TAIA,other,English,automatic
+A_0028,64.0,66.0,nTe,other,English,automatic
+A_0028,66.0,68.0,Gulf,other,English,automatic
+A_0028,68.0,70.0,Utalech,other,English,automatic
+A_0028,86.0,88.0,DIVIDED BY TEAMS,other,English,automatic
+A_0028,88.0,90.0,#UNITEDBYKINGFISHER,other,English,automatic
+A_0028,88.0,90.0,Calendar,other,English,automatic
+A_0028,88.0,90.0,GOOD TIIMES,other,English,automatic
+A_0028,88.0,90.0,PREMIUM,other,English,automatic
+A_0028,90.0,92.0,CEL,other,English,automatic
+A_0028,90.0,92.0,"G""|+",other,English,automatic
+A_0029,12.0,14.0,TUBORUE,other,English,automatic
+A_0029,36.0,40.6,TUBORG,other,English,automatic
+A_0030,0.0,2.0,Inotout9Os,other,English,automatic
+A_0030,0.0,2.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,0.0,90.2,Relive the moments @,other,English,automatic
+A_0030,4.0,6.0,Inotout9Os,other,English,automatic
+A_0030,4.0,6.0,Missing ९O's era & old days?,other,Hindi,automatic
+A_0030,6.0,8.0,Missing ९० s era & oldrda ys?,other,Hindi,automatic
+A_0030,8.0,12.0,Inotout9os,other,English,automatic
+A_0030,12.0,14.0,Missing ९Os era & old days?,other,Hindi,automatic
+A_0030,14.0,16.0,Inotout9Os,other,English,automatic
+A_0030,14.0,20.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,22.0,24.0,Inotout9Os,other,English,automatic
+A_0030,22.0,24.0,Missing ९०ls era & old days?,other,Hindi,automatic
+A_0030,24.0,32.0,Missing ९० s era & old days?,other,Hindi,automatic
+A_0030,32.0,36.0,Missing ९O's era & old days?,other,Hindi,automatic
+A_0030,36.0,42.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,38.0,42.0,Inotout9os,other,English,automatic
+A_0030,42.0,44.0,Missing ९०ls era & old days?,other,Hindi,automatic
+A_0030,46.0,48.0,Missing ९०'s era &old day5?,other,Hindi,automatic
+A_0030,48.0,50.0,Missing ९O's era & old days?,other,Hindi,automatic
+A_0030,52.0,56.0,Missing ९०s era & old days?,other,Hindi,automatic
+A_0030,60.0,64.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,64.0,66.0,Missing ९O s era & old days?,other,Hindi,automatic
+A_0030,70.0,72.0,Missing ९O's era & old days?,other,Hindi,automatic
+A_0030,72.0,76.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,74.0,76.0,Inotout9os,other,English,automatic
+A_0030,78.0,80.0,Inotout9os,other,English,automatic
+A_0030,78.0,80.0,Missing ९०ls era & old days?,other,Hindi,automatic
+A_0030,84.0,88.0,Missing ९०'s era & old days?,other,Hindi,automatic
+A_0030,90.0,90.2,Missing ९० s era & old days?,other,Hindi,automatic
+A_0030,90.0,90.2,SMIRIL,other,English,automatic
+A_0031,0.0,4.0,CELEDRATION,other,English,automatic
+A_0031,0.0,20.0,RUM:,other,English,automatic
+A_0031,2.0,4.0,OJowells,other,English,automatic
+A_0031,4.0,6.0,CEUEDRTION,other,English,automatic
+A_0031,6.0,10.0,CELEDRATION,other,English,automatic
+A_0031,10.0,12.0,CLLEBRATION,other,English,automatic
+A_0031,10.0,12.0,ODowells,other,English,automatic
+A_0031,12.0,24.0,CELEDRATION,other,English,automatic
+A_0031,12.0,14.0,Jowells|,other,English,automatic
+A_0031,16.0,18.0,OJowells,other,English,automatic
+A_0031,20.0,22.0,RUMt,other,English,automatic
+A_0031,22.0,58.0,RUM:,other,English,automatic
+A_0031,24.0,26.0,CELEBRATION,other,English,automatic
+A_0031,26.0,28.0,CELEDRATION,other,English,automatic
+A_0031,28.0,30.0,CELEBRATION,other,English,automatic
+A_0031,30.0,34.0,CELEDRATION,other,English,automatic
+A_0031,34.0,38.0,CELEBRATION,other,English,automatic
+A_0031,38.0,42.0,CELEDRATION,other,English,automatic
+A_0031,40.0,42.0,WDowells,other,English,automatic
+A_0031,42.0,44.0,CELEBRATION,other,English,automatic
+A_0031,44.0,46.0,LLEDRATION,other,English,automatic
+A_0031,48.0,56.0,CELEDRATION,other,English,automatic
+A_0031,50.0,52.0,KDowells,other,English,automatic
+A_0031,52.0,54.0,KJowells,other,English,automatic
+A_0031,52.0,54.0,Nol,other,English,automatic
+A_0031,56.0,58.0,LEDRATION,other,English,automatic
+A_0031,58.0,60.0,CELEDRATION,other,English,automatic
+A_0031,60.0,62.0,CELEBRATION,other,English,automatic
+A_0031,60.0,84.0,RUM:,other,English,automatic
+A_0031,62.0,66.0,CEUEDRATION,other,English,automatic
+A_0031,64.0,66.0,KJowells,other,English,automatic
+A_0031,66.0,70.0,CELEDRATION,other,English,automatic
+A_0031,68.0,70.0,OJowells,other,English,automatic
+A_0031,70.0,72.0,KDowells,other,English,automatic
+A_0031,74.0,76.0,KDowells,other,English,automatic
+A_0031,76.0,78.0,CLLEDRATION,other,English,automatic
+A_0031,76.0,78.0,KJowells,other,English,automatic
+A_0031,78.0,82.0,CELEDRATION,other,English,automatic
+A_0031,82.0,84.0,CELEBRATION,other,English,automatic
+A_0031,84.0,86.0,CELEDRATION,other,English,automatic
+A_0031,86.0,88.0,CLLEDRATION,other,English,automatic
+A_0031,86.0,88.0,ODowells,other,English,automatic
+A_0031,86.0,134.0,RUM:,other,English,automatic
+A_0031,88.0,90.0,)owells,other,English,automatic
+A_0031,90.0,92.0,CELEDRATION,other,English,automatic
+A_0031,92.0,94.0,CELEBRATION,other,English,automatic
+A_0031,94.0,96.0,KDowells,other,English,automatic
+A_0031,96.0,98.0,UUEDRATION,other,English,automatic
+A_0031,98.0,100.0,CELEDRATION,other,English,automatic
+A_0031,100.0,102.0,CLLEBRATION,other,English,automatic
+A_0031,102.0,106.0,CELEDRATION,other,English,automatic
+A_0031,106.0,108.0,CELEBRATION,other,English,automatic
+A_0031,106.0,114.0,ODowells,other,English,automatic
+A_0031,108.0,114.0,CELEDRATION,other,English,automatic
+A_0031,114.0,118.0,CELEBRATION,other,English,automatic
+A_0031,118.0,120.0,CELEDRATION,other,English,automatic
+A_0031,120.0,122.0,CELEBRATION,other,English,automatic
+A_0031,122.0,128.0,CELEDRATION,other,English,automatic
+A_0031,122.0,124.0,OJowells,other,English,automatic
+A_0031,126.0,128.0,ODowells,other,English,automatic
+A_0031,128.0,130.0,CELLBRATION,other,English,automatic
+A_0031,130.0,132.0,CELEBRATION,other,English,automatic
+A_0031,130.0,132.0,ODowells,other,English,automatic
+A_0031,132.0,134.0,CELEDRATION,other,English,automatic
+A_0031,134.0,136.0,CFIEDRATION,other,English,automatic
+A_0031,136.0,138.0,KJowells,other,English,automatic
+A_0031,136.0,138.0,N9],other,English,automatic
+A_0031,136.0,150.0,RUM:,other,English,automatic
+A_0031,138.0,146.0,CELEBRATION,other,English,automatic
+A_0031,146.0,148.0,JRATION,other,English,automatic
+A_0031,146.0,148.0,KJowells,other,English,automatic
+A_0031,148.0,150.0,CELEDRATION,other,English,automatic
+A_0031,150.0,152.0,ATION,other,English,automatic
+A_0031,150.0,152.0,KUM:,other,English,automatic
+A_0031,152.0,154.0,BRATION,other,English,automatic
+A_0031,152.0,156.0,KDowells,other,English,automatic
+A_0031,152.0,154.0,RUM:,other,English,automatic
+A_0031,154.0,156.0,CELEDRATION,other,English,automatic
+A_0031,156.0,160.0,CELEBRATION,other,English,automatic
+A_0031,156.0,158.0,Nol,other,English,automatic
+A_0031,156.0,162.0,RUM:,other,English,automatic
+A_0031,158.0,160.0,ODowells,other,English,automatic
+A_0031,160.0,162.0,CELEDRATION,other,English,automatic
+A_0031,162.0,164.0,ION,other,English,automatic
+A_0031,162.0,164.0,KJowells,other,English,automatic
+A_0031,164.0,166.0,)owells|,other,English,automatic
+A_0031,164.0,168.0,CELEDRATION,other,English,automatic
+A_0031,164.0,180.0,RUM:,other,English,automatic
+A_0031,168.0,172.0,CELEBRATION,other,English,automatic
+A_0031,168.0,170.0,N9I,other,English,automatic
+A_0031,172.0,174.0,FLLBRATION,other,English,automatic
+A_0031,174.0,176.0,CELEDRATION,other,English,automatic
+A_0031,176.0,178.0,LDRAIION,other,English,automatic
+A_0031,176.0,178.0,wells,other,English,automatic
+A_0031,180.0,182.0,N9l,other,English,automatic
+A_0031,180.0,182.0,NION,other,English,automatic
+A_0031,182.0,186.0,CELEBRATION,other,English,automatic
+A_0031,182.0,186.0,RUM:,other,English,automatic
+A_0031,184.0,186.0,N9I,other,English,automatic
+A_0031,186.0,188.0,CELEDRATION,other,English,automatic
+A_0031,188.0,190.0,)owells|,other,English,automatic
+A_0031,188.0,190.0,ON,other,English,automatic
+A_0031,188.0,194.0,RUM:,other,English,automatic
+A_0031,190.0,196.0,CELEBRATION,other,English,automatic
+A_0031,194.0,196.0,UM:,other,English,automatic
+A_0031,196.0,198.0,)owells|,other,English,automatic
+A_0031,196.0,204.0,RUM:,other,English,automatic
+A_0031,198.0,200.0,CELEDRATION,other,English,automatic
+A_0031,198.0,200.0,N9I,other,English,automatic
+A_0031,200.0,202.0,CELEBRATION,other,English,automatic
+A_0031,202.0,208.0,CELEDRATION,other,English,automatic
+A_0031,208.0,210.0,CELEBRATION,other,English,automatic
+A_0031,208.0,210.0,RUM:,other,English,automatic
+A_0031,210.0,212.0,N9I,other,English,automatic
+A_0031,210.0,212.0,UM:,other,English,automatic
+A_0031,212.0,214.0,KDowells,other,English,automatic
+A_0031,212.0,214.0,RUM:,other,English,automatic
+A_0031,214.0,216.0,)owells|,other,English,automatic
+A_0031,216.0,218.0,AJowells,other,English,automatic
+A_0031,216.0,218.0,CELEBRATION,other,English,automatic
+A_0031,216.0,284.0,RUM:,other,English,automatic
+A_0031,218.0,220.0,CELEDRATION,other,English,automatic
+A_0031,220.0,228.0,CELEBRATION,other,English,automatic
+A_0031,220.0,222.0,Nol,other,English,automatic
+A_0031,224.0,226.0,KJowells,other,English,automatic
+A_0031,228.0,230.0,CELEDRATION,other,English,automatic
+A_0031,230.0,232.0,CLLEDRATION,other,English,automatic
+A_0031,232.0,234.0,CELEDRATION,other,English,automatic
+A_0031,234.0,236.0,)owells|,other,English,automatic
+A_0031,234.0,236.0,CELEDRAIION,other,English,automatic
+A_0031,236.0,238.0,CLLEDRATION,other,English,automatic
+A_0031,238.0,240.0,LEDRAIION,other,English,automatic
+A_0031,238.0,240.0,N9l,other,English,automatic
+A_0031,238.0,240.0,WDowells,other,English,automatic
+A_0031,240.0,242.0,CELEBRATION,other,English,automatic
+A_0031,242.0,244.0,DRATION,other,English,automatic
+A_0031,244.0,246.0,KJowells,other,English,automatic
+A_0031,246.0,252.0,CELEBRATION,other,English,automatic
+A_0031,246.0,258.0,ODowells,other,English,automatic
+A_0031,252.0,258.0,CELEDRATION,other,English,automatic
+A_0031,258.0,262.0,CELEBRATION,other,English,automatic
+A_0031,260.0,270.0,ODowells,other,English,automatic
+A_0031,262.0,264.0,CLLEBRATION,other,English,automatic
+A_0031,264.0,274.0,CELEBRATION,other,English,automatic
+A_0031,270.0,272.0,OJowells,other,English,automatic
+A_0031,272.0,274.0,Nl,other,English,automatic
+A_0031,272.0,274.0,ODowells,other,English,automatic
+A_0031,274.0,276.0,CEIEDRATION,other,English,automatic
+A_0031,274.0,276.0,OJowells,other,English,automatic
+A_0031,276.0,280.0,CELEBRATION,other,English,automatic
+A_0031,276.0,278.0,ODowells,other,English,automatic
+A_0031,278.0,280.0,OJowells,other,English,automatic
+A_0031,280.0,282.0,wells,other,English,automatic
+A_0031,282.0,284.0,olls,other,English,automatic
+A_0031,284.0,286.0,KDowells,other,English,automatic
+A_0031,284.0,286.0,OM:,other,English,automatic
+A_0031,284.0,286.0,RATION,other,English,automatic
+A_0031,288.0,290.0,FLEBRAIION,other,English,automatic
+A_0031,288.0,290.0,N9I,other,English,automatic
+A_0031,290.0,292.0,CELLBRATION,other,English,automatic
+A_0031,290.0,292.0,UM:,other,English,automatic
+A_0031,292.0,294.0,CELLDRAIION,other,English,automatic
+A_0031,294.0,296.0,CELEDRATION,other,English,automatic
+A_0031,294.0,296.0,RUM:,other,English,automatic
+A_0031,298.0,302.0,RUM:,other,English,automatic
+A_0031,300.0,302.0,CELEBRATION,other,English,automatic
+A_0031,302.0,304.0,ADowells,other,English,automatic
+A_0031,304.0,306.0,MO)owells,other,English,automatic
+A_0031,306.0,308.0,EBRATION,other,English,automatic
+A_0031,308.0,310.0,PRAIION,other,English,automatic
+A_0031,310.0,312.0,CELEURATION,other,English,automatic
+A_0031,312.0,314.0,CELEBRATION,other,English,automatic
+A_0031,312.0,316.0,RUM:,other,English,automatic
+A_0031,314.0,316.0,CELEDRATION,other,English,automatic
+A_0031,314.0,316.0,wells,other,English,automatic
+A_0031,316.0,318.0,LLDRATION,other,English,automatic
+A_0031,318.0,320.0,RUM,other,English,automatic
+A_0031,320.0,322.0,CEIE,other,English,automatic
+A_0031,320.0,322.0,Nol,other,English,automatic
+A_0031,322.0,324.0,LERATION,other,English,automatic
+A_0031,324.0,326.0,CLEBRAIION,other,English,automatic
+A_0031,326.0,334.0,CELEBRATION,other,English,automatic
+A_0031,326.0,328.0,UM,other,English,automatic
+A_0031,328.0,330.0,KDowells,other,English,automatic
+A_0031,328.0,338.0,RUM:,other,English,automatic
+A_0031,334.0,336.0,CELEDRATION,other,English,automatic
+A_0031,334.0,336.0,KDowells,other,English,automatic
+A_0031,336.0,338.0,CELEBRATION,other,English,automatic
+A_0031,338.0,340.0,owells,other,English,automatic
+A_0031,344.0,346.0,ODowells,other,English,automatic
+A_0031,344.0,348.0,RUM:,other,English,automatic
+A_0031,346.0,348.0,CFUEBRATION,other,English,automatic
+A_0031,346.0,348.0,JKDowells,other,English,automatic
+A_0031,350.0,354.0,RUM:,other,English,automatic
+A_0031,354.0,356.0,owells,other,English,automatic
+A_0031,356.0,362.0,RUM:,other,English,automatic
+A_0031,360.0,362.0,Ils,other,English,automatic
+A_0031,364.0,366.0,KDowells,other,English,automatic
+A_0031,366.0,368.0,FLEDRATION,other,English,automatic
+A_0031,368.0,370.0,ELEDRATION,other,English,automatic
+A_0031,368.0,372.0,RUM:,other,English,automatic
+A_0031,370.0,372.0,CELEDRATION,other,English,automatic
+A_0031,374.0,376.0,LERAIION,other,English,automatic
+A_0031,374.0,376.0,NOI,other,English,automatic
+A_0031,374.0,378.0,RUM:,other,English,automatic
+A_0031,376.0,378.0,CEULDRATION,other,English,automatic
+A_0031,376.0,378.0,KDowells,other,English,automatic
+A_0031,376.0,378.0,NQI,other,English,automatic
+A_0031,378.0,380.0,CUEDRATION,other,English,automatic
+A_0031,378.0,380.0,KJowells,other,English,automatic
+A_0031,380.0,384.0,CELEBRATION,other,English,automatic
+A_0031,382.0,384.0,NOI,other,English,automatic
+A_0031,384.0,386.0,ATION,other,English,automatic
+A_0031,386.0,388.0,CELLBRATION,other,English,automatic
+A_0031,386.0,388.0,KJowells,other,English,automatic
+A_0031,386.0,388.0,UM,other,English,automatic
+A_0031,388.0,400.0,CELEBRATION,other,English,automatic
+A_0031,388.0,390.0,KDowells,other,English,automatic
+A_0031,388.0,390.0,RUMM,other,English,automatic
+A_0031,390.0,400.0,RUM,other,English,automatic
+A_0031,392.0,394.0,KJowells,other,English,automatic
+A_0031,394.0,400.0,NOI,other,English,automatic
+A_0031,400.0,402.0,M:,other,English,automatic
+A_0031,402.0,404.0,I$,other,English,automatic
+A_0031,404.0,406.0,KDowells,other,English,automatic
+A_0031,408.0,410.0,CELEBRAIION,other,English,automatic
+A_0031,408.0,412.0,RUM:,other,English,automatic
+A_0031,410.0,412.0,CELEDRAIION,other,English,automatic
+A_0031,412.0,414.0,Nol,other,English,automatic
+A_0031,414.0,418.0,KDowells,other,English,automatic
+A_0031,416.0,418.0,CELEBRAIION,other,English,automatic
+A_0031,416.0,418.0,RUM:,other,English,automatic
+A_0031,420.0,422.0,CELEDRATION,other,English,automatic
+A_0031,420.0,422.0,ODowells,other,English,automatic
+A_0031,420.0,422.0,RUM:,other,English,automatic
+A_0031,422.0,424.0,Oowell,other,English,automatic
+A_0031,424.0,426.0,CELEBRATION,other,English,automatic
+A_0031,424.0,442.0,RUM:,other,English,automatic
+A_0031,426.0,436.0,CELEDRATION,other,English,automatic
+A_0031,426.0,428.0,NOI,other,English,automatic
+A_0031,434.0,436.0,KDowells,other,English,automatic
+A_0031,436.0,442.0,CELEBRATION,other,English,automatic
+A_0031,442.0,444.0,Oowells|,other,English,automatic
+A_0031,446.0,448.0,CELEDRATION,other,English,automatic
+A_0031,446.0,448.0,RUM:,other,English,automatic
+A_0031,448.0,450.0,No,other,English,automatic
+A_0031,450.0,456.0,CELEBRATION,other,English,automatic
+A_0031,450.0,515.9,RUM:,other,English,automatic
+A_0031,452.0,456.0,ODowells,other,English,automatic
+A_0031,456.0,464.0,CELEDRATION,other,English,automatic
+A_0031,462.0,464.0,NOI,other,English,automatic
+A_0031,464.0,484.0,CELEBRATION,other,English,automatic
+A_0031,470.0,472.0,ODowells,other,English,automatic
+A_0031,484.0,486.0,CELEDRATION,other,English,automatic
+A_0031,484.0,486.0,ODowells,other,English,automatic
+A_0031,486.0,488.0,CELEBRAIION,other,English,automatic
+A_0031,488.0,490.0,CELEBRATION,other,English,automatic
+A_0031,488.0,490.0,ODowells,other,English,automatic
+A_0031,490.0,492.0,CELLBRATION,other,English,automatic
+A_0031,492.0,496.0,CELEBRATION,other,English,automatic
+A_0031,492.0,494.0,OJowells,other,English,automatic
+A_0031,494.0,496.0,ODowells,other,English,automatic
+A_0031,496.0,498.0,CLLEBRATION,other,English,automatic
+A_0031,498.0,515.9,CELEBRATION,other,English,automatic
+A_0031,500.0,502.0,ODowells,other,English,automatic
+A_0031,508.0,510.0,OJowells,other,English,automatic
+B_0029,2.0,4.0,"निषेघ, उत्पाद एवं निबंघन विभाग, बिहार सरकार",other,Hindi,automatic
+B_0029,2.0,6.0,प्रस्तुति,other,Hindi,automatic
+B_0029,2.0,4.0,मध,other,Hindi,automatic
+B_0029,4.0,6.0,बिहार,other,Hindi,automatic
+B_0029,4.0,6.0,सरकार,other,Hindi,automatic
+B_0029,76.0,78.0,CONPUICES,other,English,automatic
+B_0029,82.0,84.0,COMPUICES,other,English,automatic
+B_0029,94.0,96.0,COMPUCES,other,English,automatic
+B_0029,108.0,110.0,arowe,other,English,automatic
+B_0029,232.0,234.0,राजापाकर   नारायणपुर वैशाली,other,Hindi,automatic
+B_0029,320.0,322.0,BREAKINGheWS,other,English,automatic
+B_0029,320.0,322.0,देसी और विदेशी,other,Hindi,automatic
+B_0029,320.0,322.0,शरव,other,Hindi,automatic
+B_0029,336.0,338.0,९98,other,Hindi,automatic
+B_0029,340.0,342.0,D३,other,Hindi,automatic
+B_0029,368.0,370.0,राजकीयआदर्श विद्यालय,other,Hindi,automatic
+B_0029,370.0,374.0,आबाद हुआ उजड़ा परिवार,other,Hindi,automatic
+B_0029,370.0,372.0,"बापू की राह पर चला बिहार,",other,Hindi,automatic
+B_0029,372.0,374.0,बाप्ू की राह पर चला,other,Hindi,automatic
+B_0029,372.0,374.0,"बिहार,",other,Hindi,automatic
+B_0029,376.0,378.0,"निषेघ, उत्पाद एवं निबंघन विभाग, बिहार सरकार",other,Hindi,automatic
+B_0029,376.0,378.0,प्रस्तुति,other,Hindi,automatic
+B_0029,376.0,378.0,मध,other,Hindi,automatic
+B_0029,380.0,386.0,कृति,other,Hindi,automatic
+B_0029,380.0,386.0,साक्षी कम्युनिकेशन,other,Hindi,automatic
+B_0029,386.0,390.0,THANKS,other,English,automatic
+A_0032,38.0,40.0,CELEBRATING,other,English,automatic
+A_0032,38.0,40.0,VIMZLL,other,English,automatic
+A_0032,38.0,40.0,पान मसाला चवाना,other,Hindi,automatic
+A_0032,40.0,42.0,Dae,other,English,automatic
+A_0032,40.0,42.0,NOT FOR IINORS O% TOBACCO NO ADDED NICOTINE,warning,English,automatic
+A_0032,40.0,42.0,वे्सर युक्त,other,Hindi,automatic
+A_0033,4.0,6.0,STIY TRUE TO YOUR BEAT,other,English,automatic
+A_0033,8.0,12.0,LET YOUR SOUND BE SEEN,other,English,automatic
+A_0033,30.0,30.0,Budweiser,other,English,automatic
+A_0033,30.0,30.0,EXPERIENCES,other,English,automatic
+A_0034,4.0,6.0,91,other,English,automatic
+A_0034,4.0,6.0,CURRY,other,English,automatic
+A_0034,4.0,6.0,THE,other,English,automatic
+A_0034,18.0,20.0,SY SOMET,other,English,automatic
+A_0034,18.0,20.0,UAL,other,English,automatic
+A_0034,34.0,36.0,The iuture ls,other,English,automatic
+A_0034,34.0,36.0,YOURS!,other,English,automatic
+A_0034,34.0,36.0,let s start today,other,English,automatic
+A_0034,66.0,68.0,212.555.7272,other,English,automatic
+A_0034,66.0,68.0,CO,other,English,automatic
+A_0034,66.0,68.0,EN,other,English,automatic
+A_0034,66.0,68.0,MA,other,English,automatic
+A_0034,66.0,68.0,NOW!,other,English,automatic
+A_0034,76.0,78.0,CONTRI,other,English,automatic
+A_0034,76.0,78.0,COV,other,English,automatic
+A_0034,76.0,78.0,EVERGEN,other,English,automatic
+A_0034,76.0,78.0,IO OPEN,other,English,automatic
+A_0034,76.0,78.0,MANUA,other,English,automatic
+A_0034,76.0,78.0,OOOR IN,other,English,automatic
+A_0034,76.0,78.0,OPEN,other,English,automatic
+A_0034,76.0,78.0,ULLHAND,other,English,automatic
+A_0034,100.0,102.0,MAKEPLAY,other,English,automatic
+A_0034,102.0,104.0,IETHII,other,English,automatic
+A_0034,104.0,105.4,METHINO,other,English,automatic
+A_0035,4.0,6.0,Siunii performed,other,English,automatic
+A_0035,14.0,15.0,*D23,other,English,automatic
+A_0035,14.0,15.0,Dilbaghy,other,English,automatic
+A_0035,14.0,15.0,Finest Pan Masalla,other,English,automatic
+A_0035,14.0,15.0,Pan Masala,other,English,automatic
+A_0036,90.0,92.0,What,other,English,automatic
+A_0036,90.0,92.0,want,other,English,automatic
+A_0037,30.0,30.8,६८,other,Hindi,automatic
+B_0030,6.0,10.0,"His journey begins with therays of the sun,",other,English,automatic
+B_0030,12.0,14.0,no matter where the destination lies,other,English,automatic
+B_0030,16.0,20.0,He covers the longest distances hour after hour,other,English,automatic
+B_0030,26.0,28.0,without taking his eyes off the road,other,English,automatic
+B_0030,30.0,32.0,Satutor ' Warning Smoling,warning,English,automatic
+B_0030,30.0,34.0,health,warning,English,automatic
+B_0030,32.0,38.0,When his feet stagger in those difficult moments,other,English,automatic
+B_0030,40.0,42.0,He doesn t reach out for a cigarette or tobacco,warning,English,automatic
+B_0030,42.0,46.0,but the comfort of our love instead,other,English,automatic
+B_0030,58.0,60.0,Happiness arrives as he does,other,English,automatic
+B_0030,60.0,64.0,and our childrenls faces light up at his sight,other,English,automatic
+B_0030,64.0,66.0,The path might be difficult,other,English,automatic
+B_0030,66.0,68.0,but with the support of loved ones,other,English,automatic
+B_0030,68.0,72.0,every hardship turns into a win,other,English,automatic
+B_0030,72.0,74.0,Agood father,other,English,automatic
+B_0030,74.0,76.0,Agood husband,other,English,automatic
+B_0030,76.0,78.0,and a good human,other,English,automatic
+B_0030,76.0,78.0,being,other,English,automatic
+B_0030,78.0,80.0,AN,other,English,automatic
+B_0030,78.0,80.0,LEY,other,English,automatic
+B_0030,82.0,84.0,"At Ashok Leylands Drivers Training Institute,",other,English,automatic
+B_0030,84.0,86.0,we not only teach them how to drive,other,English,automatic
+B_0030,86.0,88.0,but also show them the right path in life,other,English,automatic
+B_0030,88.0,90.0,ASHDK,other,English,automatic
+B_0030,88.0,90.0,ASHOKLEYLAND,other,English,automatic
+B_0030,88.0,98.0,"At Ashok Leylands Drivers Training Institute,",other,English,automatic
+B_0030,88.0,90.0,Driver,other,English,automatic
+B_0030,88.0,90.0,Inscicute,other,English,automatic
+B_0030,88.0,90.0,LEYLAND,other,English,automatic
+B_0030,88.0,90.0,Training,other,English,automatic
+B_0030,88.0,98.0,the right path in life,other,English,automatic
+B_0030,90.0,92.0,ASHDK LEYLAND,other,English,automatic
+B_0030,92.0,94.0,ASHOK,other,English,automatic
+B_0030,94.0,96.0,ASHDK LEYLAND,other,English,automatic
+B_0030,94.0,96.0,"we have shown over 1०,३०,००० drivers",other,Hindi,automatic
+B_0030,96.0,104.0,ASHOK LEYLAND,other,English,automatic
+B_0030,98.0,100.0,Day,other,English,automatic
+B_0030,98.0,104.0,Issued in public interest on,other,English,automatic
+B_0030,98.0,100.0,World No Tobacco,warning,English,automatic
+B_0030,100.0,104.0,World No Tobacco Day,warning,English,automatic
+B_0030,104.0,106.0,ASHOK LEYL ANDD,other,English,automatic
+B_0030,104.0,108.1,Aapki Jeet Hamari Jeet,other,English,automatic
+B_0030,106.0,108.1,ASHOK LEYLAND,other,English,automatic
+B_0031,2.0,32.0,(NTCP),other,English,automatic
+B_0031,2.0,32.0,@MahaHealthlEC,warning,English,automatic
+B_0031,2.0,32.0,AUDIO,other,English,automatic
+B_0031,2.0,32.0,CONTROL PROGRAMME,other,English,automatic
+B_0031,2.0,10.0,IMahaArogyalECBureau,other,English,automatic
+B_0031,2.0,36.7,MahaHealthIEc,warning,English,automatic
+B_0031,2.0,32.0,NATIONAL TOBACCO,warning,English,automatic
+B_0031,2.0,32.0,mahanealthiec,other,English,automatic
+B_0031,2.0,4.0,तंबाखू - तोंडाचा कॅन्सर॰-,other,Hindi,automatic
+B_0031,2.0,6.0,तंबारू,other,Hindi,automatic
+B_0031,2.0,32.0,नियंत्रण कार्यक्रम,other,Hindi,automatic
+B_0031,2.0,36.7,"राज्य आरोग्य शिक्षण व संपर्क विभाग , पुणे",other,Hindi,automatic
+B_0031,2.0,32.0,राष्ट्रीय 7,other,Hindi,automatic
+B_0031,6.0,12.0,तंबाखू,other,Hindi,automatic
+B_0031,6.0,22.0,तंबाखू- तोंडाचा कॅन्सर॰.,other,Hindi,automatic
+B_0031,10.0,36.7,/MahaArogyalECBureau,other,English,automatic
+B_0031,12.0,16.0,तंबारू,other,Hindi,automatic
+B_0031,16.0,22.0,तंबाखू,other,Hindi,automatic
+B_0031,22.0,26.0,तंबारू,other,Hindi,automatic
+B_0031,26.0,32.0,तंबाखू,other,Hindi,automatic
+B_0031,26.0,30.0,तंबाखू- तोंडाचा कॅन्सर॰,other,Hindi,automatic
+B_0031,32.0,36.0,Imahahealthiec,warning,English,automatic
+B_0031,32.0,36.0,Tube,other,English,automatic
+B_0031,32.0,36.7,निरो्गा,other,Hindi,automatic
+B_0031,32.0,36.7,महाराष्ट्र शासन,other,Hindi,automatic
+B_0031,32.0,36.7,"सार्वजनिक आरोग्य विभाग ,",other,Hindi,automatic
+B_0031,36.0,36.7,/MahaHealthlEC,warning,English,automatic
+B_0032,2.0,4.0,"आइए, दीवार बनकर",other,Hindi,automatic
+B_0032,2.0,4.0,का सामना करें,other,Hindi,automatic
+B_0032,2.0,4.0,तंबाकू,warning,Hindi,automatic
+B_0032,6.0,8.0,दैनिक,other,Hindi,automatic
+B_0032,8.0,10.0,राहल द्रविड : भारत की भरोसेमंद दीवार,other,Hindi,automatic
+B_0032,10.0,12.0,भारत,other,Hindi,automatic
+B_0032,10.0,12.0,राहुल द्रविड :,other,Hindi,automatic
+B_0032,12.0,14.0,उन्होंने,other,Hindi,automatic
+B_0032,12.0,14.0,उसक,other,Hindi,automatic
+B_0032,12.0,14.0,एठ्यू,other,Hindi,automatic
+B_0032,12.0,14.0,कप्तान,other,Hindi,automatic
+B_0032,12.0,14.0,करने और,other,Hindi,automatic
+B_0032,12.0,14.0,कसने,other,Hindi,automatic
+B_0032,12.0,14.0,किकट,other,Hindi,automatic
+B_0032,12.0,14.0,की,other,Hindi,automatic
+B_0032,12.0,14.0,की ओर योगदान करन,other,Hindi,automatic
+B_0032,12.0,14.0,तगाम,other,Hindi,automatic
+B_0032,12.0,14.0,पर लपका था|,other,Hindi,automatic
+B_0032,12.0,14.0,प्रयासा,other,Hindi,automatic
+B_0032,12.0,14.0,मजदूत,other,Hindi,automatic
+B_0032,12.0,14.0,लपका |,other,Hindi,automatic
+B_0032,12.0,16.0,हरभजन,other,Hindi,automatic
+B_0032,12.0,14.0,११०वें टेन्ट,other,Hindi,automatic
+B_0032,12.0,14.0,५०ग,other,Hindi,automatic
+B_0032,12.0,14.0,८५८,other,Hindi,automatic
+B_0032,14.0,16.0,गदपर लपका था|,other,Hindi,automatic
+B_0032,14.0,16.0,गदपर ६७,other,Hindi,automatic
+B_0032,14.0,16.0,प्रतिवद्व हl,other,Hindi,automatic
+B_0032,14.0,16.0,मजनूत करने ओर,other,Hindi,automatic
+B_0032,14.0,16.0,लगाम कसन,other,Hindi,automatic
+B_0032,22.0,26.0,टस्ट,other,Hindi,automatic
+B_0032,22.0,24.0,२०० पर,other,Hindi,automatic
+B_0032,24.0,26.0,१ दान ट,other,Hindi,automatic
+B_0032,26.0,28.0,?0,other,English,automatic
+B_0032,26.0,28.0,करते हुए ७४० निनट,other,Hindi,automatic
+B_0032,26.0,28.0,मदद,other,Hindi,automatic
+B_0032,32.0,36.0,HRIDAY,other,English,automatic
+B_0032,32.0,36.0,TOBACCO२1C,warning,Hindi,automatic
+B_0032,32.0,36.0,जिन्दगी में,other,Hindi,automatic
+B_0032,32.0,36.0,तबाकू गुक्त,other,Hindi,automatic
+B_0032,32.0,36.0,पलफ,other,Hindi,automatic
+B_0032,32.0,36.0,बनाने के लिए युवाओं का आगे आना जरूरी है|,other,Hindi,automatic
+B_0032,32.0,36.0,लम्बी पारी खेलना चाहते हैं? MORE,other,Hindi,automatic
+B_0032,32.0,34.0,सेवन से दूर रहेंः तंबाकू जानलेवा है!,warning,Hindi,automatic
+B_0032,32.0,36.0,२१  वीं,other,Hindi,automatic
+B_0032,36.0,40.0,कल्याण गत्रालय,other,Hindi,automatic
+B_0032,36.0,40.0,जनहित मं,other,Hindi,automatic
+B_0032,36.0,40.0,जयते,other,Hindi,automatic
+B_0032,36.0,40.0,जारी,other,Hindi,automatic
+B_0032,36.0,38.0,तम्याकू नहीं,other,Hindi,automatic
+B_0032,36.0,40.0,द्वारा,other,Hindi,automatic
+B_0032,36.0,40.0,भारत,other,Hindi,automatic
+B_0032,36.0,40.0,राष्ट्रीय तम्बाकू नियंन्रण कार्यक्रम,warning,Hindi,automatic
+B_0032,36.0,40.0,सत्यमव,other,Hindi,automatic
+B_0032,36.0,40.0,सरकार,other,Hindi,automatic
+B_0032,36.0,40.0,स्वास्थ्य एवं परिवार,warning,Hindi,automatic
+B_0033,2.0,4.0,Dr Sogar S. Vaishammpayan,other,English,automatic
+B_0033,2.0,4.0,IHeed & Neck Oncosurgeon,other,English,automatic
+B_0033,2.0,8.0,Mumbai,other,English,automatic
+B_0033,2.0,4.0,Tala Memorriol IHosppilal,other,English,automatic
+B_0033,4.0,6.0,Dr Sagar S. Vishampoyan,other,English,automatic
+B_0033,4.0,6.0,Heee & Neck Oucosurgeon,other,English,automatic
+B_0033,6.0,8.0,Dr. Sogar S Vaishampayan,other,English,automatic
+B_0033,6.0,8.0,Head & Neck Oncosurgeon,other,English,automatic
+B_0033,6.0,8.0,Tala Memorial Hosppial,other,English,automatic
+B_0033,8.0,10.0,Rekhd,other,English,automatic
+B_0033,8.0,10.0,Tongve and lower jaw removed,other,English,automatic
+B_0033,8.0,10.0,४३ years old,other,Hindi,automatic
+B_0033,10.0,14.0,"LAFARGE""",other,English,automatic
+B_0033,10.0,14.0,Rekhals Son,other,English,automatic
+B_0033,12.0,14.0,Shahka,other,English,automatic
+B_0033,18.0,20.0,"MoHFW, Govt. of   India (२०१ १ )",other,Hindi,automatic
+B_0033,18.0,20.0,Sourceः Economic burden ol tobacco related diseases in India,warning,Hindi,automatic
+B_0033,18.0,22.0,The total cost of treating,other,English,automatic
+B_0033,18.0,24.0,in India is approximately,other,English,automatic
+B_0033,18.0,24.0,tobacco related diseases,warning,English,automatic
+B_0033,18.0,24.0,र 1 lakh crore/ $ २२.४ billion.,other,Hindi,automatic
+B_0033,24.0,26.0,CO,other,English,automatic
+B_0033,24.0,26.0,Cin India is approximately n,other,English,automatic
+B_0033,24.0,26.0,TIThe total cost of,other,English,automatic
+B_0033,24.0,26.0,tobacco related diseases te,warning,English,automatic
+B_0033,24.0,26.0,treating e,other,English,automatic
+B_0033,24.0,26.0,र 1 lakh crore/ S२२ 4 billion.,other,Hindi,automatic
+B_0033,26.0,32.0,Government expenditure on,other,English,automatic
+B_0033,26.0,28.0,"Source Economic burden of tobacco related diseases in India, MolIFW, Govt ol  India (२०१ १ )",warning,Hindi,automatic
+B_0033,26.0,32.0,This was १२% more than the,other,Hindi,automatic
+B_0033,26.0,32.0,combined Central and State,other,English,automatic
+B_0033,30.0,32.0,Sourceः Economic burden ol tobacco related diseiises iri Iridia,warning,Hindi,automatic
+B_0033,32.0,36.0,BRAND,other,English,automatic
+B_0033,32.0,36.0,Tobacco,warning,English,automatic
+B_0033,32.0,36.0,Tobacco is injurious to,warning,English,automatic
+B_0033,32.0,36.0,WARNING,warning,English,automatic
+B_0033,32.0,36.0,cancer,warning,English,automatic
+B_0033,32.0,34.0,health and itis now visible,warning,English,automatic
+B_0033,32.0,34.0,much larger on the,other,English,automatic
+B_0033,32.0,34.0,pack.,other,English,automatic
+B_0033,34.0,36.0,XXX,other,English,automatic
+B_0033,34.0,36.0,health and its now visible,warning,English,automatic
+B_0033,34.0,36.0,much larger on the pack.,other,English,automatic
