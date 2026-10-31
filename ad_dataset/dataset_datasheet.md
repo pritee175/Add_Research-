@@ -26,7 +26,7 @@ Why created: no existing public dataset labels Indian ads (or any ads, in any co
 - **Current status (2026-10-30): this gate has NOT been met.** All 70 ads were labeled by Claude (AI) in a single review pass; the `ann1` and `ai_draft` columns in annotators.csv both originate from that same pass and are not independent. Pilot kappa and full-set agreement cannot be meaningfully computed from the current data — doing so would measure self-consistency, not inter-annotator reliability. A genuine second, independent human pass is the top-priority open task before these labels can be treated as validated ground truth. (User decision 2026-10-30: proceeding with other build-order steps in parallel rather than blocking on this; tracked as a known limitation, see §8.)
 - Pilot kappa: [FILL IN once a real second independent human pass exists]
 - Full-set agreement: [FILL IN once a real second independent human pass exists]
-- ASR tool: OpenAI Whisper, human-corrected. OCR tool: EasyOCR, human-corrected. [Not yet run — speech.csv/screen_text.csv still empty as of 2026-10-30.]
+- ASR tool: OpenAI Whisper, human-corrected. Screen-text tool: a vision-language model (Claude) reads deduplicated keyframes (every 2 s for ads up to 60 s, every 3 s or more for longer ones, at most 90 frames per ad); EasyOCR was tried first and dropped because it misread logos, stylised and Devanagari text. Rows are `automatic` until human-corrected. Brief subtitles between sampled frames can be missed, so use speech.csv for spoken content; row end times are approximate where frames were skipped as near-duplicates. Built by scripts/extract_keyframes.py and scripts/step3b_screen_text_vlm.py.
 
 ## 5. Uses
 - Intended use: training/evaluating promotional-vs-preventive classifiers for Indian video ads; studying shortcut-learning around health warnings.
@@ -47,4 +47,4 @@ Why created: no existing public dataset labels Indian ads (or any ads, in any co
 - Entire collection happened within a 2-day window (2026-10-29 to 2026-10-30), so there is no seasonal/temporal spread (e.g. festival-season ad surges, campaign refreshes over time).
 - India-specific; label definitions and hard-case rules (surrogate advertising, "drink responsibly" disclaimers) are tuned to Indian regulatory context (COTPA, ASCI guidelines) and may not transfer directly to other countries.
 - `frames.csv` currently holds frames extracted for AI review purposes (regular percentage-based sampling, 4-5 per ad) rather than frames specifically curated for model training (e.g. deliberately including brief logo/warning flashes) — may need resampling before use as model input.
-- `speech.csv` and `screen_text.csv` are not yet populated (ASR/OCR step not yet run).
+- `speech.csv` and `screen_text.csv` are populated automatically and still need manual correction; speech for B_0029 to B_0033 falls back to Whisper pending a Sarvam rerun.
