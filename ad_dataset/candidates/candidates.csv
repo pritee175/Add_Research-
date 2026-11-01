@@ -1,0 +1,61 @@
+youtube_video_id,duration_s,title,channel,query,decision
+Df0H7YiIVzE,47,Wills Navycut HORECA,Paramvir Singh,Wills Navy Cut cigarette india tvc,"reject: Wills HORECA, unclear origin"
+OsdZlAe5kIA,63,Wills Cigarettes - Asif Iqbal - TVC.,Tariq Naseer,Wills Navy Cut cigarette india tvc,reject: Pakistan TVC
+lnX3Z2_Lx7Y,51,Funny smokers advertisement funny cigarette India video,Funny Indian Advertisement,Wills Navy Cut cigarette india tvc,reject: parody/compilation
+L-bg5RLiOaQ,48,Gold Flake Indiana Jones.mpg,Zain Mirza,Gold Flake cigarette india ad,keep?
+RnL8eDxT7Cg,119,Gold Flake add parody,enakwalajin,Gold Flake cigarette india ad,reject: parody
+3yUgbxrUuaE,118,Gold Flake Funny Ad BQM,bachoda Qoumi Moment,Gold Flake cigarette india ad,"reject: parody, likely Pakistan"
+qsF8q5beDhY,22,GOLD FLAKE , INDIE MINT ad ,Gold Flake cigarette india ad,keep?
+eXcoTo86OOw,45,Indiana Jones Gold Flake ad 1992,Ad tv Prime,Gold Flake cigarette india ad,keep?
+S6I3T9AWBQI,60,The Vintage Charm of Chairman Cigarette Commercial , Best PTV Old Comm,Classic cigarette india advertisement,reject: Pakistan PTV
+PkAjo3YgTSw,25,Charminar Brand Cigarette Old Advertisements,Old is Gold,Classic cigarette india advertisement,"reject: Pakistan/old brand, check"
+OiYtGJ_g590,85,Hero Cigarette , Old Hero Cigarette Old Doordarshan Tv Ad ,Classic cigarette india advertisement,reject: Pakistan brand
+QbTdDwfwAW4,61,Gold Flake Kidnap,Zain Mirza,Flake Gold Flake Kings ad old india,keep?
+_lm_wXf4EUM,64,Why Fake When There Is Flake? , GoldFlake Cigarettes Ad,Flake Gold Flake Kings ad old india,keep?
+_VI9dcKaICU,37,Wills Gold Flake 1985 , PTV Classic Ad @The Oval Cricket Ground London,Flake Gold Flake Kings ad old india,"reject: PTV, Pakistan"
+AKjKlvW9LgM,26,Another Epic Whisky Commercial / CHIVAS 18,Sławek Jóźwik ,Cheers whisky india tvc,"reject: Chivas, not India"
+_zTKNYzgQNI,62,Haywards5000,raj singh,Cheers whisky india tvc,keep?
+KuDTLk_O56w,21,Icon Meets Icon: Johnnie Walker Luxe Blended Water x Virat Kohli,Diageo India,Cheers whisky india tvc,keep?
+ZGKV17Q6Ohc,55,Men will be Men   Imperial Blue   Rose.mp4,_______,Imperial Blue advertisement,keep?
+6poPwhJcHjs,20,Holding the Lift , Because Men Will Be Men Returns,Imperial Blue advertisement,keep?
+JE4ZsnK0KsM,32,Happy Valentine's Day , #BecauseMenWillBeMen,Imperial Blue advertisement,keep?
+wE8AsupuJAI,23,Imperial Blue - Lift,Soda Films,Imperial Blue advertisement,keep?
+4li3qQkC-mU,22,Antiquity Blue , Campaign Film ,Antiquity Blue ad,keep?
+FbSeqrtrKoQ,37,Antiquity Blue , Ft. Rohan Shah ,Antiquity Blue ad,keep?
+QKAOOpIr6jw,39,Antiquity Blue , Ft. Aahana Kumar ,Antiquity Blue ad,keep?
+P737LICByO8,74,"Antiquity Blue Whisky Price in Delhi, Mumbai, Goa, Jaipur, Gurgaon & M",AKYM Vlog,Antiquity Blue ad,reject: price vlog
+RId_UXL3rI8,54,Seagram's Imperial Blue TVC- Anniversary.mp4,alaukik narain,Antiquity Blue ad,keep?
+0L47Gvc-I-M,85,Bagpiper Soda Tvc,Silvesmith Films LLP,Bagpiper soda ad india,keep?
+XxZ91r8k7HY,47,Bagpiper - Ajay Devgan,OSTROV73,Bagpiper soda ad india,keep?
+d87xnW1n3Ms,15,OLD VHS CASSETTE BAGPIPER CLUB SODA ADD BY SHATRUGHAN SINHA,vhs vcr pLay,Bagpiper soda ad india,reject: 15s VHS rip
+19dRfUuV2Gk,31,Bagpiper Soda TVC 30 Sec - Maharashtra,Prasant Kar,Bagpiper soda ad india,keep?
+ZdlX7gvDZ0U,26,Bagpiper Ads (2001) - TVC - Akshay Kumar,4everBollyfan,Bagpiper soda ad india,keep?
+9VLJyBaIiMQ,60,Vimal Elaichi I Kesari Holi I Ajay Devgn , Shahrukh Khan ,Vimal pan masala ad,keep?
+Q0OWMguixdI,64,Vimal Pan Masala,Billoo Sandhu,Vimal pan masala ad,keep?
+XZJ9aaxvr9o,61,Ajay Devgn New Add Vimal Pan Masala,Aniket Shahane,Vimal pan masala ad,keep?
+27vu5SMFJII,30,Vimal Elaichi I Kesari Holi I Ajay Devgn , Shahrukh Khan ,Vimal pan masala ad,reject: duplicate of 9VLJyBaIiMQ
+QUoJRZgJ-ZE,61,Vimal Elaichi - Ajay Devgn , Shahrukh Khan ,Vimal pan masala ad,keep?
+-KtN-Sz1iMA,30,Rajnigandha Ingredient Video 2026 ," Yun Hi Nahin Main, Rajnigandha Ban",Rajnigandha pan masala ad Shah Rukh,"reject: ingredient video, similar to existing"
+7VDOruS-i10,45,Rajnigandha Ingredient Video 2022 , Yun Hi Nahin Main Rajnigandha Ban ,Rajnigandha pan masala ad Shah Rukh,"reject: ingredient video, similar to existing"
+Pn8LpB6L0F8,20,Vimal Elaichi I Product Window I Shahrukh Khan I Hindi TVC 20 secs.,Vimal Elaichi,Rajnigandha pan masala ad Shah Rukh,"reject: product window, short"
+DB1zSnGnXoU,72,Kamla Pasand (Turkey Shoot ),Umesh Hadke,Kamla Pasand ad,keep?
+iEGY45xE5io,61,Kamla Pasand Pan Masala Ad,Arunakar ,Kamla Pasand ad,keep?
+IrEUXOE2JHA,102,Kamla Pasand Elaichi,Nitin Parmar,Kamla Pasand ad,keep?
+FwoX0zzjaLQ,31,Celebrating 60 YEARS of Anokha Swad,Kamla Pasand Anokha Swad,Kamla Pasand ad,keep?
+ymCBZ6xXJkY,122,"Kamla Pasand ""Choti Choti Baatein""",Nitin Parmar,Kamla Pasand ad,keep?
+GKun3S89Q48,20,Every Generation Has Its Own Style With Kamla Pasand Anokha Swad Feat ,Prachar Communications Pvt. Lt,Kamla Pasand ad,keep?
+DsWP_FrACgM,117,Hamza Ali Abasi and mehwish hayat beautiful add , Tulsi,Tulsi pan masala ad,reject: Pakistan
+k3fQ1TVjJ_0,30,Tulsi AD TVC,KAMY ENTERTAINMENT ,Tulsi pan masala ad,keep?
+fmK0FYpaJ7E,63,Tulsi Mix - Bollywood Advert from the 80s!,Friday Night At The Movies,Tulsi pan masala ad,keep?
+IFQtdRKgEzU,61,Tulsi Classic , Fahad Mustafa & Maya Ali ,Tulsi pan masala ad,reject: Pakistan
+XwgNLyk38sI,67,Tulsi Mix Pan Masala , तुलसी पान मसाला ,Tulsi pan masala ad,keep?
+NEkFNbY2ZJU,63,Goa – Iconic Pan Masala Ad Film , Paresh Rawal & Mohan Joshi ,Goa 1000 gutka ad,keep?
+i8sQcC6wF1Q,62,Goa Pan Masala Ad (Second Version) , Featuring Paresh Rawal ,Goa 1000 gutka ad,keep?
+2gK6XVlfdK0,35,GOA Gutkha Ad.,MrGOAGUTKHA,Goa 1000 gutka ad,keep?
+H2qy5DVUOw8,61,GOA Pan Masala ," Iconic 1990 Ad in Sholay’s Gabbar Scene – ""Kitne Aadm",Goa 1000 gutka ad,keep?
+cnnzQmQAPoo,49,Goa Paan Masala TVC,Coconutfilms1,Goa 1000 gutka ad,keep?
+XyHZOqYHWLY,61,Magic Moments Music CD's - Creative Surrogate Marketing Advertisement,MarqueEx,surrogate advertising india alcohol music CD ad,reject: explainer
+iNFJqekPljY,31,How Carlsberg used Surrogate Advertisement by sowing Ad of Carlsberg E,MarqueEx,surrogate advertising india alcohol music CD ad,reject: explainer
+kuXOlQNd-B4,31,Seagram's Imperial Blue Superhits Music CDs,TV Ads Reviews,surrogate advertising india alcohol music CD ad,keep?
+fsfXddAVMxM,65,How Alcohol brands are promoted in India,GoByMe.com,surrogate advertising india alcohol music CD ad,reject: explainer
+pug_FOyasfI,24,ABSOLUT Vodka's Surrogate marketing,Kuldip Ganvir,surrogate advertising india alcohol music CD ad,"reject: explainer, not India"
