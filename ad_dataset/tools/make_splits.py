@@ -11,7 +11,7 @@ def grp(r):
     if r[c['campaign_id']]: return r[c['campaign_id']]
     b = r[c['brand']]
     return 'BRAND_' + b if b and b not in ('unknown', 'not_applicable') else r[c['ad_id']]
-use = [r for r in rows[1:] if r[c['video_status']] == 'downloaded']
+use = [r for r in rows[1:] if r[c['video_status']] == 'downloaded' and r[c['main_label']] != 'excluded']
 for r in rows[1:]: r[c['split']] = ''
 G = collections.defaultdict(list)
 for r in use: G[(r[c['search_target']], grp(r))].append(r)
