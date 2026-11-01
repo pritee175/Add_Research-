@@ -8,7 +8,9 @@ Why created: no existing public dataset labels Indian ads (or any ads, in any co
 ## 2. Composition
 - Product category covered: pan_masala, tobacco (cigarettes/bidi), alcohol; one mouth-freshener/elaichi entry on the pan_masala boundary (A_0003, Vimal Elaichi) kept because of its real-world regulatory relevance to the pan masala/gutka product line.
 - Classes: promotional / preventive / unclear_mixed / excluded
-- Count so far (as of 2026-10-30, single-rater draft labels — see §4 caveat): 70 total ads (68 with a usable video file; 2 failed to download and are excluded). 35 promotional, 31 preventive, 4 excluded, 0 unclear_mixed.
+- Count so far (as of 2026-10-30, single-rater draft labels — see §4 caveat): 70 total ads (68 with a usable video file; 2 excluded because the YouTube videos have been removed: A_0020, B_0024). 35 promotional, 31 preventive, 4 excluded, 0 unclear_mixed.
+- Category mix of the 68 usable ads: tobacco 31 (28 public-health, 3 commercial), pan masala 17, alcohol 19 (15 commercial, 4 public-health), elaichi 1. Public-health vs commercial is roughly 32 vs 36.
+- Splits (`ads.csv` `split`, made by `tools/make_splits.py`, seed 42): train 47 / val 11 / test 10, stratified by collection target (promotional vs preventive) and grouped so ads from the same campaign or brand, plus the duplicate pair B_0002/B_0017, never fall in different splits. Splits do not depend on final labels, so they stay valid after adjudication.
 - Languages present: Hindi, English, Hindi-English code-mixed, Marathi, Bengali, Tamil; a few marked unknown.
 - Known imbalance: promotional/preventive are roughly balanced at this draft stage (35 vs. 31), but this reflects collection targeting, not a verified ground-truth distribution — see §4.
 
@@ -41,6 +43,7 @@ Why created: no existing public dataset labels Indian ads (or any ads, in any co
 - Update plan: [FILL IN]
 
 ## 8. Known limitations
+- **A second AI pass (`ai_ann2`) exists** (kappa 0.866 vs `ann1`, 5 disagreements: A_0015, B_0004, B_0016, B_0017, B_0027), but it was made from transcript, screen text and metadata without frames and is not human agreement. Human second annotation and adjudication are still pending.
 - **No verified inter-annotator reliability yet.** Current labels (annotators.csv `ann1`/`ai_draft`) are both AI-origin from one review pass, not two independent humans. Cohen's kappa has not been and cannot yet be meaningfully computed. Treat current `chosen_label` values as a strong draft, not validated ground truth, until a real second human pass is added.
 - `surrogate_verified` is a content-based research proxy (shared brand name/logo), not a legal determination — ASCI's actual legal test relies on private sales-turnover data this dataset does not have.
 - Small sample size (70 ads) relative to the build-order target of 150-500 ads; may not generalize across brands, years, or regions.
