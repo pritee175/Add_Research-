@@ -3,7 +3,7 @@
 ## Scope
 - Version 1 = video ads only (commercial ads + public-health campaign videos).
 - Excluded from v1: static image ads, hoardings, movie scenes, news clips, ordinary user posts.
-- Country: India. Product focus: [FILL IN — alcohol / tobacco-pan masala, pick one first].
+- Country: India. Product focus: alcohol, tobacco (cigarettes, smokeless) and pan masala, all three collected together in v1.
 
 ## Label definitions
 
