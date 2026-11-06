@@ -7,14 +7,14 @@ Status as of 2026-11-06. Everything here was checked against the files in this r
 **Goal.** Build a labeled video dataset of Indian ads for alcohol, tobacco and pan masala, so a model can learn to tell **promotional** ads (make the product attractive) from **preventive** ones (warn against use), including **surrogate advertising** (for example a "music CD" or "soda" ad that really sells whisky).
 
 **Where we are.**
-- 119 videos collected, **108 usable** (11 excluded: removed from YouTube, not Indian, not ads, or duplicates).
-- Each usable video has speech transcripts. On-screen text now exists for all 108 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
+- 119 videos collected, **103 usable** (16 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
+- Each usable video has speech transcripts. On-screen text exists for all 103 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
 - Every video has been given a label by an AI, but **no human has labeled anything yet**. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
-- The data is **imbalanced**: 65 promotional-targeted vs 43 preventive-targeted. Preventive alcohol has 8 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
+- The data is **imbalanced**: 63 promotional-targeted vs 40 preventive-targeted. Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
-1. Get real humans to label the ads (sheet is ready, rebuilt for 116 downloaded ads).
-2. Check the ads flagged in Section 7 (A_0062 and A_0031 look out of scope), then add AI labels for the 11 round-3 ads.
+1. Get real humans to label the ads (sheet is ready, rebuilt for the 103 usable ads).
+2. Add AI labels for the 11 round-3 ads.
 3. Do not train any model on the current labels or claim any agreement figure until step 1 is done.
 
 ## 2. The project in plain terms
@@ -57,22 +57,22 @@ IDs: `A_xxxx` = commercial/promotional-targeted search, `B_xxxx` = public-health
 5. **Screen text.** Keyframes every 2 s (every 3 s or more for ads over 60 s), deduplicated by image difference (`scripts/extract_keyframes.py`), then read by a vision-language model (Claude) into typed rows. Output rows marked `automatic`. This replaced an earlier noisier EasyOCR pass.
 6. **Labels (draft).** Claude labeled the first 70 ads in one pass (`ann1` and `ai_draft` are the same pass, not independent). A second Claude pass (`ai_ann2`) was run later on all 97 usable ads.
 7. **Pre-filled field.** `statutory_warning_present = yes` was set for 12 pan masala ads where a "chewing of pan masala is injurious to health" warning was read from frames. Marked as an automatic suggestion for annotators to confirm.
-8. **Splits.** `make_splits.py` assigns train/val/test grouped by campaign or brand so near-copies never straddle splits, stratified by search target, fixed seed 42. Current: **train 75 / val 17 / test 16**.
+8. **Splits.** `make_splits.py` assigns train/val/test grouped by campaign or brand so near-copies never straddle splits, stratified by search target, fixed seed 42. Current: **train 72 / val 16 / test 15**.
 
-## 5. Current numbers (108 usable ads)
+## 5. Current numbers (103 usable ads)
 
 | | Count |
 |---|---|
 | Total rows in `ads.csv` | 119 |
-| Usable | 108 |
-| Excluded | 11 (A_0020, A_0039, A_0040, A_0057, A_0063, A_0070, A_0071, A_0073, B_0024, B_0034, B_0036) |
-| By product | tobacco 39, alcohol 36, pan masala 30, elaichi 3 |
-| By search target | promotional 65, preventive 43 |
-| Preventive by product | tobacco 35, **alcohol 8**, pan masala 0 |
+| Usable | 103 |
+| Excluded | 16 (A_0020, A_0031, A_0039, A_0040, A_0057, A_0062, A_0063, A_0070, A_0071, A_0073, B_0024, B_0034, B_0036, B_0039, B_0043, B_0046) |
+| By product | tobacco 38, alcohol 33, pan masala 29, elaichi 3 |
+| By search target | promotional 63, preventive 40 |
+| Preventive by product | tobacco 34, **alcohol 6**, pan masala 0 |
 | Promotional by product | pan masala 30, alcohol 28, tobacco 4, elaichi 3 |
 | Speech coverage | all usable ads except a few music-only ones |
-| Screen-text coverage | all 108 usable ads (644 rows, all `automatic`) |
-| AI labels | `ai_ann2` covers the 97 round 1-2 ads only (63 promotional, 29 preventive, 3 unclear_mixed, 2 excluded). The 11 usable round-3 ads (B_0035, B_0037-B_0046) have **no AI label yet**. |
+| Screen-text coverage | all usable ads (644 rows incl. excluded ads, all `automatic`) |
+| AI labels | `ai_ann2` covers the 97 round 1-2 ads only (63 promotional, 29 preventive, 3 unclear_mixed, 2 excluded). The 8 usable round-3 ads (B_0035, B_0037, B_0038, B_0040-B_0042, B_0044, B_0045) have **no AI label yet**. |
 | Human labels | **0** |
 
 Why the first nine were excluded: three videos were removed from YouTube; A_0040 is a Pakistani Gold Flake pack (Urdu script); A_0063 is likely a Pakistani ad; A_0039 is a VHS rip of unverified origin; A_0070, A_0071 and A_0073 are explainer videos, not ads. B_0034 and B_0036 are duplicates of B_0019 and B_0003 (transcript match). Rows were kept, not deleted, with `exclude_reason` filled.
@@ -100,8 +100,8 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 2. **Adjudication** of disagreements. Known AI disagreements so far: A_0015, B_0004, B_0016, B_0017, B_0027.
 
 **B. Data gaps I can do once decisions are made.**
-4. **Class balance.** 65 promotional-targeted vs 43 preventive-targeted. Alcohol-preventive (8) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
-5. **Round 2 and 3 completeness.** Screen text is done for both (read from contact sheets of deduplicated keyframes, built with `scripts/make_contact_sheets.py`). They still have **no `frames.csv` or `evidence.csv` rows**, and the 11 usable round-3 ads have no AI label. Please review these: A_0062 (Tulsi pan masala; clapboard names a Pakistani production, so probably not Indian), A_0031 (an 8-minute rum review, not an ad), B_0039 and B_0046 (amateur short films), B_0045 (a PSA by the Ministry of Road Transport). Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
+4. **Class balance.** 63 promotional-targeted vs 40 preventive-targeted. Alcohol-preventive (6) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
+5. **Round 2 and 3 completeness.** Screen text is done for both (read from contact sheets of deduplicated keyframes, built with `scripts/make_contact_sheets.py`). They still have **no `frames.csv` or `evidence.csv` rows**, and the 8 usable round-3 ads have no AI label. A_0062 (likely Pakistani), A_0031 (a review, not an ad), B_0039 and B_0046 (amateur films) and B_0043 (cut off) were excluded on 2026-11-06. Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
 6. **Weak round-2 labels.** 26 of the 29 round-2 `ai_ann2` labels came from title, brand and transcript only, without watching the video (confidence set to medium and the reason says so). They are all "promotional", partly because we searched by commercial brand. Do not treat them as evidence.
 7. **No `unclear_mixed` ground truth yet.** AI marked 3. Diageo and Pernod Ricard "responsible drinking" candidates are the best source of real mixed cases.
 8. **Empty or unknown fields.** `surrogate_basis` is empty for all ads, `main_label` is filled only for the 9 excluded ads, and `celebrity_present`, `responsible_message_present`, `statutory_warning_present` are mostly `unknown`. Round-2 `promotion_type` is blank.
@@ -122,7 +122,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 3. Extract audio, run Sarvam ASR, extract keyframes, read screen text, and append (do **not** regenerate) the new rows in `speech.csv` and `screen_text.csv`, so existing corrections are not overwritten.
 4. Re-run `python ad_dataset/tools/make_splits.py`. **Do this only before any model is trained.** After that, freeze the split.
 
-**Phase 2 - Finish round-2 and round-3 data (screen text done; frames/evidence rows remain).** For the 29 round-2 and 11 round-3 ads, add screen-text rows and `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
+**Phase 2 - Finish round-2 and round-3 data (screen text done; frames/evidence rows remain).** For the round-2 and round-3 ads, add screen-text rows and `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
 
 **Phase 3 - Human labeling (about 1-2 hours per annotator per 100 ads).**
 1. Rebuild the sheet after Phase 1: `python ad_dataset/tools/build_annotation_sheet.py`.
@@ -152,7 +152,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 - **Label circularity.** All current labels come from the same AI family. Agreement between them (kappa 0.866 between `ann1` and `ai_ann2` on the 68 first-round ads with video) measures self-consistency, not reliability. Do not cite it.
 - **Class and product skew.** Promotional ads are mostly pan masala and alcohol; preventive ads are almost all tobacco. A model could learn the product, not the stance. This is why alcohol-preventive and tobacco-promotional ads matter.
-- **Small data.** 108 ads against a plan of 150-200 for the pilot and 300-500 per class later.
+- **Small data.** 103 ads against a plan of 150-200 for the pilot and 300-500 per class later.
 - **External processing.** Audio went to Sarvam, and frames were read by Claude. Mention this in any ethics or data statement.
 - **Wellbeing.** Content includes addiction-promoting material. Annotators should take breaks and may flag distressing ads instead of forcing a label.
 

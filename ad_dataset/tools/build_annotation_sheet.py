@@ -8,7 +8,7 @@ import csv, json, pathlib
 root = pathlib.Path(__file__).resolve().parents[1]
 ann = root / 'annotations'
 rd = lambda n: list(csv.DictReader(open(ann / n, encoding='utf-8')))
-ads = [a for a in rd('ads.csv') if a['video_status'] == 'downloaded']
+ads = [a for a in rd('ads.csv') if a['video_status'] == 'downloaded' and a['main_label'] != 'excluded']
 by = lambda rows: {k: [r for r in rows if r['ad_id'] == k] for k in {r['ad_id'] for r in rows}}
 sp, st = by(rd('speech.csv')), by(rd('screen_text.csv'))
 data = []
