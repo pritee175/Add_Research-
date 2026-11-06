@@ -8,13 +8,13 @@ Status as of 2026-11-06. Everything here was checked against the files in this r
 
 **Where we are.**
 - 119 videos collected, **108 usable** (11 excluded: removed from YouTube, not Indian, not ads, or duplicates).
-- Each usable video has speech transcripts. On-screen text exists for round 1 only (67 ads).
+- Each usable video has speech transcripts. On-screen text now exists for all 108 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
 - Every video has been given a label by an AI, but **no human has labeled anything yet**. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
 - The data is **imbalanced**: 65 promotional-targeted vs 43 preventive-targeted. Preventive alcohol has 8 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
 1. Get real humans to label the ads (sheet is ready, rebuilt for 116 downloaded ads).
-2. Finish round 2 and 3 screen text, keyframes and evidence rows.
+2. Check the ads flagged in Section 7 (A_0062 and A_0031 look out of scope), then add AI labels for the 11 round-3 ads.
 3. Do not train any model on the current labels or claim any agreement figure until step 1 is done.
 
 ## 2. The project in plain terms
@@ -71,7 +71,7 @@ IDs: `A_xxxx` = commercial/promotional-targeted search, `B_xxxx` = public-health
 | Preventive by product | tobacco 35, **alcohol 8**, pan masala 0 |
 | Promotional by product | pan masala 30, alcohol 28, tobacco 4, elaichi 3 |
 | Speech coverage | all usable ads except a few music-only ones |
-| Screen-text coverage | 67 ads (round 1 only); rounds 2 and 3 have none |
+| Screen-text coverage | all 108 usable ads (644 rows, all `automatic`) |
 | AI labels | `ai_ann2` covers the 97 round 1-2 ads only (63 promotional, 29 preventive, 3 unclear_mixed, 2 excluded). The 11 usable round-3 ads (B_0035, B_0037-B_0046) have **no AI label yet**. |
 | Human labels | **0** |
 
@@ -90,7 +90,8 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 9. Updated the datasheet counts and limitations.
 10. Built the preventive candidate list; round 3 downloaded the 13 accepted ones (B_0034-B_0046), added speech, found 2 duplicates, rebuilt splits and the sheet.
 11. Searched for more preventive alcohol and pan masala ads (111 candidates). Four were accepted, but on checking none was Indian and on-topic, so none was added.
-12. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
+12. Screen text for the 41 round-2 and round-3 ads (188 rows); `statutory_warning_present = yes` set for 9 pan masala ads where the warning text was read (A_0054, A_0059, A_0060, A_0064-A_0069).
+13. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
 
 ## 7. What is REMAINING
 
@@ -100,7 +101,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 **B. Data gaps I can do once decisions are made.**
 4. **Class balance.** 65 promotional-targeted vs 43 preventive-targeted. Alcohol-preventive (8) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
-5. **Round 2 and 3 completeness.** The 29 usable round-2 ads and the 11 usable round-3 ads have **no screen text, no `frames.csv` rows, no `evidence.csv` rows**, and round 3 has no AI label. Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
+5. **Round 2 and 3 completeness.** Screen text is done for both (read from contact sheets of deduplicated keyframes, built with `scripts/make_contact_sheets.py`). They still have **no `frames.csv` or `evidence.csv` rows**, and the 11 usable round-3 ads have no AI label. Please review these: A_0062 (Tulsi pan masala; clapboard names a Pakistani production, so probably not Indian), A_0031 (an 8-minute rum review, not an ad), B_0039 and B_0046 (amateur short films), B_0045 (a PSA by the Ministry of Road Transport). Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
 6. **Weak round-2 labels.** 26 of the 29 round-2 `ai_ann2` labels came from title, brand and transcript only, without watching the video (confidence set to medium and the reason says so). They are all "promotional", partly because we searched by commercial brand. Do not treat them as evidence.
 7. **No `unclear_mixed` ground truth yet.** AI marked 3. Diageo and Pernod Ricard "responsible drinking" candidates are the best source of real mixed cases.
 8. **Empty or unknown fields.** `surrogate_basis` is empty for all ads, `main_label` is filled only for the 9 excluded ads, and `celebrity_present`, `responsible_message_present`, `statutory_warning_present` are mostly `unknown`. Round-2 `promotion_type` is blank.
@@ -121,7 +122,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 3. Extract audio, run Sarvam ASR, extract keyframes, read screen text, and append (do **not** regenerate) the new rows in `speech.csv` and `screen_text.csv`, so existing corrections are not overwritten.
 4. Re-run `python ad_dataset/tools/make_splits.py`. **Do this only before any model is trained.** After that, freeze the split.
 
-**Phase 2 - Finish round-2 and round-3 data (about half a day).** Extract and read keyframes for the 29 round-2 and 11 round-3 ads, add screen-text rows and `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
+**Phase 2 - Finish round-2 and round-3 data (screen text done; frames/evidence rows remain).** For the 29 round-2 and 11 round-3 ads, add screen-text rows and `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
 
 **Phase 3 - Human labeling (about 1-2 hours per annotator per 100 ads).**
 1. Rebuild the sheet after Phase 1: `python ad_dataset/tools/build_annotation_sheet.py`.
