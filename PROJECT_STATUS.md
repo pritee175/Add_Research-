@@ -9,12 +9,12 @@ Status as of 2026-11-06. Everything here was checked against the files in this r
 **Where we are.**
 - 119 videos collected, **103 usable** (16 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
 - Each usable video has speech transcripts. On-screen text exists for all 103 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
-- Every video has been given a label by an AI, but **no human has labeled anything yet**. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
+- The 95 round 1-2 ads have an AI label; the 8 round-3 ads have none yet. **No human has labeled anything.** So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
 - The data is **imbalanced**: 63 promotional-targeted vs 40 preventive-targeted. Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
 1. Get real humans to label the ads (sheet is ready, rebuilt for the 103 usable ads).
-2. Add AI labels for the 11 round-3 ads.
+2. Add AI labels for the 8 round-3 ads.
 3. Do not train any model on the current labels or claim any agreement figure until step 1 is done.
 
 ## 2. The project in plain terms
@@ -55,7 +55,7 @@ IDs: `A_xxxx` = commercial/promotional-targeted search, `B_xxxx` = public-health
 3. **Audio.** `ffmpeg` to 16 kHz mono wav in `ad_dataset/audio/`.
 4. **Speech to text.** Sarvam `saaras:v4` (cloud, **audio only is uploaded, never video**), in silence-aware chunks of 10-25 s, per-segment language. An API key is needed (`.secrets/speech_key.txt`, git-ignored). Script: `scripts/step2d_asr_sarvam.py`. Whisper variants exist as fallback. Output rows are marked `automatic`.
 5. **Screen text.** Keyframes every 2 s (every 3 s or more for ads over 60 s), deduplicated by image difference (`scripts/extract_keyframes.py`), then read by a vision-language model (Claude) into typed rows. Output rows marked `automatic`. This replaced an earlier noisier EasyOCR pass.
-6. **Labels (draft).** Claude labeled the first 70 ads in one pass (`ann1` and `ai_draft` are the same pass, not independent). A second Claude pass (`ai_ann2`) was run later on all 97 usable ads.
+6. **Labels (draft).** Claude labeled the first 70 ads in one pass (`ann1` and `ai_draft` are the same pass, not independent). A second Claude pass (`ai_ann2`) was run later on the 97 usable round 1-2 ads (before the latest exclusions).
 7. **Pre-filled field.** `statutory_warning_present = yes` was set for 12 pan masala ads where a "chewing of pan masala is injurious to health" warning was read from frames. Marked as an automatic suggestion for annotators to confirm.
 8. **Splits.** `make_splits.py` assigns train/val/test grouped by campaign or brand so near-copies never straddle splits, stratified by search target, fixed seed 42. Current: **train 72 / val 16 / test 15**.
 
@@ -91,7 +91,8 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 10. Built the preventive candidate list; round 3 downloaded the 13 accepted ones (B_0034-B_0046), added speech, found 2 duplicates, rebuilt splits and the sheet.
 11. Searched for more preventive alcohol and pan masala ads (111 candidates). Four were accepted, but on checking none was Indian and on-topic, so none was added.
 12. Screen text for the 41 round-2 and round-3 ads (188 rows); `statutory_warning_present = yes` set for 9 pan masala ads where the warning text was read (A_0054, A_0059, A_0060, A_0064-A_0069).
-13. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
+13. Excluded A_0031 (a review, not an ad), A_0062 (likely Pakistani), B_0039 and B_0046 (amateur films), B_0043 (cut off). `build_annotation_sheet.py` now skips excluded ads (103 in the sheet).
+14. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
 
 ## 7. What is REMAINING
 
@@ -122,7 +123,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 3. Extract audio, run Sarvam ASR, extract keyframes, read screen text, and append (do **not** regenerate) the new rows in `speech.csv` and `screen_text.csv`, so existing corrections are not overwritten.
 4. Re-run `python ad_dataset/tools/make_splits.py`. **Do this only before any model is trained.** After that, freeze the split.
 
-**Phase 2 - Finish round-2 and round-3 data (screen text done; frames/evidence rows remain).** For the round-2 and round-3 ads, add screen-text rows and `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
+**Phase 2 - Finish round-2 and round-3 data (screen text done; frames/evidence rows remain).** For the round-2 and round-3 ads, add `frames.csv`/`evidence.csv` rows, and confirm `statutory_warning_present` where a warning is visible.
 
 **Phase 3 - Human labeling (about 1-2 hours per annotator per 100 ads).**
 1. Rebuild the sheet after Phase 1: `python ad_dataset/tools/build_annotation_sheet.py`.
