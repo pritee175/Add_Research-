@@ -2,13 +2,27 @@
 
 Shows video, transcript and screen text only. Never embeds main_label, existing
 annotator answers, source_type, title or search_target. Exports rows in the
-annotators.csv format.  Usage: python build_annotation_sheet.py
+annotators.csv format.
+Usage: python build_annotation_sheet.py [--id ann2] [--sample N] [--seed 7] [--out annotation_sheet.html]
+  --sample N draws a random sample stratified by final label (the label is used only to draw the sample, never embedded)
+  --id sets annotator_id in the export and gives the sheet its own browser storage key.
 """
-import csv, json, pathlib
+import csv, json, pathlib, argparse, random, collections
+ap = argparse.ArgumentParser(); ap.add_argument('--id', default='ann2'); ap.add_argument('--sample', type=int, default=0)
+ap.add_argument('--seed', type=int, default=7); ap.add_argument('--out', default='annotation_sheet.html'); args = ap.parse_args()
 root = pathlib.Path(__file__).resolve().parents[1]
 ann = root / 'annotations'
 rd = lambda n: list(csv.DictReader(open(ann / n, encoding='utf-8')))
 ads = [a for a in rd('ads.csv') if a['video_status'] == 'downloaded' and a['main_label'] != 'excluded']
+if args.sample:
+    rnd = random.Random(args.seed); pool = [a for a in ads if a['main_label'] in ('promotional', 'preventive')]
+    g = collections.defaultdict(list)
+    for a in pool: g[a['main_label']].append(a)
+    pick = []
+    for k in sorted(g):
+        pick += rnd.sample(g[k], round(args.sample * len(g[k]) / len(pool)))
+    rnd.shuffle(pick); ads = pick
+    (ann / ('sample_ids_' + args.id + '.txt')).write_text(chr(10).join(sorted(a['ad_id'] for a in ads)) + chr(10))
 by = lambda rows: {k: [r for r in rows if r['ad_id'] == k] for k in {r['ad_id'] for r in rows}}
 sp, st = by(rd('speech.csv')), by(rd('screen_text.csv'))
 data = []
@@ -20,19 +34,19 @@ for a in ads:
         warn=a['statutory_warning_present'],
         speech=[[r['start_second'], r['original_text']] for r in sp.get(i, [])],
         screen=[[r['start_second'], r['text_type'], r['original_text']] for r in st.get(i, [])]))
-tpl = r'''<!doctype html><html><head><meta charset="utf-8"><title>Annotation Sheet</title>
+tpl = r'''<!doctype html><html><head><meta charset="utf-8"><title>Annotation Sheet (__AID__)</title>
 <style>body{font:15px system-ui;margin:0;display:flex;height:100vh}#l{width:150px;overflow:auto;border-right:1px solid #ccc}
 #l div{padding:6px 10px;cursor:pointer}#l .d{background:#d7f5d7}#l .c{font-weight:bold;outline:2px solid #36c}
 #m{flex:1;overflow:auto;padding:14px}video{max-width:560px;width:100%}.b{background:#f4f4f4;padding:8px;margin:8px 0;max-height:170px;overflow:auto;white-space:pre-wrap}
 label{display:block;margin:3px 0}textarea{width:100%;height:70px}button{padding:6px 14px;margin-right:8px}</style></head><body>
 <div id="l"></div><div id="m"></div>
 <script>
-const D=__DATA__;let cur=0;const S=JSON.parse(localStorage.ann2||'{}');
+const D=__DATA__;let cur=0;const KEY='ann_'+'__AID__';const S=JSON.parse(localStorage[KEY]||'{}');
 const L=[['promotional','Main message makes product/brand attractive, encourages trial/purchase or normalizes use (a small required warning does not change this)'],
 ['preventive','Main message warns about harm, discourages use or supports quitting'],
 ['unclear_mixed','Substantial messages both ways, or purpose genuinely unclear (explain in reason)'],
 ['excluded','Not an ad/campaign, duplicate, incomplete or too poor to judge (explain in reason)']];
-function save(){localStorage.ann2=JSON.stringify(S)}
+function save(){localStorage[KEY]=JSON.stringify(S)}
 function list(){l.innerHTML=D.map((x,i)=>`<div class="${S[x.id]&&S[x.id].lab?'d':''} ${i==cur?'c':''}" onclick="cur=${i};show()">${x.id}</div>`).join('')}
 function show(){const x=D[cur],s=S[x.id]||{};list();
 m.innerHTML=`<h3>${x.id} <small>(${x.dur}s)</small></h3><video controls src="${x.video}"></video>
@@ -48,10 +62,10 @@ S[x.id]={lab:v('lab'),conf:v('conf'),why:document.getElementById('why').value};s
 function go(d){cur=Math.max(0,Math.min(D.length-1,cur+d));show()}
 function exp(){const q=t=>'"'+String(t).replace(/"/g,'""')+'"';
 const r=['ad_id,annotator_id,chosen_label,confidence,reason,agreed_flag,final_label,adjudicator_id'];
-D.forEach(x=>{const s=S[x.id];if(s&&s.lab)r.push([x.id,'ann2',s.lab,s.conf,q(s.why),'','',''].join(','))});
-const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([r.join('\n')],{type:'text/csv'}));a.download='annotators_ann2.csv';a.click()}
+D.forEach(x=>{const s=S[x.id];if(s&&s.lab)r.push([x.id,'__AID__',s.lab,s.conf,q(s.why),'','',''].join(','))});
+const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([r.join('\n')],{type:'text/csv'}));a.download='annotators___AID__.csv';a.click()}
 show();
 </script></body></html>'''
-out = root / 'annotation_sheet.html'
-out.write_text(tpl.replace('__DATA__', json.dumps(data, ensure_ascii=False)), encoding='utf-8')
+out = root / args.out
+out.write_text(tpl.replace('__DATA__', json.dumps(data, ensure_ascii=False)).replace('__AID__', args.id), encoding='utf-8')
 print(len(data), 'ads ->', out)
