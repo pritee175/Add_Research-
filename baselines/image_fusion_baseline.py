@@ -38,17 +38,18 @@ def preds(name, tri, tei):
     if name == 'text': return p_text(tri, tei) > .5
     return (p_text(tri, tei) + p_img(tri, tei)) / 2 > .5
 sc = lambda yt, yp: dict(acc=accuracy_score(yt, yp), macro_f1=f1_score(yt, yp, average='macro'))
-res = {}
-for name in ['image', 'text', 'text+image']:
-    tr, va, te = (np.where(split == s)[0] for s in ('train', 'val', 'test'))
-    out = {nm: sc(y[ix], preds(name, tr, ix)) for nm, ix in (('val', va), ('test', te))}
-    out['test']['confusion[prev,promo]'] = confusion_matrix(y[te], preds(name, tr, te), labels=[0, 1]).tolist()
-    f1s, accs, wrong = [], [], collections.Counter()
-    for seed in range(5):
-        for a, b in StratifiedGroupKFold(5, shuffle=True, random_state=seed).split(np.zeros(len(y)), y, g):
-            p = preds(name, a, b); s = sc(y[b], p); f1s.append(s['macro_f1']); accs.append(s['acc'])
-            for i in b[p != y[b]]: wrong[ads[i]['ad_id']] += 1
-    out['cv'] = dict(macro_f1_mean=float(np.mean(f1s)), macro_f1_sd=float(np.std(f1s)), acc_mean=float(np.mean(accs)), folds=len(f1s))
-    out['most_often_wrong'] = [k for k, _ in wrong.most_common(10)]; res[name] = out
-    print(f"{name:11} test acc {out['test']['acc']:.2f} F1 {out['test']['macro_f1']:.2f} | val F1 {out['val']['macro_f1']:.2f} | CV F1 {out['cv']['macro_f1_mean']:.2f}±{out['cv']['macro_f1_sd']:.2f} acc {out['cv']['acc_mean']:.2f} | wrong often: {out['most_often_wrong'][:8]}")
-json.dump(res, open(B / 'results_image_fusion.json', 'w'), indent=1)
+if __name__ == '__main__':
+    res = {}
+    for name in ['image', 'text', 'text+image']:
+        tr, va, te = (np.where(split == s)[0] for s in ('train', 'val', 'test'))
+        out = {nm: sc(y[ix], preds(name, tr, ix)) for nm, ix in (('val', va), ('test', te))}
+        out['test']['confusion[prev,promo]'] = confusion_matrix(y[te], preds(name, tr, te), labels=[0, 1]).tolist()
+        f1s, accs, wrong = [], [], collections.Counter()
+        for seed in range(5):
+            for a, b in StratifiedGroupKFold(5, shuffle=True, random_state=seed).split(np.zeros(len(y)), y, g):
+                p = preds(name, a, b); s = sc(y[b], p); f1s.append(s['macro_f1']); accs.append(s['acc'])
+                for i in b[p != y[b]]: wrong[ads[i]['ad_id']] += 1
+        out['cv'] = dict(macro_f1_mean=float(np.mean(f1s)), macro_f1_sd=float(np.std(f1s)), acc_mean=float(np.mean(accs)), folds=len(f1s))
+        out['most_often_wrong'] = [k for k, _ in wrong.most_common(10)]; res[name] = out
+        print(f"{name:11} test acc {out['test']['acc']:.2f} F1 {out['test']['macro_f1']:.2f} | val F1 {out['val']['macro_f1']:.2f} | CV F1 {out['cv']['macro_f1_mean']:.2f}±{out['cv']['macro_f1_sd']:.2f} acc {out['cv']['acc_mean']:.2f} | wrong often: {out['most_often_wrong'][:8]}")
+    json.dump(res, open(B / 'results_image_fusion.json', 'w'), indent=1)

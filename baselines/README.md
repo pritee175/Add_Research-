@@ -34,3 +34,21 @@ How to read this
 - The two modalities make different mistakes (text misses B_0044, B_0014, B_0028, B_0042; image misses B_0021, A_0017, B_0035, A_0005), which is why fusion helps a little. After fusion only B_0021, B_0044, B_0014, B_0004 are often wrong.
 - Image features can pick up production style and end-card layout (glossy TV ads vs government PSAs), not only persuasive content. These baselines show the classes are separable; they do not show that a model understands promotion vs prevention. A harder check is to test on surrogate and "responsible drinking" ads only, where style and message disagree (too few ads for a reliable number so far).
 - Labels were adjudicated mostly from the same text (see above), and the second annotator's agreement with the AI is not independent human agreement. Report these numbers as baselines on provisional labels.
+
+# Style-versus-message check (2026-11-20)
+
+Question: do the baselines understand the message, or the style of the source? `hard_subsets.py` scores out-of-fold accuracy (5x5 grouped CV, each ad's share of repeats classified correctly; bootstrap 95% CI over ads) on subsets defined from metadata that is never a model input. Run `cd baselines && python hard_subsets.py`.
+
+| Subset | n | text | image | text+image |
+|---|---|---|---|---|
+| surrogate promotional (soda, water, music CDs, elaichi under restricted brands) | 22 | 0.99 [0.97,1.00] | 0.94 [0.83,1.00] | 1.00 |
+| direct promotional (control) | 41 | 0.98 | 0.99 | 1.00 |
+| preventive, non-institutional source (film-style, `source_type` other/brand) | 10 | **0.66 [0.42,0.86]** | 0.82 [0.60,1.00] | 0.76 [0.50,1.00] |
+| preventive NGO/government PSAs (control) | 28 | 0.95 | 0.95 | 0.97 |
+| all | 101 | 0.94 | 0.95 | 0.97 |
+
+Findings
+- Surrogate ads are not hard here. All three models classify them as promotional almost perfectly. The brand identity is the likely cue (brand names, "men will be men", logos), although CV is grouped by brand so the same brand never sits on both sides of a fold. Because every surrogate ad is promotional, this is a statement about the label, not about legal surrogate status.
+- The weak spot is the preventive message delivered in a non-institutional style: short films and amateur-looking pieces. Accuracy drops from about 0.95 on NGO/government PSAs to 0.66-0.82 (text weakest). Ads mostly wrong: B_0028 and B_0044 (text), B_0004, B_0021 and A_0017 (image), B_0021 and B_0044 (fused).
+- Limits: n=10 for the weak subset and its interval overlaps the control; treat this as a pointer, not a measured effect. All 10 preventive non-institutional ads are among the least typical of the preventive class, and no promotional ad has an institutional-looking style, so style and class are still confounded.
+- To separate style from message the dataset needs promotional ads in an institutional/PSA style and preventive ads in a commercial style; neither exists yet.
