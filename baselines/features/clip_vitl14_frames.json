@@ -1,0 +1,9 @@
+{
+ "model": "openai/clip-vit-large-patch14",
+ "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41",
+ "torch": "2.13.0+cpu",
+ "transformers": "5.17.0",
+ "python": "3.12.10",
+ "n_frames": 512,
+ "n_ads": 102
+}

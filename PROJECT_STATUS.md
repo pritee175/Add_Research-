@@ -141,7 +141,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 **Phase 5 - Clean and freeze.** Correct warning/brand/helpline rows in screen text and the worst speech rows. Fill the datasheet placeholders. Tag a release (annotations and links only).
 
-**Phase 6 - Baselines (text baselines DONE 2026-11-20, see `baselines/README.md`; CV macro-F1 0.93 with transcript + screen text; frame model still to do).** Train simple classifiers on transcript, screen text and frames using the frozen splits, report per-class results, and be explicit about the small test set. Fields never to use as model input: `main_label`, `final_reason`, `exclude_reason`, annotator decisions, `evidence.direction`.
+**Phase 6 - Baselines (text baselines DONE 2026-11-20, see `baselines/README.md`; CV macro-F1 0.93 text, 0.94 CLIP image, 0.96 fused; see `baselines/README.md`).** Train simple classifiers on transcript, screen text and frames using the frozen splits, report per-class results, and be explicit about the small test set. Fields never to use as model input: `main_label`, `final_reason`, `exclude_reason`, annotator decisions, `evidence.direction`.
 
 ## 9. How to work with this repo
 
