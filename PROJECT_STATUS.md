@@ -1,21 +1,21 @@
 # Project Status and Handover - Indian Addiction-Ad Dataset (v1)
 
-Status as of 2026-11-06. Everything here was checked against the files in this repo on that date. If you only read one section, read **Section 1** and **Section 7**.
+Status as of 2026-11-20. Everything here was checked against the files in this repo on that date. If you only read one section, read **Section 1** and **Section 7**.
 
 ## 1. In one minute
 
 **Goal.** Build a labeled video dataset of Indian ads for alcohol, tobacco and pan masala, so a model can learn to tell **promotional** ads (make the product attractive) from **preventive** ones (warn against use), including **surrogate advertising** (for example a "music CD" or "soda" ad that really sells whisky).
 
 **Where we are.**
-- 119 videos collected, **103 usable** (16 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
-- Each usable video has speech transcripts. On-screen text exists for all 103 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
-- **All AI work is done:** every usable ad has an AI label (`ai_ann2`), speech, screen text, frame and evidence rows, and AI-filled metadata. **No human has labeled anything.** So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
-- The data is **imbalanced**: 63 promotional-targeted vs 40 preventive-targeted. Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
+- 119 videos collected, **102 usable** (17 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
+- Each usable video has speech transcripts. On-screen text exists for all 102 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
+- **All AI work is done:** every usable ad has an AI label (`ai_ann2`), speech, screen text, frame and evidence rows, and AI-filled metadata. **Final labels exist (adjudicated 2026-11-20), but no clearly independent human labeling has been done:** the second annotator `ann2` is a teammate whose labels match the AI on 98 of 103 ads and whose reasons look AI-assisted. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
+- The data is **imbalanced**: 63 promotional-targeted vs 39 preventive-targeted (final labels: 63 promotional, 38 preventive, 1 unclear_mixed). Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
-1. Get real humans to label the ads (sheet is ready, rebuilt for the 103 usable ads).
+1. Recommended: a person with no AI help labels a random 30-ad sample on a clean sheet, to get a defensible human kappa.
 2. Check the AI-filled metadata (Section 7, item 8) while labeling.
-3. Do not train any model on the current labels or claim any agreement figure until step 1 is done.
+3. Do not report the 0.902 kappa as human agreement. Labels and splits are frozen, so baselines can start.
 
 ## 2. The project in plain terms
 
@@ -33,7 +33,7 @@ Status as of 2026-11-06. Everything here was checked against the files in this r
 | Path | What it is |
 |---|---|
 | `ad_dataset/annotations/ads.csv` | **Main table**, one row per ad (31 columns: metadata, product, brand, label fields, split). |
-| `.../annotators.csv` | Every annotator's label per ad (`ann1`, `ai_draft`, `ai_ann2`). |
+| `.../annotators.csv` | Every annotator's label per ad (`ann1`, `ai_draft`, `ai_ann2`, `ann2`) with `agreed_flag`, `final_label`, `adjudicator_id`. |
 | `.../speech.csv` | Speech transcripts, timestamped (Sarvam ASR). |
 | `.../screen_text.csv` | On-screen text read from keyframes, typed (brand, warning, helpline, tagline...). |
 | `.../frames.csv`, `.../evidence.csv` | Sampled frame list (5 per ad, in `ad_dataset/frames/`) and evidence notes. Round 1 notes were written by hand; rounds 2-3 notes are generated from screen text and speech. |
@@ -57,22 +57,22 @@ IDs: `A_xxxx` = commercial/promotional-targeted search, `B_xxxx` = public-health
 5. **Screen text.** Keyframes every 2 s (every 3 s or more for ads over 60 s), deduplicated by image difference (`scripts/extract_keyframes.py`), then read by a vision-language model (Claude) into typed rows. Output rows marked `automatic`. This replaced an earlier noisier EasyOCR pass.
 6. **Labels (draft).** Claude labeled the first 70 ads in one pass (`ann1` and `ai_draft` are the same pass, not independent). A second Claude pass (`ai_ann2`) was run later on the round 1-2 ads, and extended to the 8 round-3 ads on 2026-11-06.
 7. **Pre-filled field.** `statutory_warning_present = yes` was set for 12 pan masala ads where a "chewing of pan masala is injurious to health" warning was read from frames. Marked as an automatic suggestion for annotators to confirm.
-8. **Splits.** `make_splits.py` assigns train/val/test grouped by campaign or brand so near-copies never straddle splits, stratified by search target, fixed seed 42. Current: **train 72 / val 16 / test 15**.
+8. **Splits.** `make_splits.py` assigns train/val/test grouped by campaign or brand so near-copies never straddle splits, stratified by search target, fixed seed 42. Current: **train 71 / val 16 / test 15**.
 
-## 5. Current numbers (103 usable ads)
+## 5. Current numbers (102 usable ads)
 
 | | Count |
 |---|---|
 | Total rows in `ads.csv` | 119 |
-| Usable | 103 |
-| Excluded | 16 (A_0020, A_0031, A_0039, A_0040, A_0057, A_0062, A_0063, A_0070, A_0071, A_0073, B_0024, B_0034, B_0036, B_0039, B_0043, B_0046) |
+| Usable | 102 |
+| Excluded | 17 (A_0020, A_0031, A_0039, A_0040, A_0057, A_0062, A_0063, A_0070, A_0071, A_0073, B_0024, B_0034, B_0036, B_0039, B_0043, B_0046, B_0017) |
 | By product | tobacco 38, alcohol 33, pan masala 29, elaichi 3 |
-| By search target | promotional 63, preventive 40 |
+| By search target | promotional 63, preventive 39 |
 | Preventive by product | tobacco 34, **alcohol 6**, pan masala 0 |
 | Promotional by product | pan masala 30, alcohol 28, tobacco 4, elaichi 3 |
 | Speech coverage | all usable ads except a few music-only ones |
 | Screen-text coverage | all usable ads (644 rows incl. excluded ads, all `automatic`) |
-| AI labels | `ai_ann2` covers all 103 usable ads (the 8 round-3 ads are all preventive, high confidence). |
+| AI labels | `ai_ann2` covers all 103 ads, 102 usable (the 8 round-3 ads are all preventive, high confidence). |
 | Human labels | **0** |
 
 Why the first nine were excluded: three videos were removed from YouTube; A_0040 is a Pakistani Gold Flake pack (Urdu script); A_0063 is likely a Pakistani ad; A_0039 is a VHS rip of unverified origin; A_0070, A_0071 and A_0073 are explainer videos, not ads. B_0034 and B_0036 are duplicates of B_0019 and B_0003 (transcript match). Rows were kept, not deleted, with `exclude_reason` filled.
@@ -93,19 +93,20 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 12. Screen text for the 41 round-2 and round-3 ads (188 rows); `statutory_warning_present = yes` set for 9 pan masala ads where the warning text was read (A_0054, A_0059, A_0060, A_0064-A_0069).
 13. Excluded A_0031 (a review, not an ad), A_0062 (likely Pakistani), B_0039 and B_0046 (amateur films), B_0043 (cut off). `build_annotation_sheet.py` now skips excluded ads (103 in the sheet).
 14. AI work finished (2026-11-06): `ai_ann2` labels for the 8 round-3 ads; frames (5 per ad, `frames/review_r23/`) and evidence rows for the 36 ads that lacked them; metadata filled for all 103 ads (`promotion_type`, `shown_product`, `implied_product`, `surrogate_basis`, `statutory_warning_present`, `responsible_message_present`, `celebrity_present` where known, `language_summary`).
-15. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
+15. Second annotator and adjudication (2026-11-20): `ann2` (a teammate, 103 ads) merged into `annotators.csv`; agreement with `ai_ann2` 95.1%, kappa 0.902 (an AI reference, so not human agreement). The 5 disagreements were adjudicated by Claude with the project owner's approval: A_0015 promotional, B_0016 unclear_mixed, B_0027 preventive, B_0030 preventive, B_0017 excluded as a duplicate of B_0002 (same video). `final_label` copied to `main_label` with `final_reason` and `label_confidence`; B_0037 moved into B_0002's campaign group so the Hindi and English versions share a split; splits rebuilt.
+16. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
 
 ## 7. What is REMAINING
 
 **A. Needs a human (blocking for any credible result).**
-1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. Currently `ann1`, `ai_draft` and `ai_ann2` are all AI. Treat them as reference labels only.
-2. **Adjudication** of disagreements. Known AI disagreements so far: A_0015, B_0004, B_0016, B_0017, B_0027.
+1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. `ann1`, `ai_draft` and `ai_ann2` are AI. `ann2` (103 ads) agrees with `ai_ann2` on 98 and its reasons look AI-assisted (they quote YouTube descriptions the sheet hides). Treat the set as not independently human-labeled until a clean human sample exists.
+2. **Adjudication** was done on 2026-11-20 by Claude, approved by the project owner (`adjudicator_id` = `claude_adj (approved by project owner)`). A human adjudicator may still revisit A_0015, B_0016, B_0017, B_0027 and B_0030.
 
 **B. Data gaps I can do once decisions are made.**
-4. **Class balance.** 63 promotional-targeted vs 40 preventive-targeted. Alcohol-preventive (6) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
+4. **Class balance.** 63 promotional-targeted vs 39 preventive-targeted. Alcohol-preventive (6) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
 5. **Round 2 and 3 completeness.** Screen text is done for both (read from contact sheets of deduplicated keyframes, built with `scripts/make_contact_sheets.py`). Frame and evidence rows are also done. A_0062 (likely Pakistani), A_0031 (a review, not an ad), B_0039 and B_0046 (amateur films) and B_0043 (cut off) were excluded on 2026-11-06. Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
 6. **Weak round-2 labels.** 26 of the 29 round-2 `ai_ann2` labels were first made from title, brand and transcript only (confidence medium); on 2026-11-06 they were checked against the on-screen text and no contradiction was found, and the reason says so. They are all "promotional", partly because we searched by commercial brand. Do not treat them as evidence.
-7. **No `unclear_mixed` ground truth yet.** AI marked 3. Diageo and Pernod Ricard "responsible drinking" candidates are the best source of real mixed cases.
+7. **No `unclear_mixed` ground truth yet.** Final labels contain only 1 (B_0016). Diageo and Pernod Ricard "responsible drinking" candidates are the best source of real mixed cases.
 8. **AI-filled metadata to verify.** These are suggestions, not ground truth: `promotion_type` (direct 41, surrogate_verified 19, surrogate_possible 2, uncertain 1 [A_0017], not_applicable 40) and `surrogate_basis` (22 ads; verified = same brand name/logo as the restricted product, a content proxy only). `statutory_warning_present = no` means no warning was seen in sampled frames, so verify it, especially A_0009 and A_0007. `responsible_message_present` is yes for 6 ads and left blank for preventive ads. `celebrity_present` is yes for 16 and still `unknown` for 57. `shown_product` is unknown only for A_0016 and A_0017. `main_label`, `final_reason`, `label_confidence` are blank on purpose: they come from the human labels. `year` is unknown for nearly all ads.
 9. **Cleaning.** Speech and screen text are automatic and noisy (long ads have few, long speech rows). Priority: correct warning, brand and helpline rows.
 10. **Register.** The original register was removed; `ads.csv` is now the only register.
@@ -129,10 +130,10 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 **Phase 3 - Human labeling (about 1-2 hours per annotator per 100 ads).**
 1. Rebuild the sheet after Phase 1: `python ad_dataset/tools/build_annotation_sheet.py`.
 2. Annotator 1 and annotator 2 each open `ad_dataset/annotation_sheet.html` in Chrome or Edge, **without looking at `annotators.csv`**, label every ad (label, confidence, one-line reason) and click **Export CSV**. The sheet hides existing labels, source type, title and search target. Progress saves in the browser. It needs the `videos/` folder next to it.
-3. Merge each export: `python ad_dataset/tools/merge_ann2.py <export.csv> <annotator_id>`. **Note:** the script currently computes kappa against `ann1`, which is an AI label. It needs a small change to compare two human ids before the number can be reported. Do that first.
+3. Merge each export: `python ad_dataset/tools/merge_ann2.py <export.csv> <annotator_id>`. Usage: `merge_ann2.py export.csv <annotator_id> <reference_id>`; the script now takes the reference annotator (default `ai_ann2`).
 4. Report kappa on the two original human labels, before adjudication.
 
-**Phase 4 - Adjudication and final fields.**
+**Phase 4 - Adjudication and final fields (labels DONE 2026-11-20; metadata checks remain).**
 1. Third person resolves every disagreement; record `adjudicator_id` and `final_label` in `annotators.csv`.
 2. Copy final labels into `main_label`; fill `final_reason`, `exclude_reason`, `label_confidence`.
 3. Confirm or correct the AI-suggested `promotion_type` and `surrogate_basis` using the guide's rules (`surrogate_verified` only with a documented brand or logo link; otherwise `surrogate_possible`).
@@ -152,9 +153,9 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 ## 10. Risks and caveats to keep in mind
 
-- **Label circularity.** All current labels come from the same AI family. Agreement between them (kappa 0.866 between `ann1` and `ai_ann2` on the 68 first-round ads with video) measures self-consistency, not reliability. Do not cite it.
+- **Label circularity.** All current labels come from the same AI family. Agreement between them (kappa 0.866 between `ann1` and `ai_ann2` on the 68 first-round ads with video, 0.902 between `ann2` and `ai_ann2` on 102+1 ads) measures self-consistency, not reliability. Do not cite it.
 - **Class and product skew.** Promotional ads are mostly pan masala and alcohol; preventive ads are almost all tobacco. A model could learn the product, not the stance. This is why alcohol-preventive and tobacco-promotional ads matter.
-- **Small data.** 103 ads against a plan of 150-200 for the pilot and 300-500 per class later.
+- **Small data.** 102 ads against a plan of 150-200 for the pilot and 300-500 per class later.
 - **External processing.** Audio went to Sarvam, and frames were read by Claude. Mention this in any ethics or data statement.
 - **Wellbeing.** Content includes addiction-promoting material. Annotators should take breaks and may flag distressing ads instead of forcing a label.
 
