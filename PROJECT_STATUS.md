@@ -2,6 +2,44 @@
 
 Status as of 2026-11-20. Everything here was checked against the files in this repo on that date. If you only read one section, read **Section 1** and **Section 7**.
 
+## 0. START HERE (teammates and AI agents)
+
+**What this repo is.** A research dataset of Indian video ads for alcohol, tobacco and pan masala, labeled promotional vs preventive (with surrogate ads as a hard case), plus baseline classifiers. Target: a pilot paper and a released annotations-and-links dataset.
+
+**Where it stands (2026-11-20, git tag `v1.0-labels`, about 45-50% of a pilot paper, my estimate).**
+- **Data:** 119 collected, **102 usable** (17 excluded or unavailable; the 3 failed downloads are A_0020, B_0024, A_0057). Final labels in `ads.csv` `main_label`: 63 promotional, 38 preventive, 1 unclear_mixed (B_0016). Products: tobacco 37, alcohol 33, pan masala 29, elaichi 3. Preventive by product: tobacco 33, alcohol 5, **pan masala 0**. Promotional tobacco: only 4.
+- **Per-ad features (all automatic, not human-corrected):** speech (`speech.csv`, 347 rows), on-screen text (`screen_text.csv`, 644 rows), 5 sampled frames (`frames.csv`, `ad_dataset/frames/`), evidence notes (`evidence.csv`), AI-filled metadata in `ads.csv` (`promotion_type`, `surrogate_basis`, shown/implied product, warnings, celebrity, language).
+- **Labels:** `ann1` and `ai_draft` (AI, same pass), `ai_ann2` (second AI pass, all ads), `ann2` (a teammate, all ads; matches `ai_ann2` on 98 of 103, kappa 0.902). Five disagreements (A_0015, B_0016, B_0017, B_0027, B_0030) were adjudicated by Claude with the project owner's approval (`adjudicator_id` = `claude_adj (approved by project owner)`). The project owner then accepted `ann2` as the final human annotator.
+- **Splits (frozen):** train 71 / val 16 / test 15, grouped by campaign or brand, stratified, seed 42.
+- **Baselines (5x5 grouped CV, macro-F1, binary, 101 ads):** majority 0.38, transcript 0.76, screen text 0.88, transcript+screen 0.93, CLIP ViT-L/14 image 0.94, text+image fused **0.96**. Weak spot: preventive messages in non-institutional (film) style, accuracy 0.66-0.82 on only 10 ads. Details: `baselines/README.md`.
+
+**Progress by part (estimates).** Background research ~80%; dataset v1 ~85%; labels (single annotator, frozen) ~80%; baselines and analysis ~30%; dataset expansion ~10%; paper and release ~5%.
+
+**Caveats you must not lose.**
+1. Only one human labeled the ads. There is **no human-human kappa**. The 0.902 is `ann2` vs an AI. Say "single-annotator labels with an AI cross-check".
+2. `ann2`'s reasons look AI-assisted (they quote YouTube descriptions the sheet hides). Unresolved: ask her and record the answer (Section 7, item 1).
+3. Labels were set largely from the same transcript and screen text the models read, so high scores partly reflect circularity.
+4. Style and class are confounded (all preventive ads look like PSAs or films, all promotional ones like commercials). Do not claim the models understand persuasion.
+5. 15 test ads is too few for single-split claims; report grouped CV.
+6. AI-filled metadata (`promotion_type`, `surrogate_basis`, warning `no` = not seen in sampled frames) is a suggestion, not ground truth. Surrogate labels are a content-based research proxy, not a legal finding.
+
+**What needs to be done next, in order.**
+1. **Teammate:** answer in writing whether `ann2` used AI or looked the videos up; record it in Section 7, item 1 and the datasheet.
+2. **Round 4 data collection** (the highest-value work): preventive ads in commercial style (brand drink-driving spots, agency PSAs, Diageo and Pernod Ricard responsible-drinking films), preventive pan masala, promotional tobacco, and promotional ads in a PSA or CSR style. Follow Section 8, Phase 1 (candidates in `ad_dataset/candidates/candidates_all.csv`, new ids continue `B_0047...` and `A_0074...`). Append new rows to `speech.csv` and `screen_text.csv`; label them with a human first.
+3. **Optional human check:** a person with no AI help labels the 30 ads in `ad_dataset/annotation_sheet_human1.html` (ids in `ad_dataset/annotations/sample_ids_human1.txt`; they need those 30 videos), then `python ad_dataset/tools/merge_ann2.py annotators_human1.csv human1 ann2`.
+4. **Clean the automatic data:** warning, brand and helpline rows in `screen_text.csv`; worst speech rows; verify the AI-filled metadata.
+5. **Stronger models and analysis:** fine-tuned or multimodal models, per-class errors, ablations that separate style from message.
+6. **Write the paper**, fill the datasheet placeholders (license, maintainer, update plan), and release annotations and links only.
+
+**Rules for any agent working here.**
+- Never use `main_label`, `final_reason`, `exclude_reason`, `label_confidence`, annotator columns, `search_target`, `source_type` or `evidence.direction` as model input (they leak the answer). They may define subsets for analysis only.
+- Splits are frozen at `v1.0-labels`. Re-run `make_splits.py` only if the data changes, and then tag a new version.
+- Do not regenerate `speech.csv` or `screen_text.csv`; append only. Do not commit videos, `.secrets/` or `.hf_cache/`.
+- Edit CSVs with Python and keep each file's line endings; never save `ads.csv` from Excel.
+- Report results honestly: say what the number does and does not show, and keep the caveats above next to any claim.
+- Legacy clutter that can be deleted: `ad_dataset/ann2_backup.json` and `ad_dataset/annotation_sheet.before_edit.html` (a teammate's backup and an old sheet copy).
+- Reproduce the baselines: `python baselines/extract_clip_features.py` (downloads CLIP to `.hf_cache/`; the saved features are already in `baselines/features/`), then `python baselines/text_baseline.py`, `python baselines/image_fusion_baseline.py`, `python baselines/hard_subsets.py`.
+
 ## 1. In one minute
 
 **Goal.** Build a labeled video dataset of Indian ads for alcohol, tobacco and pan masala, so a model can learn to tell **promotional** ads (make the product attractive) from **preventive** ones (warn against use), including **surrogate advertising** (for example a "music CD" or "soda" ad that really sells whisky).
@@ -10,7 +48,7 @@ Status as of 2026-11-20. Everything here was checked against the files in this r
 - 119 videos collected, **102 usable** (17 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
 - Each usable video has speech transcripts. On-screen text exists for all 102 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
 - **All AI work is done:** every usable ad has an AI label (`ai_ann2`), speech, screen text, frame and evidence rows, and AI-filled metadata. **Labels are FINAL for v1 (decision of the project owner, 2026-11-20):** `ann2`, a teammate, is the accepted human annotator, and the 5 disagreements with the AI were adjudicated. Limitations: only one human labeled; her labels match `ai_ann2` on 98 of 103 ads and her reasons look AI-assisted; there is no human-human kappa. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
-- The data is **imbalanced**: 63 promotional-targeted vs 39 preventive-targeted (final labels: 63 promotional, 38 preventive, 1 unclear_mixed). Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
+- The data is **imbalanced**: 63 promotional-targeted vs 39 preventive-targeted (final labels: 63 promotional, 38 preventive, 1 unclear_mixed). Preventive alcohol has 5 ads (plus 1 unclear_mixed) and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
 1. v1 labels are frozen (git tag `v1.0-labels`). Optional later: an independent human labels the 30-ad sample (`ad_dataset/annotation_sheet_human1.html`, ids in `annotations/sample_ids_human1.txt`) to get a human-human kappa.
@@ -68,7 +106,7 @@ IDs: `A_xxxx` = commercial/promotional-targeted search, `B_xxxx` = public-health
 | Excluded | 17 (A_0020, A_0031, A_0039, A_0040, A_0057, A_0062, A_0063, A_0070, A_0071, A_0073, B_0024, B_0034, B_0036, B_0039, B_0043, B_0046, B_0017) |
 | By product | tobacco 38, alcohol 33, pan masala 29, elaichi 3 |
 | By search target | promotional 63, preventive 39 |
-| Preventive by product | tobacco 34, **alcohol 6**, pan masala 0 |
+| Preventive by product | tobacco 33, **alcohol 5**, pan masala 0 |
 | Promotional by product | pan masala 30, alcohol 28, tobacco 4, elaichi 3 |
 | Speech coverage | all usable ads except a few music-only ones |
 | Screen-text coverage | all usable ads (644 rows incl. excluded ads, all `automatic`) |
@@ -104,7 +142,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 2. **Adjudication** was done on 2026-11-20 by Claude, approved by the project owner (`adjudicator_id` = `claude_adj (approved by project owner)`). A human adjudicator may still revisit A_0015, B_0016, B_0017, B_0027 and B_0030.
 
 **B. Data gaps I can do once decisions are made.**
-4. **Class balance.** 63 promotional-targeted vs 39 preventive-targeted. Alcohol-preventive (6) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
+4. **Class balance.** 63 promotional-targeted vs 39 preventive-targeted. Alcohol-preventive (5) is thin and pan masala preventive (0) does not exist. Preventive pan masala ads are almost absent on YouTube; state this in the paper. Promotional tobacco has only 4.
 5. **Round 2 and 3 completeness.** Screen text is done for both (read from contact sheets of deduplicated keyframes, built with `scripts/make_contact_sheets.py`). Frame and evidence rows are also done. A_0062 (likely Pakistani), A_0031 (a review, not an ad), B_0039 and B_0046 (amateur films) and B_0043 (cut off) were excluded on 2026-11-06. Four ads have no speech (A_0041, A_0047 and others), possibly music-only.
 6. **Weak round-2 labels.** 26 of the 29 round-2 `ai_ann2` labels were first made from title, brand and transcript only (confidence medium); on 2026-11-06 they were checked against the on-screen text and no contradiction was found, and the reason says so. They are all "promotional", partly because we searched by commercial brand. Do not treat them as evidence.
 7. **No `unclear_mixed` ground truth yet.** Final labels contain only 1 (B_0016). Diageo and Pernod Ricard "responsible drinking" candidates are the best source of real mixed cases.
@@ -128,7 +166,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 **Phase 2 - Finish round-2 and round-3 data (DONE on 2026-11-06).** Screen text, frames and evidence rows now exist for every usable ad.
 
-**Phase 3 - Human labeling (about 1-2 hours per annotator per 100 ads).**
+**Phase 3 - Human labeling (DONE for v1: `ann2` accepted as final on 2026-11-20; an independent 30-ad human check is optional and the sheet is ready).**
 1. Rebuild the sheet after Phase 1: `python ad_dataset/tools/build_annotation_sheet.py`.
 2. Annotator 1 and annotator 2 each open `ad_dataset/annotation_sheet.html` in Chrome or Edge, **without looking at `annotators.csv`**, label every ad (label, confidence, one-line reason) and click **Export CSV**. The sheet hides existing labels, source type, title and search target. Progress saves in the browser. It needs the `videos/` folder next to it.
 3. Merge each export: `python ad_dataset/tools/merge_ann2.py <export.csv> <annotator_id>`. Usage: `merge_ann2.py export.csv <annotator_id> <reference_id>`; the script now takes the reference annotator (default `ai_ann2`).
@@ -150,6 +188,9 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 - **Secrets.** Never commit `.secrets/` (Sarvam API key). It is git-ignored. Ask the owner for a key if you need to run ASR.
 - **Environment.** Scripts expect a Python venv with `opencv-python`, `easyocr`, `requests`, `imageio-ffmpeg`, plus `yt-dlp` and `ffmpeg`. The venv itself is not in git. Paths in `scripts/` are hard-coded to `E:\Research_FF` and need adjusting on another machine.
 - **Editing CSVs.** Use Python or a spreadsheet that keeps UTF-8; many fields are Hindi, Tamil, Bengali and Marathi. Files use CRLF line endings. Close a CSV in Excel before scripts write to it (a locked file causes write errors).
+- **Run everything from the repo root** (`python baselines/text_baseline.py`). In Git Bash, `python` needs `E:/...` paths, not `/e/...`. Set `PYTHONIOENCODING=utf-8` when printing Hindi. Model weights are cached on the project disk in `.hf_cache/` (git-ignored; set `HF_HOME` to change it).
+- **Never open `ads.csv` in Excel and save it.** That once rewrote every `date_collected` to `DD-MM-YYYY`. Edit with Python (keep the file's line endings) or a text editor.
+- **Sheet builder options:** `python ad_dataset/tools/build_annotation_sheet.py [--id NAME] [--sample N --seed S] [--out FILE]`. The export uses `--id` as `annotator_id`, and each id has its own browser storage, so keep the same browser and file path while labeling.
 - **Do not regenerate `speech.csv` or `screen_text.csv` wholesale.** The assemble scripts rebuild them from scratch and would erase manual corrections. Append new ads only.
 
 ## 10. Risks and caveats to keep in mind
@@ -162,7 +203,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 
 ## 11. Open questions for the team
 
-1. Who are the two human annotators and the adjudicator, and by when?
+1. Did the second annotator (`ann2`) use any AI tool or look the videos up? Record her answer in Section 7, item 1. Who will do the optional independent 30-ad check, and by when?
 2. Accept that preventive pan masala ads are not available, or source them manually (state tobacco-control cell sites, Doordarshan archives)?
 3. Do we collect more promotional tobacco ads (only 4 now) in the same round?
 4. Release plan: annotations and links only, or request permission for videos?
