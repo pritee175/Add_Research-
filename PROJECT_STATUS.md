@@ -9,13 +9,13 @@ Status as of 2026-11-20. Everything here was checked against the files in this r
 **Where we are.**
 - 119 videos collected, **102 usable** (17 excluded: removed from YouTube, not Indian, not ads, amateur films or duplicates).
 - Each usable video has speech transcripts. On-screen text exists for all 102 (round 1 earlier, rounds 2 and 3 on 2026-11-06).
-- **All AI work is done:** every usable ad has an AI label (`ai_ann2`), speech, screen text, frame and evidence rows, and AI-filled metadata. **Final labels exist (adjudicated 2026-11-20), but no clearly independent human labeling has been done:** the second annotator `ann2` is a teammate whose labels match the AI on 98 of 103 ads and whose reasons look AI-assisted. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
+- **All AI work is done:** every usable ad has an AI label (`ai_ann2`), speech, screen text, frame and evidence rows, and AI-filled metadata. **Labels are FINAL for v1 (decision of the project owner, 2026-11-20):** `ann2`, a teammate, is the accepted human annotator, and the 5 disagreements with the AI were adjudicated. Limitations: only one human labeled; her labels match `ai_ann2` on 98 of 103 ads and her reasons look AI-assisted; there is no human-human kappa. So the labels are drafts, not ground truth, and there is **no valid inter-annotator agreement number**.
 - The data is **imbalanced**: 63 promotional-targeted vs 39 preventive-targeted (final labels: 63 promotional, 38 preventive, 1 unclear_mixed). Preventive alcohol has 6 ads and preventive pan masala has **0**. Round 3 added 13 preventive ads; further YouTube searches found no more usable ones, so this gap is documented, not fixed.
 
 **The three things that matter most next:**
-1. Recommended: a person with no AI help labels a random 30-ad sample on a clean sheet, to get a defensible human kappa.
+1. v1 labels are frozen (git tag `v1.0-labels`). Optional later: an independent human labels the 30-ad sample (`ad_dataset/annotation_sheet_human1.html`, ids in `annotations/sample_ids_human1.txt`) to get a human-human kappa.
 2. Check the AI-filled metadata (Section 7, item 8) while labeling.
-3. Do not report the 0.902 kappa as human agreement. Labels and splits are frozen, so baselines can start.
+3. Do not report the 0.902 kappa as human-human agreement (it is `ann2` vs an AI). Describe the labels as single-annotator labels with an AI cross-check.
 
 ## 2. The project in plain terms
 
@@ -94,12 +94,13 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 13. Excluded A_0031 (a review, not an ad), A_0062 (likely Pakistani), B_0039 and B_0046 (amateur films), B_0043 (cut off). `build_annotation_sheet.py` now skips excluded ads (103 in the sheet).
 14. AI work finished (2026-11-06): `ai_ann2` labels for the 8 round-3 ads; frames (5 per ad, `frames/review_r23/`) and evidence rows for the 36 ads that lacked them; metadata filled for all 103 ads (`promotion_type`, `shown_product`, `implied_product`, `surrogate_basis`, `statutory_warning_present`, `responsible_message_present`, `celebrity_present` where known, `language_summary`).
 15. Second annotator and adjudication (2026-11-20): `ann2` (a teammate, 103 ads) merged into `annotators.csv`; agreement with `ai_ann2` 95.1%, kappa 0.902 (an AI reference, so not human agreement). The 5 disagreements were adjudicated by Claude with the project owner's approval: A_0015 promotional, B_0016 unclear_mixed, B_0027 preventive, B_0030 preventive, B_0017 excluded as a duplicate of B_0002 (same video). `final_label` copied to `main_label` with `final_reason` and `label_confidence`; B_0037 moved into B_0002's campaign group so the Hindi and English versions share a split; splits rebuilt.
-16. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
+16. Decision (2026-11-20): the project owner accepted `ann2` as the final labels; the independent 30-ad human sample was not run (the sheet and sample ids are kept for later). Baselines were run (`baselines/`: text, CLIP image, fusion, style-vs-message subsets). v1 tagged `v1.0-labels`.
+17. Cleanup: merged the candidate lists into `candidates_all.csv`; removed the old register, the merged `ai_ann2` export, caches and logs.
 
 ## 7. What is REMAINING
 
 **A. Needs a human (blocking for any credible result).**
-1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. `ann1`, `ai_draft` and `ai_ann2` are AI. `ann2` (103 ads) agrees with `ai_ann2` on 98 and its reasons look AI-assisted (they quote YouTube descriptions the sheet hides). Treat the set as not independently human-labeled until a clean human sample exists.
+1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. `ann1`, `ai_draft` and `ai_ann2` are AI. `ann2` (103 ads) agrees with `ai_ann2` on 98 and its reasons look AI-assisted (they quote YouTube descriptions the sheet hides). The project owner accepted `ann2` as final on 2026-11-20, so v1 is single-human-annotated with this caveat. Ask the annotator how she wrote the reasons (AI help or not) and record her answer here.
 2. **Adjudication** was done on 2026-11-20 by Claude, approved by the project owner (`adjudicator_id` = `claude_adj (approved by project owner)`). A human adjudicator may still revisit A_0015, B_0016, B_0017, B_0027 and B_0030.
 
 **B. Data gaps I can do once decisions are made.**
