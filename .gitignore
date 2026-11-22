@@ -5,6 +5,7 @@
 # environments and caches
 .venv/
 .venv_media/
+.venv-text/
 .hf_cache/
 .model_cache/
 .pip_cache/

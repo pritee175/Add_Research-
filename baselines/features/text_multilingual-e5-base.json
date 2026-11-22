@@ -1,0 +1,14 @@
+{
+ "model": "intfloat/multilingual-e5-base",
+ "resolved_commit": "d128750597153bb5987e10b1c3493a34e5a4502a",
+ "pooling": "mean",
+ "prefix": "query: ",
+ "max_len": 512,
+ "torch": "2.14.1+cpu",
+ "transformers": "4.57.1",
+ "python": "3.10.9",
+ "n_ads": 101,
+ "emb_dim": 768,
+ "ads_needing_chunking": 8,
+ "max_chunks": 3
+}

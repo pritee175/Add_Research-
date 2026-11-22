@@ -81,3 +81,72 @@ The server is stdlib-only (about 30 MB) and reads precomputed `web/demo_data.jso
 Verified: all API endpoints, video streaming with seeking, and that the page's JavaScript parses. It has not been checked visually in every browser. The upload box loads CLIP (about 2 GB free RAM); the held-out test demo needs almost nothing extra. Run it from the repo root; stop with Ctrl+C.
 
 Split facts shown in the demo (binary task, 101 ads): train 70 / val 16 / test 15 (about 70/15/15), stratified by collection target and grouped by campaign/brand. Checked 2026-11-22: 0 shared groups, 0 shared YouTube videos, 0 identical transcripts between test and train+val; nearest training ad for any test ad has CLIP cosine at most 0.89 (median 0.83), below the 0.92 90th percentile seen between training ads. The test set uses different campaigns and brands but the same collection, era and sources.
+
+# Multilingual text embeddings vs TF-IDF (2026-11-23)
+
+Question: does a model that understands phrases (multilingual-e5, an XLM-RoBERTa-based sentence-embedding model) beat the word-counting TF-IDF text model, alone and fused with CLIP images? **Nothing in the earlier baselines was changed**: two new scripts reuse the existing ads, labels, groups, frozen split, CLIP features and the same 5x5 grouped CV (identical folds). The script re-runs TF-IDF, CLIP and TF-IDF+CLIP and checks them against `results_image_fusion.json`; they match exactly (0.9325, 0.9386, 0.961).
+
+**Model:** `intfloat/multilingual-e5-base` (commit `d128750597153bb5987e10b1c3493a34e5a4502a`), mean pooling, prefix `query: `, frozen (no fine-tuning). Text per ad = transcript + `|||` + screen text, the same as the TF-IDF model. 8 ads were longer than 512 tokens and were split into chunks (max 3) and averaged. Classifier: logistic regression, C=10, balanced classes, exactly as the other baselines. No hyper-parameters were tuned. Only this one embedding model was tried.
+
+| Method | Test acc (n=15) | Val F1 | 5x5 grouped CV macro-F1 | CV acc | Paired dF1 vs TF-IDF (folds better / worse / same) |
+|---|---|---|---|---|---|
+| tfidf (current text model) | 0.93 | 1.00 | 0.932 +/- 0.068 | 0.941 | 0 (reference) |
+| embed (e5 text) | 0.93 | 1.00 | 0.960 +/- 0.047 | 0.964 | +0.028 (11 / 4 / 10) |
+| clip (image) | 1.00 | 0.87 | 0.939 +/- 0.052 | 0.947 | +0.006 (10 / 10 / 5) |
+| tfidf + clip (previous best) | 1.00 | 0.93 | 0.961 +/- 0.048 | 0.965 | +0.029 (13 / 4 / 8) |
+| **embed + clip** | 1.00 | 1.00 | **0.991 +/- 0.026** | **0.992** | **+0.059 (14 / 1 / 10)** |
+| tfidf + embed | 0.93 | 1.00 | 0.955 +/- 0.051 | 0.961 | +0.023 (11 / 2 / 12) |
+| tfidf + embed + clip | 1.00 | 1.00 | 0.977 +/- 0.036 | 0.978 | +0.045 (13 / 0 / 12) |
+
+Out-of-fold accuracy on the style-versus-message subsets (same definitions as `hard_subsets.py`):
+
+| Subset | n | tfidf | embed | clip | tfidf+clip | embed+clip |
+|---|---|---|---|---|---|---|
+| surrogate promotional | 22 | 0.99 | 1.00 | 0.94 | 1.00 | 1.00 |
+| direct promotional (control) | 41 | 0.98 | 1.00 | 0.99 | 1.00 | 1.00 |
+| **preventive, non-institutional (film-style)** | 10 | 0.66 | 0.74 | 0.82 | 0.76 | **0.96** |
+| preventive NGO/government (control) | 28 | 0.95 | 0.96 | 0.95 | 0.97 | 0.99 |
+| all | 101 | 0.94 | 0.96 | 0.95 | 0.97 | 0.99 |
+
+Which ads change (an ad counts as wrong when it is misclassified in at least half of the 5 CV repeats):
+- Relative to TF-IDF, the e5 text model fixes B_0028 (film-style preventive) and A_0048, and breaks B_0015 and B_0029.
+- Wrong most often: tfidf B_0014, B_0028, B_0044, A_0048; embed B_0015, B_0014, B_0029, B_0044; tfidf+clip B_0021, B_0044, B_0014; **embed+clip none** (no ad is wrong in half or more of the repeats; this is not zero errors); tfidf+embed+clip B_0014, B_0044.
+- embed+clip fixes B_0014, B_0028, A_0048 and B_0044 relative to TF-IDF and breaks none. These are the film-style preventive ads the earlier text model missed, which was the interesting outcome to look for.
+
+How to read this
+- The paired column is the fair comparison: all methods see the same folds, so "better 14 / worse 1" for embed+clip is much stronger evidence than comparing two averages that have an SD of 0.03-0.07. embed alone vs TF-IDF (11 better / 4 worse) is a modest, not decisive, gain.
+- Most of the headline gain comes from combining multilingual text with CLIP images (0.961 -> 0.991). With 101 ads, the difference between 0.96 and 0.99 is a handful of ads, so do not over-read the exact digits.
+- The film-style jump (0.76 -> 0.96) is on **n=10 ads** and its interval is wide; it is a pointer, not a measured effect.
+- Caveats from the earlier sections still apply and this experiment does not remove them: labels come from a single human with an AI cross-check and were adjudicated mostly from the same transcript and screen text the text models read (circularity); style and class are still confounded (PSA look vs commercial look), so a higher score does not show the model understands persuasion; the 15-ad test split is too small to quote. Seven combinations were compared on the same data, so quote the one pre-chosen result (embed+clip) together with its paired numbers, not "the best of seven".
+- Round 4 data (preventive ads in commercial style, promotional ads in a PSA style) is still the proper test of style vs message.
+
+Files: `extract_text_embeddings.py`, `text_embedding_comparison.py`, `features/text_multilingual-e5-base.npz` + `.json` (288 KB; versions and commit recorded), `results_text_embeddings_multilingual-e5-base.json` (all numbers above, plus per-ad detail).
+
+## How to reproduce (PowerShell, from the repo root, i.e. the folder that contains `baselines/`)
+
+Needs Python 3.10+, internet on the first run (about 1.1 GB model download), and the repo files `ads.csv`, `speech.csv`, `screen_text.csv` and `baselines/features/clip_vitl14_frames.npz`. Videos are **not** needed. If `features/text_multilingual-e5-base.npz` is already in the repo you can skip steps 2-4 and just run step 5 (any Python with numpy, scipy and scikit-learn works for step 5).
+
+```powershell
+# 1. get the code
+git pull origin main
+Test-Path baselines\extract_text_embeddings.py, baselines\text_embedding_comparison.py, baselines\features\clip_vitl14_frames.npz   # all True
+
+# 2. private Python environment (stays on your machine; .venv-text/ is git-ignored)
+python -m venv .venv-text
+.\.venv-text\Scripts\python.exe -m pip install --upgrade pip
+.\.venv-text\Scripts\python.exe -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+.\.venv-text\Scripts\python.exe -m pip install "transformers==4.57.1" huggingface_hub numpy scipy scikit-learn
+.\.venv-text\Scripts\python.exe -c "import torch, transformers, sklearn; print(torch.__version__, transformers.__version__, sklearn.__version__)"
+
+# 3. keep the model download OUTSIDE OneDrive (set again in every new PowerShell window)
+$env:HF_HOME = "$env:LOCALAPPDATA\huggingface_cache"
+New-Item -ItemType Directory -Force $env:HF_HOME | Out-Null
+
+# 4. turn every ad's text into numbers -> baselines\features\text_multilingual-e5-base.npz (+ .json)
+.\.venv-text\Scripts\python.exe baselines\extract_text_embeddings.py
+
+# 5. compare the 7 methods on the same 101 ads -> baselines\results_text_embeddings_multilingual-e5-base.json
+.\.venv-text\Scripts\python.exe baselines\text_embedding_comparison.py
+```
+
+What to expect: step 5 prints the table above and a `sanity check` line that must say `match: True` for tfidf, clip and tfidf+clip. If it does not, the data or the existing code changed and the comparison is not valid. Another embedding model can be tried with `--model` in step 4 (for example `--model sentence-transformers/LaBSE --pooling cls --prefix ""`) and `--features <file.npz>` in step 5. If a step fails with a memory or "paging file" error, see "Web demo" above (free space on C:).
