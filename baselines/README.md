@@ -52,3 +52,22 @@ Findings
 - The weak spot is the preventive message delivered in a non-institutional style: short films and amateur-looking pieces. Accuracy drops from about 0.95 on NGO/government PSAs to 0.66-0.82 (text weakest). Ads mostly wrong: B_0028 and B_0044 (text), B_0004, B_0021 and A_0017 (image), B_0021 and B_0044 (fused).
 - Limits: n=10 for the weak subset and its interval overlaps the control; treat this as a pointer, not a measured effect. All 10 preventive non-institutional ads are among the least typical of the preventive class, and no promotional ad has an institutional-looking style, so style and class are still confounded.
 - To separate style from message the dataset needs promotional ads in an institutional/PSA style and preventive ads in a commercial style; neither exists yet.
+
+# Final model and demo (2026-11-22)
+
+**The model.** `fused_model.py`: TF-IDF + logistic regression on transcript + screen text, logistic regression on frozen CLIP ViT-L/14 image embeddings (5 frames/ad, mean-pooled), probabilities averaged. Either modality works alone. Saved in `models/` (`model_trainval.joblib` trained on train+val for honest test scores, `model_all.joblib` trained on all 101 binary ads for new videos). Train and score with `python baselines/final_model.py`.
+
+**Held-out test split (15 ads, trained on train+val only):** fused 15/15 correct (95% Wilson interval 0.80-1.00), image only 15/15, text only 14/15. Per-ad probabilities: `results_final_test.csv`. This agrees with the grouped CV (macro-F1 0.96) but 15 ads is too few to report 1.00 as an accuracy; **quote the cross-validated numbers as the main result** and the test split as a sanity check.
+
+**Informal out-of-sample check** (`external_check.py`): 15 round-4 "keep" candidates (6 drink-driving films, 8 old Indian cigarette TV ads, 1 Royal Stag short film) downloaded to `.tmp/` and never used for training or added to the dataset. Image-only predictions vs my expected labels (from titles and descriptions, NOT human-annotated): 12 videos were scored before the machine ran out of memory; **11 of 12 agreed** (5/6 drink-driving films, 6/6 cigarette ads). The one miss: "Chennai Traffic Police Advises (Do Not Drink and Drive)", predicted promotional at P=0.70. Three videos (Wills 96 World Cup, an old Doordarshan cigarette ad, the Royal Stag short film) were not scored. Treat this as a sanity check, not a result: n is tiny and the labels are unverified.
+
+**Demo** (`demo.py`):
+```
+python baselines/demo.py --test-set                  # the 15 held-out ads: true vs predicted vs probability
+python baselines/demo.py --ad_id B_0028              # one ad with explanation (warns if it was a training ad)
+python baselines/demo.py --video my_ad.mp4           # new video, image-only (needs ~2 GB free RAM)
+python baselines/demo.py --video my_ad.mp4 --transcript "..." --screen "..."   # adds the text model
+```
+It prints the label, P(promotional), each modality's vote, words pushing each way, and the 3 most similar dataset ads. `clip_embed.py` loads only the CLIP image tower in float16 (cosine >= 0.99997 vs the stored float32 features), because the full model did not fit in memory on a 7.5 GB laptop; the `--video` mode still needs roughly 2 GB free and can fail with a "paging file too small" error if other apps are using memory (close Chrome/VS Code windows and retry). `--test-set` and `--ad_id` do not load CLIP and always work.
+
+**What the model is not.** It is not validated on videos from outside the collection, not a legal classifier of surrogate advertising, and the labels it learned are single-annotator labels with an AI cross-check. Style and class are confounded (see above), so it may be partly recognising PSA-vs-commercial style.

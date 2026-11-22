@@ -13,6 +13,8 @@ Status as of 2026-11-20. Everything here was checked against the files in this r
 - **Splits (frozen):** train 71 / val 16 / test 15, grouped by campaign or brand, stratified, seed 42.
 - **Baselines (5x5 grouped CV, macro-F1, binary, 101 ads):** majority 0.38, transcript 0.76, screen text 0.88, transcript+screen 0.93, CLIP ViT-L/14 image 0.94, text+image fused **0.96**. Weak spot: preventive messages in non-institutional (film) style, accuracy 0.66-0.82 on only 10 ads. Details: `baselines/README.md`.
 
+**Model and demo (built 2026-11-22).** A trained fused model is saved in `baselines/models/`; `python baselines/demo.py --test-set` shows it on the 15 held-out ads (15/15, interval 0.80-1.00; main result is the grouped CV, macro-F1 0.96). Details and caveats: `baselines/README.md`, section "Final model and demo". Round 4 candidates (15 keep, 13 maybe) are screened in `ad_dataset/candidates/candidates_round4.csv`; **the project owner decided on 2026-11-22 to finish the other work first and add the round-4 ads at the end**, after the teammate can label them.
+
 **Progress by part (estimates).** Background research ~80%; dataset v1 ~85%; labels (single annotator, frozen) ~80%; baselines and analysis ~30%; dataset expansion ~10%; paper and release ~5%.
 
 **Caveats you must not lose.**
@@ -25,7 +27,7 @@ Status as of 2026-11-20. Everything here was checked against the files in this r
 
 **What needs to be done next, in order.**
 1. **Teammate:** answer in writing whether `ann2` used AI or looked the videos up; record it in Section 7, item 1 and the datasheet.
-2. **Round 4 data collection** (the highest-value work): preventive ads in commercial style (brand drink-driving spots, agency PSAs, Diageo and Pernod Ricard responsible-drinking films), preventive pan masala, promotional tobacco, and promotional ads in a PSA or CSR style. Follow Section 8, Phase 1 (candidates in `ad_dataset/candidates/candidates_all.csv`, new ids continue `B_0047...` and `A_0074...`). Append new rows to `speech.csv` and `screen_text.csv`; label them with a human first.
+2. **Round 4 data collection** (deferred by the project owner to the end; candidates already screened): preventive ads in commercial style (brand drink-driving spots, agency PSAs, Diageo and Pernod Ricard responsible-drinking films), preventive pan masala, promotional tobacco, and promotional ads in a PSA or CSR style. Follow Section 8, Phase 1 (candidates in `ad_dataset/candidates/candidates_all.csv`, new ids continue `B_0047...` and `A_0074...`). Append new rows to `speech.csv` and `screen_text.csv`; label them with a human first.
 3. **Optional human check:** a person with no AI help labels the 30 ads in `ad_dataset/annotation_sheet_human1.html` (ids in `ad_dataset/annotations/sample_ids_human1.txt`; they need those 30 videos), then `python ad_dataset/tools/merge_ann2.py annotators_human1.csv human1 ann2`.
 4. **Clean the automatic data:** warning, brand and helpline rows in `screen_text.csv`; worst speech rows; verify the AI-filled metadata.
 5. **Stronger models and analysis:** fine-tuned or multimodal models, per-class errors, ablations that separate style from message.
