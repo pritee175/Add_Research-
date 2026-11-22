@@ -71,3 +71,11 @@ python baselines/demo.py --video my_ad.mp4 --transcript "..." --screen "..."   #
 It prints the label, P(promotional), each modality's vote, words pushing each way, and the 3 most similar dataset ads. `clip_embed.py` loads only the CLIP image tower in float16 (cosine >= 0.99997 vs the stored float32 features), because the full model did not fit in memory on a 7.5 GB laptop; the `--video` mode still needs roughly 2 GB free and can fail with a "paging file too small" error if other apps are using memory (close Chrome/VS Code windows and retry). `--test-set` and `--ad_id` do not load CLIP and always work.
 
 **What the model is not.** It is not validated on videos from outside the collection, not a legal classifier of surrogate advertising, and the labels it learned are single-annotator labels with an AI cross-check. Style and class are confounded (see above), so it may be partly recognising PSA-vs-commercial style.
+
+# Web demo (2026-11-22)
+
+`python baselines/web_demo.py` then open http://127.0.0.1:8765 (standard library only, works offline, nothing leaves the computer). One page that shows: the pipeline, the data split and the checks that the test set is separate, cross-validated results, the subset analysis, a live demo on the 15 held-out test ads (watch the video, press Predict, then Reveal the human label), an optional upload for a new video, and the limitations. Files: `web_demo.py` (server), `web/index.html` (page).
+
+Verified: all API endpoints, video streaming with seeking, and that the page's JavaScript parses. It has not been checked visually in every browser. The upload box loads CLIP (about 2 GB free RAM); the held-out test demo needs almost nothing extra. Run it from the repo root; stop with Ctrl+C.
+
+Split facts shown in the demo (binary task, 101 ads): train 70 / val 16 / test 15 (about 70/15/15), stratified by collection target and grouped by campaign/brand. Checked 2026-11-22: 0 shared groups, 0 shared YouTube videos, 0 identical transcripts between test and train+val; nearest training ad for any test ad has CLIP cosine at most 0.89 (median 0.83), below the 0.92 90th percentile seen between training ads. The test set uses different campaigns and brands but the same collection, era and sources.

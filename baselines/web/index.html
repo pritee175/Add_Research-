@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ad Stance Classifier Demo</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--mut:#5d6878;--line:#dfe3e9;--promo:#c2410c;--promo-bg:#fff1e6;--prev:#0f766e;--prev-bg:#e6f6f4;--acc:#2f4b7c;--bad:#b42318;--ok:#067647}
+@media(prefers-color-scheme:dark){:root{--bg:#12161c;--card:#1b212a;--ink:#e8ecf2;--mut:#9aa6b6;--line:#2c3541;--promo:#fb923c;--promo-bg:#2b1d12;--prev:#2dd4bf;--prev-bg:#102523;--acc:#8fb0ea;--bad:#f97066;--ok:#47cd89}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{padding:22px 24px 14px;border-bottom:1px solid var(--line);background:var(--card)}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mut)}
+main{max-width:1180px;margin:0 auto;padding:16px 24px 60px}section{margin:22px 0}h2{font-size:17px;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}.grid{display:grid;gap:14px}.g4{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.stat b{display:block;font-size:26px;color:var(--acc)}.stat span{color:var(--mut);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{color:var(--mut);font-weight:600}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.box{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);font-size:13px}.arrow{color:var(--mut)}
+.bar{height:10px;background:var(--line);border-radius:6px;position:relative;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.small{font-size:13px;color:var(--mut)}.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600}
+.promo{background:var(--promo-bg);color:var(--promo)}.prev{background:var(--prev-bg);color:var(--prev)}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.lay{display:grid;grid-template-columns:330px 1fr;gap:14px}@media(max-width:860px){.lay{grid-template-columns:1fr}}
+.list{max-height:560px;overflow:auto}.item{padding:8px 10px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;background:var(--card)}.item:hover{border-color:var(--acc)}.item.sel{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+video{width:100%;max-height:340px;background:#000;border-radius:8px}button,select,textarea,input[type=file]{font:inherit}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer}button.sec{background:transparent;color:var(--acc);border:1px solid var(--acc)}button:disabled{opacity:.5;cursor:default}
+.gauge{position:relative;height:26px;border-radius:13px;background:linear-gradient(90deg,var(--prev-bg),var(--card) 50%,var(--promo-bg));border:1px solid var(--line);margin:8px 0 2px}
+.gauge .mk{position:absolute;top:-4px;width:4px;height:32px;background:var(--ink);border-radius:2px;transform:translateX(-2px)}.gauge .mid{position:absolute;left:50%;top:0;bottom:0;border-left:1px dashed var(--mut)}
+.chips span{display:inline-block;margin:2px 4px 2px 0;padding:1px 8px;border-radius:6px;font-size:13px;border:1px solid var(--line)}
+textarea{width:100%;height:56px;border:1px solid var(--line);border-radius:8px;padding:6px;background:var(--bg);color:var(--ink)}
+.warn{border-left:4px solid var(--promo);background:var(--promo-bg);padding:8px 12px;border-radius:6px;font-size:14px}.lim li{margin:4px 0}
+</style></head><body>
+<header><h1>Promotional vs Preventive: Indian alcohol, tobacco and pan masala ads</h1>
+<p>Research prototype &middot; video-ad stance classifier &middot; runs locally, nothing leaves this computer</p></header>
+<main>
+<section><div class="grid g4" id="stats"></div></section>
+
+<section><h2>1. How it works</h2><div class="card">
+<div class="flow"><div class="box">Ad video</div><span class="arrow">&rarr;</span>
+<div><div class="flow"><div class="box">Speech transcript (Sarvam ASR)<br>+ on-screen text</div><span class="arrow">&rarr;</span><div class="box">TF-IDF (words 1-2, chars 2-5)<br>+ logistic regression</div></div>
+<div class="flow" style="margin-top:8px"><div class="box">5 sampled frames</div><span class="arrow">&rarr;</span><div class="box">CLIP ViT-L/14 (frozen, pretrained)<br>mean-pooled &rarr; logistic regression</div></div></div>
+<span class="arrow">&rarr;</span><div class="box"><b>Average of the two probabilities</b><br>&gt; 0.5 = promotional, else preventive</div></div>
+<p class="small" style="margin-bottom:0">Only the small logistic-regression layers are trained (on 70-86 ads). CLIP is used as a fixed feature extractor. Either branch also works alone, which is what happens for a brand-new video with no transcript (image-only).</p></div></section>
+
+<section><h2>2. Data and split</h2><div class="grid g2"><div class="card"><table id="splitTbl"></table>
+<p class="small" id="splitNote" style="margin-bottom:0"></p></div><div class="card"><b>Is the test set really separate?</b><div id="disjoint" class="small" style="margin-top:6px"></div></div></div></section>
+
+<section><h2>3. Results</h2><div class="grid g2"><div class="card"><b>Cross-validated macro-F1</b> <span class="small">(5&times;5 grouped folds, 101 ads &mdash; the main result)</span><div id="cv" style="margin-top:8px"></div></div>
+<div class="card"><b>Held-out test set</b> <span class="small" id="testTitle"></span><div id="testRes" style="margin-top:8px"></div>
+<p class="small" style="margin-bottom:0">15 ads is small: one ad changes accuracy by 7 points. Quote the cross-validated number as the main result.</p></div></div>
+<div class="card" style="margin-top:14px"><b>Where does it struggle? Accuracy on subsets</b> <span class="small">(out-of-fold, grouped CV)</span><table id="hard" style="margin-top:6px"></table></div></section>
+
+<section><h2>4. Live demo on the held-out test ads</h2>
+<p class="small">These 15 ads were never used for training. Pick one, watch it, press <b>Predict</b>, then <b>Reveal</b> the human label.</p>
+<div class="lay"><div class="card list" id="list"></div><div class="card" id="detail"><p class="small">Select an ad on the left.</p></div></div></section>
+
+<section><h2>5. Try a new video</h2><div class="card">
+<p class="small" style="margin-top:0">Upload any ad video (mp4). The image model looks at 5 frames. Optionally paste a transcript and/or on-screen text to add the text model. First use loads CLIP (about 20 s, needs ~2 GB free RAM). This is for illustration only; it is not validated on videos outside the collection.</p>
+<input type="file" id="up" accept="video/*"> <button id="upBtn">Classify</button> <span class="small" id="upMsg"></span>
+<div class="grid g2" style="margin-top:10px"><textarea id="tr" placeholder="Optional: transcript (any language)"></textarea><textarea id="sc" placeholder="Optional: on-screen text"></textarea></div>
+<div id="upRes" style="margin-top:12px"></div></div></section>
+
+<section><h2>6. Limitations (read before quoting any number)</h2><div class="card"><ul class="lim" style="margin:0;padding-left:20px">
+<li><b>Labels:</b> one human annotator plus an AI cross-check; there is no human-human agreement figure yet.</li>
+<li><b>Circularity:</b> labels were set largely from the same transcript and screen text the text model reads.</li>
+<li><b>Style vs message:</b> all preventive ads look like PSAs or films and all promotional ads like commercials, so the model may partly recognise style. It is weakest on preventive messages in film style.</li>
+<li><b>Small data:</b> 101 ads (70 train / 16 val / 15 test). The test set uses different campaigns and brands, but the same collection, era and sources; it does not test other countries or years.</li>
+<li><b>Classes missing:</b> no preventive pan-masala ads exist in the data; promotional tobacco has only 4.</li>
+<li><b>Not a legal tool:</b> "surrogate" advertising is treated here as a content-based research label, not a legal finding.</li></ul></div></section>
+</main>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pill=l=>`<span class="pill ${l==='promotional'?'promo':'prev'}">${esc(l)}</span>`;let S,cur=null,revealed=false;
+async function init(){S=await (await fetch('/api/summary')).json();const sp=S.splits,d=S.disjoint,c=S.cv;
+$('stats').innerHTML=[[S.n_ads,'ads (promotional vs preventive)'],[`${sp.train.n} / ${sp.val.n} / ${sp.test.n}`,'train / val / test split'],[c.fused.f1.toFixed(2),'cross-validated macro-F1 (fused)'],[`${S.test.fused.correct}/${S.test.fused.n}`,'held-out test ads correct']].map(x=>`<div class="card stat"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
+$('splitTbl').innerHTML='<tr><th>Split</th><th>Ads</th><th>Promotional</th><th>Preventive</th><th>Share</th></tr>'+['train','val','test'].map(k=>`<tr><td>${k}</td><td>${sp[k].n}</td><td>${sp[k].promotional}</td><td>${sp[k].preventive}</td><td>${(100*sp[k].n/S.n_ads).toFixed(0)}%</td></tr>`).join('');
+$('splitNote').textContent='About 70/15/15, stratified by collection target and grouped so ads from the same campaign or brand never sit in different splits (seed 42). One further ad (unclear_mixed) is outside this binary task.';
+$('disjoint').innerHTML=`<ul style="margin:0;padding-left:18px"><li>Shared campaign/brand groups between test and train+val: <b>${d.shared_groups}</b></li><li>Shared YouTube videos: <b>${d.shared_videos}</b></li><li>Nearest training ad by CLIP similarity: median <b>${d.test_to_train_median}</b>, max <b>${d.test_to_train_max}</b>, versus <b>${d.train_to_train_median}</b> median (90th percentile ${d.train_to_train_p90}) for a training ad and its nearest training neighbour &mdash; so no test ad is a near-copy of a training ad.</li><li>Same collection, era and sources: it tests new campaigns and brands, not a new country or time.</li></ul>`;
+const rows=[['Always guess majority class',c.majority],['Transcript only',c.transcript],['On-screen text only',c.screen],['Transcript + screen text',c.text],['Image only (CLIP)',c.image],['Fused: text + image',c.fused]];
+$('cv').innerHTML=rows.map(r=>`<div style="margin:6px 0"><div style="display:flex;justify-content:space-between"><span>${r[0]}</span><b>${r[1].f1.toFixed(2)} <span class="small">&plusmn;${r[1].sd.toFixed(2)}</span></b></div><div class="bar"><i style="width:${r[1].f1*100}%"></i></div></div>`).join('');
+const t=S.test;$('testTitle').textContent='(trained on train+val only)';
+$('testRes').innerHTML=`<table><tr><th>Model</th><th>Correct</th><th>95% interval</th></tr>${['fused','image','text'].map(k=>`<tr><td>${k}</td><td>${t[k].correct}/${t[k].n}</td><td>${t[k].acc_ci95_wilson[0].toFixed(2)}&ndash;${t[k].acc_ci95_wilson[1].toFixed(2)}</td></tr>`).join('')}</table>`;
+const names={'surrogate promotional':'Surrogate promotional (soda, water, CDs under liquor brands)','direct promotional (control)':'Direct promotional','preventive non-institutional':'Preventive, film-style sources (hardest)','preventive NGO/government (control)':'Preventive, NGO/government PSAs','all':'All ads'};
+$('hard').innerHTML='<tr><th>Subset</th><th>n</th><th>text</th><th>image</th><th>fused</th></tr>'+Object.keys(names).filter(k=>S.hard[k]).map(k=>{const h=S.hard[k];return `<tr><td>${names[k]}</td><td>${h.n}</td><td>${h.text.toFixed(2)}</td><td>${h.image.toFixed(2)}</td><td>${h['text+image'].toFixed(2)}</td></tr>`}).join('');
+$('list').innerHTML=S.test_ads.map((a,i)=>`<div class="item" data-i="${i}"><b>${esc(a.id)}</b> <span class="small">${esc(a.product)}</span><br><span class="small">${esc(a.title.slice(0,52))}</span></div>`).join('')+`<div class="small" style="margin:10px 0 4px">Or any other dataset ad (these were in training, so not a fair test):</div><select id="other" style="width:100%"><option value="">choose...</option>${S.other_ads.map(a=>`<option value="${esc(a.id)}">${esc(a.id)} (${esc(a.split)}) ${esc(a.title)}</option>`).join('')}</select>`;
+document.querySelectorAll('.item').forEach(e=>e.onclick=()=>pick(S.test_ads[+e.dataset.i],e));
+$('other').onchange=async e=>{if(!e.target.value)return;const r=await (await fetch('/api/ad?id='+encodeURIComponent(e.target.value))).json();pick(r,null)};}
+function pick(a,el){cur=a;revealed=false;document.querySelectorAll('.item').forEach(x=>x.classList.remove('sel'));if(el)el.classList.add('sel');
+$('detail').innerHTML=`<h3 style="margin:0 0 8px">${esc(a.id)} <span class="small">${esc(a.title)}</span></h3>${a.in_training?'<div class="warn" style="margin-bottom:8px">This ad was in the training data, so a correct answer is not a fair test.</div>':''}${a.has_video?`<video controls src="/video/${esc(a.id)}.mp4"></video>`:'<p class="small">Video file not available on this machine.</p>'}<div style="margin-top:10px"><button id="pb">Predict</button> <button class="sec" id="rb" disabled>Reveal human label</button></div><div id="out" style="margin-top:12px"></div>`;
+$('pb').onclick=()=>{$('pb').disabled=true;$('rb').disabled=false;$('out').innerHTML=resultHtml(a,false)};$('rb').onclick=()=>{revealed=true;$('out').innerHTML=resultHtml(a,true);$('rb').disabled=true}}
+function gauge(p){return `<div class="gauge"><span class="mid"></span><span class="mk" style="left:${p*100}%"></span></div><div class="small" style="display:flex;justify-content:space-between"><span>preventive</span><span>P(promotional) = <b>${p.toFixed(2)}</b></span><span>promotional</span></div>`}
+function resultHtml(a,rev){const parts=Object.entries(a.parts).map(([k,v])=>`<tr><td>${k==='text'?'Text model (transcript + screen)':'Image model (CLIP, 5 frames)'}</td><td>${v.toFixed(2)}</td><td>${pill(v>.5?'promotional':'preventive')}</td></tr>`).join('');
+const chips=(w)=>w&&w.length?`<span class="chips">${w.map(x=>`<span>${esc(x)}</span>`).join('')}</span>`:'<span class="small">none</span>';
+return `<div>Prediction: ${pill(a.pred)}</div>${gauge(a.p)}<table style="margin-top:8px"><tr><th>Branch</th><th>P(promo)</th><th>Vote</th></tr>${parts}</table>
+${a.pos||a.neg?`<p style="margin:10px 0 2px"><b>Words pushing toward promotional</b></p>${chips(a.pos)}<p style="margin:6px 0 2px"><b>Words pushing toward preventive</b></p>${chips(a.neg)}`:''}
+<p style="margin:10px 0 2px"><b>Most similar dataset ads (image similarity)</b></p><div class="small">${a.neighbours.map(n=>`${esc(n.id)} ${pill(n.label)} ${n.sim.toFixed(2)} &mdash; ${esc(n.title)}`).join('<br>')}</div>
+${rev?`<p style="margin-top:12px">Human label: ${pill(a.true)} &nbsp; <b class="${a.correct?'ok':'bad'}">${a.correct?'&check; model agrees':'&times; model disagrees'}</b></p>`:''}`}
+$('upBtn').onclick=async()=>{const f=$('up').files[0];if(!f){$('upMsg').textContent='Choose a video first.';return}
+$('upBtn').disabled=true;$('upMsg').textContent='Working... (first run loads the model, can take a minute)';$('upRes').innerHTML='';
+try{const q=new URLSearchParams({transcript:$('tr').value,screen:$('sc').value});const r=await fetch('/api/upload?'+q,{method:'POST',body:f});const j=await r.json();
+if(j.error){$('upRes').innerHTML=`<div class="warn">${esc(j.error)}</div>`}else{$('upRes').innerHTML=resultHtml(j,false)+(j.image_only?'<p class="small">Image-only prediction (no text supplied); cross-validated F1 for image-only is about 0.94 on this collection.</p>':'')}
+}catch(e){$('upRes').innerHTML=`<div class="warn">${esc(e)}</div>`}$('upBtn').disabled=false;$('upMsg').textContent=''};
+init();
+</script></body></html>
