@@ -61,7 +61,7 @@ class H(BaseHTTPRequestHandler):
             if line: self.send_json(json.loads(line[-1]))
             else:
                 err = (p.stderr or '')[-300:]
-                msg = 'Not enough free memory to load the image model. Close other programs and try again; the held-out test ads above need no extra memory.' if ('Memory' in err or 'paging' in err) else 'Prediction failed: ' + err[-160:]
+                msg = 'The computer does not have enough free memory to load the image model (the C: drive is full, which stops Windows from growing its memory file). The held-out test ads above work without it. To enable uploads: free space on C: or add a paging file on E:, then restart.' if re.search(r'memory|paging|alloc', err, re.I) else 'Prediction failed: ' + err[-160:]
                 self.send_json(dict(error=msg), 500)
         except Exception as e: self.send_json(dict(error='%s: %s' % (type(e).__name__, str(e)[:160])), 500)
         finally:
