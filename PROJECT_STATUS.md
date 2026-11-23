@@ -140,7 +140,7 @@ Why the first nine were excluded: three videos were removed from YouTube; A_0040
 ## 7. What is REMAINING
 
 **A. Needs a human (blocking for any credible result).**
-1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. `ann1`, `ai_draft` and `ai_ann2` are AI. `ann2` (103 ads) agrees with `ai_ann2` on 98 and its reasons look AI-assisted (they quote YouTube descriptions the sheet hides). The project owner accepted `ann2` as final on 2026-11-20, so v1 is single-human-annotated with this caveat. Ask the annotator how she wrote the reasons (AI help or not) and record her answer here.
+1. **Real annotators.** The guide requires two independent human annotators and an adjudicator. `ann1`, `ai_draft` and `ai_ann2` are AI. `ann2` (103 ads) agrees with `ai_ann2` on 98 and its reasons look AI-assisted (they quote YouTube descriptions the sheet hides). The project owner accepted `ann2` as final on 2026-11-20, so v1 is single-human-annotated with this caveat. **Answer recorded 2026-11-23 (from the project owner): AI was used for `ann2`'s labels and reasons, and the AI output was approved by two human reviewers.** Still to record: who the two reviewers were (roles), whether each reviewed all ads or a split, and whether they watched the videos or reviewed transcripts and AI reasoning. Report this as an AI-assisted process with two-human approval, NOT as independent human-human agreement; the 0.902 stays AI-vs-annotator agreement.
 2. **Adjudication** was done on 2026-11-20 by Claude, approved by the project owner (`adjudicator_id` = `claude_adj (approved by project owner)`). A human adjudicator may still revisit A_0015, B_0016, B_0017, B_0027 and B_0030.
 
 **B. Data gaps I can do once decisions are made.**
