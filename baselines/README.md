@@ -150,3 +150,22 @@ New-Item -ItemType Directory -Force $env:HF_HOME | Out-Null
 ```
 
 What to expect: step 5 prints the table above and a `sanity check` line that must say `match: True` for tfidf, clip and tfidf+clip. If it does not, the data or the existing code changed and the comparison is not valid. Another embedding model can be tried with `--model` in step 4 (for example `--model sentence-transformers/LaBSE --pooling cls --prefix ""`) and `--features <file.npz>` in step 5. If a step fails with a memory or "paging file" error, see "Web demo" above (free space on C:).
+
+
+# Round 4 held-out check (2026-11-23)
+
+**What:** 15 screened Round 4 candidates were downloaded, run through the same pipeline (Sarvam speech, on-screen text read by the model, 5 frames) and **staged separately** in `ad_dataset/round4/` (same columns as `ad_dataset/annotations/`). Nothing in `ad_dataset/annotations/`, the frozen splits or the saved features was changed, so every earlier number is reproducible. `split = round4` marks these ads. Scripts: `scripts/round4_ingest.py`, `scripts/round4_sheets.py`, `scripts/round4_build.py`, `baselines/round4_eval.py` (results: `results_round4.json`).
+
+**Content:** 14 usable ads - 6 commercial-style or public-body preventive drink-driving films (B_0047-B_0052), 7 promotional tobacco (2 direct, 5 surrogate via Four Square, Wills Sport) and 1 promotional alcohol short film (A_0082, Royal Stag Barrel Select Large Short Films). A_0081 was **excluded: not Indian** (a US black-and-white Salem commercial mislabeled as Doordarshan). Preventive pan masala stayed at **0**: all 56 candidates were rejected.
+
+**Result (frozen model trained on train+val only, never saw these ads):**
+
+| Model | Correct (n=14) | Accuracy (Wilson 95%) | Preventive (n=6) | Promotional (n=8) |
+|---|---|---|---|---|
+| text + image (fused) | 12 | 0.86 (0.60-0.96) | 4 | 8 |
+| text only | 10 | 0.71 (0.45-0.88) | 2 | 8 |
+| image only | 10 | 0.71 (0.45-0.88) | 4 | 6 |
+
+Wrong for the fused model: B_0051 (Dinamalar spot, no speech, Tamil on-screen text) and B_0052 (Chennai Traffic Police film). The four preventive ads it got right are barely over the line (P(promotional) 0.35-0.46), so commercial-style preventive ads are still the weak spot, as predicted. All 8 promotional tobacco and surrogate ads were correct.
+
+**How to read it:** n=14 is tiny and the interval is wide. The labels are AI labels (the model watched the frames and read the transcript) **pending human review**, so scores are provisional. Round 4 on-screen text is **partial**: for long ads only the first and last contact sheets, and for 4 ads only some frames, were read; warnings or end cards in unread frames are missing. Speech is automatic and uncorrected (A_0074 and B_0051 have none). The model was **not** retrained, so this is a clean second held-out set. Wills (A_0024) and Royal Stag (A_0012) are in the v1 test split, not in training. Promotion type (`surrogate_verified`) and brand attribution are AI-filled and unverified. **Next:** a human labels these 14 blind, then merge them into `ads.csv` only after review and a new split plan.

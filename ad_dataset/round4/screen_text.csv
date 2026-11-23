@@ -1,0 +1,45 @@
+ad_id,start_second,end_second,original_text,text_type,language,correction_status
+B_0047,18,22,"No..it's second hand. Can't you see, I'm coming straight from the showroom",caption,English,automatic
+B_0047,24,26,Looks like top model,caption,English,automatic
+B_0047,30,33,I don't even consider anything below top model. Plus it's got ABS,caption,English,automatic
+B_0047,36,38,"ABS, what's that?",caption,English,automatic
+B_0047,48,51,Ok. Suppose car is at top speed and suddenly you have to brake then what happens?,caption,English,automatic
+B_0047,66,69,"My car has ABS, which means full control on brakes",caption,English,automatic
+B_0047,105,111,#BeTheBetterGuy,tagline,English,automatic
+B_0048,32,38,कृपया शराब पीकर गाड़ी न चलाएं,tagline,Hindi,automatic
+B_0048,38,40,Issued in public interest by,credit,English,automatic
+B_0048,38,40,MARUTI SUZUKI,brand,English,automatic
+B_0048,38,40,#SafeRoadsWithMaruti,tagline,English,automatic
+B_0049,6,10,"you have to hold on to the grass,",caption,English,automatic
+B_0049,24,26,and after that,caption,English,automatic
+B_0049,108,114,#Someoneiswaiting,tagline,English,automatic
+B_0050,3,8,Antony D'cruz,caption,English,automatic
+B_0050,75,77,ISSUED IN PUBLIC INTEREST BY CYBERABAD TRAFFIC POLICE,credit,English,automatic
+B_0050,75,77,ప్రజాహితార్థం సైబరాబాద్ ట్రాఫిక్ పోలీస్ వారిచే జారీ,credit,Telugu,automatic
+B_0050,75,77,CYBERABAD TRAFFIC POLICE,brand,English,automatic
+B_0051,26,28,மது,caption,Tamil,automatic
+B_0051,28,31,மதுவின் பயணம் மரணத்தின் வாசல்,tagline,Tamil,automatic
+B_0051,28,31,தினமலர்,brand,Tamil,automatic
+B_0051,28,31,மக்கள் பணியில் தினமலர் உண்மையின் உரைகல்,tagline,Tamil,automatic
+A_0074,6,12,FOUR SQUARE,brand,English,automatic
+A_0074,18,24,FOUR SQUARE,brand,English,automatic
+A_0074,20,24,Batting for India,tagline,English,automatic
+A_0075,57,59,FOUR SQUARE CRICKET GEAR,brand,English,automatic
+A_0075,60,62,You never know what you can become !,tagline,English,automatic
+A_0075,60,62,"For further information write to P.O. Box No. 222, New Delhi - 110 001",other,English,automatic
+A_0076,10,12,WILLS,brand,English,automatic
+A_0076,26,28,WILLS SPORT,brand,English,automatic
+A_0076,28,30,Wills Sport proudly supports the WILLS INDIAN TEAM,tagline,English,automatic
+A_0076,30,31,Apparel & Accessories available at select Club Stores,other,English,automatic
+A_0077,78,80,CHARMS,brand,English,automatic
+A_0078,44,48,WILLS SPORT proudly supports the WILLS INDIAN TEAM,tagline,English,automatic
+A_0078,44,48,WILLS SPORT,brand,English,automatic
+A_0079,44,46,WILLS KINGS,brand,English,automatic
+A_0079,44,46,YOURS.,tagline,English,automatic
+A_0079,40,44,JAZBA,other,English,automatic
+A_0080,0,3,WILLS MUSIC VIDEO 14-4-99,other,English,automatic
+A_0082,159,162,YOU'LL NEVER BE THE SAME AGAIN,tagline,English,automatic
+A_0082,165,168,SOME FILMS HAVE THE POWER TO CHANGE YOU,tagline,English,automatic
+A_0082,177,184,PRESENTING SEAGRAM'S ROYAL STAG BARREL SELECT LARGE SHORT FILMS CATEGORY,brand,English,automatic
+A_0082,177,184,19th MUMBAI FILM FESTIVAL (MAMI) Jio Star,credit,English,automatic
+A_0082,177,184,#MAKEITPERFECT,tagline,English,automatic

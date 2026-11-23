@@ -1,0 +1,15 @@
+ad_id,start_second,end_second,evidence_type,direction,description
+B_0047,0,111,speech,preventive,"Closing voice-over: ""Don't drink and drive. Be the better guy."""
+B_0048,0,40,text,preventive,"On-screen ""please do not drive after drinking""; issued in public interest by Maruti Suzuki"
+B_0049,0,114,speech,preventive,"Ironic ""Go on, drink"" voice-over followed by a fatal crash and family loss"
+B_0050,0,77,speech,preventive,Testimony about a friend killed by a drunk driver; issued by Cyberabad Traffic Police
+B_0051,0,30,text,preventive,Tamil text: the journey of alcohol is the gateway to death; drink poured into fuel tank
+B_0052,0,108,frame,preventive,"Police drink-driving checkpoint and crash, followed by an actor addressing the camera"
+A_0074,0,24,frame,promotional,"Cricket gear and Four Square logo with ""Batting for India""; no tobacco shown (surrogate)"
+A_0075,0,62,speech,promotional,"""Four Square Cricket Gear. You never know what you can become."""
+A_0076,0,31,text,promotional,"""Wills Sport proudly supports the Wills Indian Team"" (surrogate for Wills cigarettes)"
+A_0077,0,81,frame,promotional,"Man lights a cigarette by the lake, Charms pack shown; ""Charm is the spirit of freedom"""
+A_0078,0,48,text,promotional,"""Wills Sport proudly supports the Wills Indian Team"" after a cricket fan story"
+A_0079,0,46,frame,promotional,"Wills Kings pack shown with ""Yours.""; characters smoking at a celebration"
+A_0080,0,140,frame,promotional,"Wills team cricket music video, Wills logo on kit (surrogate)"
+A_0082,0,189,text,promotional,"Closing card: Seagram's Royal Stag Barrel Select Large Short Films, #MAKEITPERFECT; no product in the film"

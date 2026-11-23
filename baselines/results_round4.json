@@ -1,0 +1,259 @@
+{
+ "fused": {
+  "n": 14,
+  "correct": 12,
+  "acc": 0.857,
+  "wilson95": [
+   0.601,
+   0.96
+  ],
+  "macro_f1": 0.844,
+  "by_group": {
+   "preventive": [
+    4,
+    6
+   ],
+   "direct": [
+    2,
+    2
+   ],
+   "surrogate_verified": [
+    6,
+    6
+   ]
+  }
+ },
+ "text": {
+  "n": 14,
+  "correct": 10,
+  "acc": 0.714,
+  "wilson95": [
+   0.454,
+   0.883
+  ],
+  "macro_f1": 0.65,
+  "by_group": {
+   "preventive": [
+    2,
+    6
+   ],
+   "direct": [
+    2,
+    2
+   ],
+   "surrogate_verified": [
+    6,
+    6
+   ]
+  }
+ },
+ "image": {
+  "n": 14,
+  "correct": 10,
+  "acc": 0.714,
+  "wilson95": [
+   0.454,
+   0.883
+  ],
+  "macro_f1": 0.708,
+  "by_group": {
+   "preventive": [
+    4,
+    6
+   ],
+   "direct": [
+    2,
+    2
+   ],
+   "surrogate_verified": [
+    4,
+    6
+   ]
+  }
+ },
+ "per_ad": [
+  {
+   "ad_id": "B_0047",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "Hyundai | #BeTheBetterGuy | Road Safety feat. Shah",
+   "fused": "preventive",
+   "text": "preventive",
+   "image": "preventive",
+   "p_fused": 0.458,
+   "p_text": 0.471,
+   "p_image": 0.445
+  },
+  {
+   "ad_id": "B_0048",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "Do not drink and drive",
+   "fused": "preventive",
+   "text": "promotional",
+   "image": "preventive",
+   "p_fused": 0.388,
+   "p_text": 0.502,
+   "p_image": 0.274
+  },
+  {
+   "ad_id": "B_0049",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "PSA on Drunken Driving",
+   "fused": "preventive",
+   "text": "promotional",
+   "image": "preventive",
+   "p_fused": 0.362,
+   "p_text": 0.503,
+   "p_image": 0.221
+  },
+  {
+   "ad_id": "B_0050",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "A friend's request | Cyberabad Traffic Police | Dr",
+   "fused": "preventive",
+   "text": "preventive",
+   "image": "promotional",
+   "p_fused": 0.349,
+   "p_text": 0.195,
+   "p_image": 0.502
+  },
+  {
+   "ad_id": "B_0051",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "dinamalar traffic awareness: Drink and Drive",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "preventive",
+   "p_fused": 0.629,
+   "p_text": 0.889,
+   "p_image": 0.37
+  },
+  {
+   "ad_id": "B_0052",
+   "true": "preventive",
+   "promotion_type": "not_applicable",
+   "product": "alcohol",
+   "title": "Chennai Traffic Police Advises (Do Not Drink and D",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.768,
+   "p_text": 0.852,
+   "p_image": 0.685
+  },
+  {
+   "ad_id": "A_0074",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "tobacco",
+   "title": "FOUR SQUARE Batting for India",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "preventive",
+   "p_fused": 0.604,
+   "p_text": 0.731,
+   "p_image": 0.477
+  },
+  {
+   "ad_id": "A_0075",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "tobacco",
+   "title": "FOUR SQUARE - TEAM INDIA | FOUR SQUARE OLD DOORDAR",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.751,
+   "p_text": 0.867,
+   "p_image": 0.635
+  },
+  {
+   "ad_id": "A_0076",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "tobacco",
+   "title": "Wills sport",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.716,
+   "p_text": 0.722,
+   "p_image": 0.71
+  },
+  {
+   "ad_id": "A_0077",
+   "true": "promotional",
+   "promotion_type": "direct",
+   "product": "tobacco",
+   "title": "CHARMS old ad | Charms Old Doordarshan ads",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.782,
+   "p_text": 0.82,
+   "p_image": 0.743
+  },
+  {
+   "ad_id": "A_0078",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "tobacco",
+   "title": "wills team",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.678,
+   "p_text": 0.665,
+   "p_image": 0.692
+  },
+  {
+   "ad_id": "A_0079",
+   "true": "promotional",
+   "promotion_type": "direct",
+   "product": "tobacco",
+   "title": "Wills Kings Commercial (Ca. 1999)",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.836,
+   "p_text": 0.79,
+   "p_image": 0.882
+  },
+  {
+   "ad_id": "A_0080",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "tobacco",
+   "title": "Old wills advertisement with Indian team for 96 wo",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "promotional",
+   "p_fused": 0.672,
+   "p_text": 0.624,
+   "p_image": 0.72
+  },
+  {
+   "ad_id": "A_0082",
+   "true": "promotional",
+   "promotion_type": "surrogate_verified",
+   "product": "alcohol",
+   "title": "A Perfect Short Film That'll Change Your Life | Ti",
+   "fused": "promotional",
+   "text": "promotional",
+   "image": "preventive",
+   "p_fused": 0.61,
+   "p_text": 0.775,
+   "p_image": 0.445
+  }
+ ],
+ "note": "Frozen model trained on train+val (86 ads). Round 4 labels are AI labels pending human review. Wills (A_0024) and Royal Stag (A_0012) ads are in the v1 TEST split, not in training."
+}
